@@ -20,10 +20,10 @@ public class Ej14{
 
     // array para los colores predeterminados
       String[] colores={"rojo", "azul", "amarillo", "naranja", "rosa", "negro", "blanco", "morado"};
-      int j=0;
 
     // array auxiliar
       String[] aux={};
+      int j=0;
 
     /*****************************/
 
@@ -35,25 +35,45 @@ public class Ej14{
         for(int i=0; i<t; i++){
           System.out.print("Introduce una palabra: ");
             n[i]=s.nextLine();
+
+          // a minúsculas
+            for(int k=0; k<t; k++){
+              n[k]=n[k].toLowerCase();
+            }
+
+          // comprobación de si es un color
+            for(String c:colores){
+              if(n[i].equals(c)){
+                aux[j++]=c;
+              }
+            }
         }
 
       // cierre scanner
         s.close();
 
-      // a minúsculas
-        for(int i=0; i<t; i++){
-          n[i]=n[i].toLowerCase();
-        }
-
     /*****************************/
 
-    // comprobación de la palabra leía
+    // resto de palabras
       for(int i=0; i<t; i++){
-        if(n[i]==colores[j]){
-          aux[i]=n[i];
+        boolean esColor=false;
+
+        for(String c:colores){
+          if(n[i].equals(c)){
+            esColor=true;
+          }
         }
 
-        j++;
+        if(!esColor){
+          aux[j++]=n[i];
+        }
       }
+
+      /*****************************/
+
+      // debug
+        for(int i=0; i<t; i++){
+          System.out.print("| "+aux[i]+" |");
+        }
   }
 }
