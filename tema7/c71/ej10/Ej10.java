@@ -51,6 +51,22 @@ public class Ej10{
 
     /*************************************/
 
-    // 
+    // reordenamiento
+      // pares a las primeras posiciones
+        for(int i=0; i<par; i++){
+          n[i]=pares[i];
+        }
+
+      // impares a las posiciones restantes
+        for(int i=par; i<t; i++){
+          n[i]=impares[i-par];
+        }
+
+    /*************************************/
+
+    // debug
+      for(int i=0; i<t; i++){
+        System.out.print("| "+n[i]+" |");
+      }
   }
 }
