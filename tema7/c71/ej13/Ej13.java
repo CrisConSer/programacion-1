@@ -30,7 +30,26 @@ public class Ej13{
     // asignación de valores aleatorios
       for(int i=0; i<t; i++){
         n[i]=(int)(Math.random()*501);
+
+        // asignación del máximo y el mínimo
+          // max
+            if(n[i]>max){
+              max=n[i];
+            }
+
+          // min
+            if(n[i]<min){
+              min=n[i];
+            }
       }
+
+    /************************************/
+
+    // array sin cambios
+      for(int i=0; i<t; i++){
+        System.out.print("| "+n[i]+" |");
+      }
+      System.out.println();
 
     /************************************/
 
@@ -49,7 +68,23 @@ public class Ej13{
 
       // máximo
         if(opt==1){
-          
+          for(int i=0; i<t; i++){
+            if(n[i]==max){
+              System.out.print("| **"+n[i]+"** |");
+            }else{
+              System.out.print("| "+n[i]+" |");
+            }
+          }
+        }else if(opt==2){
+          for(int i=0; i<t; i++){
+            if(n[i]==min){
+              System.out.print("| **"+n[i]+"** |");
+            }else{
+              System.out.print("| "+n[i]+" |");
+            }
+          }
+        }else{
+          System.out.print("La opción seleccionada no es correcta.");
         }
   }
 }
