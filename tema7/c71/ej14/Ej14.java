@@ -18,6 +18,14 @@ public class Ej14{
 
     /*****************************/
 
+    // array para los colores predeterminados
+      String[] colores={"rojo", "azul", "amarillo", "naranja", "rosa", "negro", "blanco", "morado"};
+
+    // array auxiliar
+      String[] aux={};
+
+    /*****************************/
+
     // elementos
       // scanner
         Scanner s=new Scanner(System.in);
@@ -30,6 +38,11 @@ public class Ej14{
 
       // cierre scanner
         s.close();
+
+      // a minúsculas
+        for(int i=0; i<t; i++){
+          n[i]=n[i].toLowerCase();
+        }
 
     /*****************************/
 
