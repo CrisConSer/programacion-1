@@ -20,6 +20,7 @@ public class Ej14{
 
     // array para los colores predeterminados
       String[] colores={"rojo", "azul", "amarillo", "naranja", "rosa", "negro", "blanco", "morado"};
+      int j=0;
 
     // array auxiliar
       String[] aux={};
@@ -46,6 +47,13 @@ public class Ej14{
 
     /*****************************/
 
-    // 
+    // comprobación de la palabra leía
+      for(int i=0; i<t; i++){
+        if(n[i]==colores[j]){
+          aux[i]=n[i];
+        }
+
+        j++;
+      }
   }
 }
