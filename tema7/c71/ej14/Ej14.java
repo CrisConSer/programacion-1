@@ -3,6 +3,8 @@
   info: ejercicio 14
 */
 
+// este ejercicio no funciona
+
 package tema7.c71.ej14;
 
 import java.util.Scanner;
