@@ -49,6 +49,7 @@ public class Ej1{
         for(columna=0; columna<c; columna++){
           System.out.printf("| %-2d ", array[fila][columna]);
         }
+
         System.out.println("|");
         System.out.print("+----+----+----+----+----+----+");
         System.out.println();
