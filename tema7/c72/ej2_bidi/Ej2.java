@@ -56,25 +56,25 @@ public class Ej2{
 
     // comprobar el número con más dígitos de cada columna para adaptar el tamaño
       // array para el número de dígitos máximo de la columna
-        int[] maxDigitos = new int[c];
+        int[] maxDigitos=new int[c];
 
       // 
-        for(int i=0; i<f; i++){
-          for(int j=0; j<c; j++){
-            int num=array[i][j];
+        for(int filas=0; filas<f; filas++){
+          for(int columnas=0; columnas<c; columnas++){
+            int maxContado=array[filas][columnas];
             int numDigits=0;
 
-            if(num<0){
-              num=-num;
+            if(maxContado<0){
+              maxContado=-maxContado;
               numDigits++;
             }
 
-            while(num>0){
+            while(maxContado>0){
               numDigits++;
-              num/=10;
+              maxContado/=10;
             }
 
-            maxDigitos[j]=Math.max(maxDigitos[j], numDigits);
+            maxDigitos[columnas]=Math.max(maxDigitos[columnas], numDigits);
           }
         }
 
