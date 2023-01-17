@@ -14,21 +14,14 @@ public class Ej2{
         // filas
           int f=4;
 
-          // sumas
-            int suma1=0;
-            int suma2=0;
-            int suma3=0;
-            int suma4=0;
-
         // columnas
           int c=5;
 
-          // sumas
-            int suma5=0;
-            int suma6=0;
-            int suma7=0;
-            int suma8=0;
-            int suma9=0;
+        // sumas
+        int[] sumaFilas=new int[f];
+        int[] sumaColumnas=new int[c];
+
+        int total=0;
 
       /******************/
 
