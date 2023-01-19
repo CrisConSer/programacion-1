@@ -1,6 +1,6 @@
 /*
   @author: Christian Millán Soria
-  info: ejemplo
+  info: ejemplo 2
 */
 
 package tema7.c72.ejemplo2;
