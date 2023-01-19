@@ -1,23 +1,30 @@
 /*
   @author: Christian Millán Soria
-  info: ejemplo
+  info: ejemplo 1
 */
 
-package tema7.c72.ejemplo;
+package tema7.c72.ejemplo1;
 
-public class Ejemplo{
+public class Ejemplo1{
   public static void main(String[] args){
     // array
       // filas y columnas
-        int f=5;
-        int c=3;
+        int f=4;
+        int c=6;
+
+      // auxiliar
+        int aux=1;
 
       // creación
         int[][] array=new int[f][c];
 
       // asignación de valores
-        for(int i=0; i<f; i++){
-          
+        for(int fila=0; fila<f; fila++){
+          for(int columna=0; columna<c; columna++){
+            array[fila][columna]=aux;
+
+            aux+=1;
+          }
         }
 
       // contenido del array
