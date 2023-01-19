@@ -3,6 +3,8 @@
   info: ejercicio 2
 */
 
+// este programa no funciona
+
 package tema7.c72.ej2_bidi;
 
 import java.util.Scanner;
@@ -70,7 +72,7 @@ public class Ej2{
           }
         }
 
-    /*********************************************/
+    /*********************************************************/
 
     // debug
       for(int i=0; i<f; i++){
@@ -81,10 +83,22 @@ public class Ej2{
           sumaFilas+=array[i][j];
 
           System.out.printf("| %-"+maxDigitos[j]+"d ", array[i][j]);
-
-          
         }
-        System.out.println(sumaFilas+" |");
+
+        System.out.println("| "+sumaFilas+" |");
       }
+
+      for(int fila=0; f<c; f++){
+        for(int columna=0; columna<f; columna++){
+          sumaColumnas+=array[columna][fila];
+        }
+
+        System.out.printf("| %-"+maxDigitos+"d ", sumaColumnas);
+
+        total+=sumaColumnas;
+        sumaColumnas=0;
+      }
+
+      System.out.print("| "+total+" |");
   }
 }
