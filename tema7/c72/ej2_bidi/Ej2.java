@@ -18,10 +18,9 @@ public class Ej2{
           int c=5;
 
         // sumas
-        int[] sumaFilas=new int[f];
-        int[] sumaColumnas=new int[c];
-
-        int total=0;
+          int sumaFilas=0;
+          int sumaColumnas=0;
+          int total=0;
 
       /******************/
 
@@ -75,11 +74,17 @@ public class Ej2{
 
     // debug
       for(int i=0; i<f; i++){
+        total+=sumaFilas;
+        sumaFilas=0;
+
         for(int j=0; j<c; j++){
+          sumaFilas+=array[i][j];
+
           System.out.printf("| %-"+maxDigitos[j]+"d ", array[i][j]);
+
+          
         }
-        
-        System.out.println("|");
+        System.out.println(sumaFilas+" |");
       }
   }
 }
