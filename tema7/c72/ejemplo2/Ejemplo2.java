@@ -12,7 +12,7 @@ public class Ejemplo2{
         int f=6;
         int c=4;
 
-      // auxiliar
+      // valor para cada elemento del array
         int aux=1;
 
       // creación
