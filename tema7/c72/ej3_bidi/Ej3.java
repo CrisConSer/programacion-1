@@ -5,8 +5,6 @@
 
 package tema7.c72.ej3_bidi;
 
-import java.util.Scanner;
-
 public class Ej3{
   public static void main(String[] args){
     // array
@@ -29,20 +27,12 @@ public class Ej3{
 
       /******************/
 
-      // asignación de valores
-        // scanner para obtenerlos
-          Scanner s=new Scanner(System.in);
-
-        // obtención
-          for(int filas=0; filas<f; filas++){
-            for(int columnas=0; columnas<c; columnas++){
-              System.out.print("Introduce un número: ");
-                array[filas][columnas]=s.nextInt();
-            }
+      // generación aleatoria de valores
+        for(int filas=0; filas<f; filas++){
+          for(int columnas=0; columnas<c; columnas++){
+            array[filas][columnas]=(int)((Math.random()*900)+100);
           }
-
-        // cierre scanner
-          s.close();
+        }
 
     /*********************************************************/
 
@@ -52,7 +42,7 @@ public class Ej3{
           for(int j=0; j<c; j++){
             sumaFilas+=array[i][j];
 
-            System.out.printf("| %-6d ", array[i][j]);
+            System.out.printf("| %-8d ", array[i][j]);
           }
 
           total+=sumaFilas;
