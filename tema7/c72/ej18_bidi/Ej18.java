@@ -7,6 +7,17 @@ package tema7.c72.ej18_bidi;
 
 public class Ej18{
   public static void main(String[] args){
+    // mayores y menores que 100
+      int mitad=10;
+
+      int[] mayores=new int[mitad];
+      int[] menores=new int[mitad];
+
+      int mayoresCont=0;
+      int menoresCont=0;
+
+    /*************************************/
+
     // creación del array
       // número de elementos
         int t=10;
@@ -19,6 +30,20 @@ public class Ej18{
     // asignación de valores aleatorios entre 0-100
       for(int i=0; i<t; i++){
         array[i]=(int)(Math.random()*201);
+
+        // mayores que 100
+          if(array[i]>100){
+            mayores[i]=array[i];
+
+            mayoresCont++;
+          }
+
+        // menores que 100
+          if(array[i]<100){
+            menores[i]=array[i];
+
+            menoresCont++;
+        }
       }
 
     /*************************************/
@@ -28,12 +53,7 @@ public class Ej18{
 
     /*************************************/
 
-    // reordenamiento
-      
-
-    /*************************************/
-
-    // debug
+    // array original
       System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
       System.out.print("| Indice ");
 
@@ -54,5 +74,41 @@ public class Ej18{
 
         System.out.println("|");
         System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+    /*************************************/
+
+    // reordenamiento
+      System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
+      System.out.print("| Indice ");
+
+      for(int i=0; i<10; i++){
+        System.out.printf("| %-3d ", indice);
+
+        indice++;
+      }
+
+      System.out.println("|");
+      System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
+      System.out.print("| Valor  ");
+
+      for(int i=0; i<t; i++){
+        while(mayoresCont>0&&menoresCont>0){
+          System.out.printf("| %-3d ", menores[i]);
+
+          System.out.printf("| %-3d ", mayores[i]);
+
+          mayoresCont--;
+
+          menoresCont--;
+        }
+
+        System.out.printf("| %-3d ", array[i]);
+      }
+
+      System.out.println("|");
+      System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
   }
 }
