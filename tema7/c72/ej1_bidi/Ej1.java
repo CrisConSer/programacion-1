@@ -1,6 +1,6 @@
 /*
   @author: Christian Millán Soria
-  info: ejercicio 1
+  info: ejercicio 1 bidimensionales
 */
 
 package tema7.c72.ej1_bidi;

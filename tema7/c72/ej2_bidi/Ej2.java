@@ -1,6 +1,6 @@
 /*
   @author: Christian Millán Soria
-  info: ejercicio 2
+  info: ejercicio 2 bidimensionales
 */
 
 // este programa no funciona
