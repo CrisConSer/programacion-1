@@ -3,8 +3,6 @@
   info: ejercicio 2 bidimensionales
 */
 
-// este programa no funciona
-
 package tema7.c72.ej2_bidi;
 
 import java.util.Scanner;
@@ -48,57 +46,32 @@ public class Ej2{
 
     /*********************************************************/
 
-    // comprobar el número con más dígitos de cada columna para adaptar el tamaño
-      // array para el número de dígitos máximo de la columna
-        int[] maxDigitos=new int[c];
-
-      // 
-        for(int filas=0; filas<f; filas++){
-          for(int columnas=0; columnas<c; columnas++){
-            int maxContado=array[filas][columnas];
-            int numDigits=0;
-
-            if(maxContado<0){
-              maxContado=-maxContado;
-              numDigits++;
-            }
-
-            while(maxContado>0){
-              numDigits++;
-              maxContado/=10;
-            }
-
-            maxDigitos[columnas]=Math.max(maxDigitos[columnas], numDigits);
-          }
-        }
-
-    /*********************************************************/
-
     // debug
-      for(int i=0; i<f; i++){
-        total+=sumaFilas;
-        sumaFilas=0;
+      // filas
+        for(int i=0; i<f; i++){
+          total+=sumaFilas;
+          sumaFilas=0;
 
-        for(int j=0; j<c; j++){
-          sumaFilas+=array[i][j];
+          for(int j=0; j<c; j++){
+            sumaFilas+=array[i][j];
 
-          System.out.printf("| %-"+maxDigitos[j]+"d ", array[i][j]);
+            System.out.printf("| %-6d ", array[i][j]);
+          }
+
+          System.out.println("| **"+sumaFilas+"** |");
         }
 
-        System.out.println("| "+sumaFilas+" |");
-      }
+      // columnas
+        for(int i=0; i<c; i++){
+          sumaColumnas=0;
 
-      for(int fila=0; f<c; f++){
-        for(int columna=0; columna<f; columna++){
-          sumaColumnas+=array[columna][fila];
+          for(int j=0; j<f; j++){
+            sumaColumnas+=array[j][i];
+          }
+
+          System.out.printf("| **%-2d** ", sumaColumnas);
         }
 
-        System.out.printf("| %-"+maxDigitos+"d ", sumaColumnas);
-
-        total+=sumaColumnas;
-        sumaColumnas=0;
-      }
-
-      System.out.print("| "+total+" |");
+        System.out.printf("| **%-2d** |", total);
   }
 }
