@@ -1,11 +1,11 @@
 /*
   @author: Christian Millán Soria
-  info: ejercicio 11 bidimensionales
+  info: ejercicio 3 bidimensionales
 */
 
-package tema7.c72.ej11_bidi;
+package tema7.c72.ej3_bidi;
 
-public class Ej11{
+public class Ej3{
   public static void main(String[] args){
     
   }
