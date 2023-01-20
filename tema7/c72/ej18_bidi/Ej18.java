@@ -8,10 +8,10 @@ package tema7.c72.ej18_bidi;
 public class Ej18{
   public static void main(String[] args){
     // mayores y menores que 100
-      int mitad=10;
+      int auxiliares=10;
 
-      int[] mayores=new int[mitad];
-      int[] menores=new int[mitad];
+      int[] mayores=new int[auxiliares];
+      int[] menores=new int[auxiliares];
 
       int mayoresCont=0;
       int menoresCont=0;
@@ -81,6 +81,8 @@ public class Ej18{
     /*************************************/
 
     // reordenamiento
+      indice=0;
+
       System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
       System.out.print("| Indice ");
 
