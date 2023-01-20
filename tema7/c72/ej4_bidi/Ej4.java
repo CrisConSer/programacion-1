@@ -6,7 +6,7 @@
 package tema7.c72.ej4_bidi;
 
 public class Ej4{
-  public static void main(String[] args){
+  public static void main(String[] args) throws InterruptedException{
     // array
       // nº elementos
         // filas
@@ -46,7 +46,11 @@ public class Ej4{
           }
 
           total+=sumaFilas;
+
+          Thread.sleep(500);
           System.out.println("| **"+sumaFilas+"** |");
+          Thread.sleep(500);
+
           sumaFilas=0;
         }
 
@@ -58,9 +62,11 @@ public class Ej4{
             sumaColumnas+=array[j][i];
           }
 
+          Thread.sleep(500);
           System.out.printf("| **%-2d** ", sumaColumnas);
         }
 
+        Thread.sleep(1000);
         System.out.printf("| **%-2d** |", total);
   }
 }
