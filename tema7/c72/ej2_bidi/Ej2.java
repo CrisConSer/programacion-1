@@ -49,16 +49,15 @@ public class Ej2{
     // debug
       // filas
         for(int i=0; i<f; i++){
-          total+=sumaFilas;
-          sumaFilas=0;
-
           for(int j=0; j<c; j++){
             sumaFilas+=array[i][j];
 
             System.out.printf("| %-6d ", array[i][j]);
           }
 
+          total+=sumaFilas;
           System.out.println("| **"+sumaFilas+"** |");
+          sumaFilas=0;
         }
 
       // columnas
