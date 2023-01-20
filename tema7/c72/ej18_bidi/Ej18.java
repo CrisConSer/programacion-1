@@ -97,14 +97,12 @@ public class Ej18{
       System.out.print("| Valor  ");
 
       for(int i=0; i<t; i++){
-        while(mayoresCont>0&&menoresCont>0){
-          System.out.printf("| %-3d ", menores[i]);
-
+        if(mayoresCont>0){
           System.out.printf("| %-3d ", mayores[i]);
+        }
 
-          mayoresCont--;
-
-          menoresCont--;
+        if(menoresCont>0){
+          System.out.printf("| %-3d ", menores[i]);
         }
 
         System.out.printf("| %-3d ", array[i]);
