@@ -34,15 +34,25 @@ public class Ej18{
     /*************************************/
 
     // debug
-      System.out.println("+--------+----+----+----+----+----+----+----+----+----+----+");
+      System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
       System.out.print("| Indice ");
 
       for(int i=0; i<10; i++){
-        System.out.printf("| %-2d ", indice);
+        System.out.printf("| %-3d ", indice);
 
         indice++;
       }
 
       System.out.println("|");
+      System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
+      System.out.print("| Valor  ");
+
+      // array original
+        for(int i=0; i<10; i++){
+          System.out.printf("| %-3d ", array[i]);
+        }
+
+        System.out.println("|");
+        System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
   }
 }
