@@ -1,6 +1,6 @@
 /*
   @author: Christian Millán Soria
-  info: ejercicio 18 bidimensionales
+  info: ejercicio 18
 */
 
 package tema7.c72.ej18;
