@@ -33,17 +33,11 @@ public class Ej18{
 
         // mayores que 100
           if(array[i]>100){
-            mayores[i]=array[i];
-
-            mayoresCont++;
+            mayores[mayoresCont++]=array[i];
+          }else{
+            // menores que 100
+              menores[menoresCont++]=array[i];
           }
-
-        // menores que 100
-          if(array[i]<100){
-            menores[i]=array[i];
-
-            menoresCont++;
-        }
       }
 
     /*************************************/
@@ -80,11 +74,7 @@ public class Ej18{
     /*************************************/
 
     // reordenamiento
-      for(int i=0; i<t; i++){
-        if(array[i]==0){
-          
-        }
-      }
+      
 
     /*************************************/
 
@@ -110,8 +100,5 @@ public class Ej18{
 
       System.out.println("|");
       System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
-      System.out.println();
-      System.out.println();
-      System.out.println();
   }
 }
