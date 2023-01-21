@@ -30,7 +30,7 @@ public class Ej3{
       // generación aleatoria de valores
         for(int filas=0; filas<f; filas++){
           for(int columnas=0; columnas<c; columnas++){
-            array[filas][columnas]=(int)((Math.random()*900)+100);
+            array[filas][columnas]=(int)(Math.random()*801+100);
           }
         }
 
