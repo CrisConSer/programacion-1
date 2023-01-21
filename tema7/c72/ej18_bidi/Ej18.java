@@ -80,7 +80,7 @@ public class Ej18{
     // reordenamiento
       // array final
         int[] arrayFinal=new int[t];
-;
+
     /*************************************/
 
     // debug
