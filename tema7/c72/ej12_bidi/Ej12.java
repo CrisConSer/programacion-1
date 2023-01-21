@@ -64,7 +64,7 @@ public class Ej12{
                       max=array[i][9-i];
                     }
 
-                  // máximo
+                  // mínimo
                     if(array[i][9-i]<min){
                       min=array[i][9-i];
                     }

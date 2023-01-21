@@ -31,16 +31,38 @@ public class Ej13{
     /**********************************************/
 
     // debug
-      String indice="MED MIN MAX ";
+      // máximo, mínimo y media
+        int max=Integer.MIN_VALUE;
+        int min=Integer.MAX_VALUE;
 
-      System.out.println("                                                "+indice);
+        int suma=0;
+
+      String indice="MED MIN MAX";
+
+      System.out.println("                                                                "+indice);
 
       for(int i=0; i<f; i++){
         System.out.printf("%9s:", pais[i]);
 
-        for(int k=0; k<c; k++){
-          System.out.printf(" %-3d ", estatura[i][k]);
+        for(int j=0; j<c; j++){
+          System.out.printf(" %-3d ", estatura[i][j]);
+
+          suma+=estatura[i][j];
+
+          // máximo
+            if(estatura[i][j]>max){
+              max=estatura[i][j];
+            }
+
+          // mínimo
+            if(estatura[i][j]>max){
+              max=estatura[i][j];
+            }
         }
+
+        System.out.printf(" |  %-3d ", suma/c);
+
+        suma=0;
 
         System.out.println();
       }
