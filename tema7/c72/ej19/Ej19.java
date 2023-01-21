@@ -5,6 +5,8 @@
 
 package tema7.c72.ej19;
 
+import java.util.Scanner;
+
 public class Ej19{
   public static void main(String[] args){
     // array original
@@ -26,14 +28,77 @@ public class Ej19{
 
         System.out.print("Indice ");
         for(int i=0; i<12; i++){
-          System.out.printf(" %-3d ", indice);
+          System.out.printf(" %3d ", indice);
   
           indice++;
         }
 
         System.out.print("\nValor  ");
         for(int i=0; i<12; i++){
-          System.out.printf(" %-3d ", array[i]);
+          System.out.printf(" %3d ", array[i]);
+        }
+
+      /*****************************************/
+
+      // valor a insertar
+        // scanner
+          Scanner s=new Scanner(System.in);
+
+        // número
+          System.out.print("\n\nIntroduce el número que quieres insertar: ");
+            int num=s.nextInt();
+
+        // posición
+        System.out.print("Introduce la posición donde lo quieres insertar (0-11): ");
+          int pos=s.nextInt();
+
+        // cierre scanner
+          s.close();
+
+      /*****************************************/
+
+      // comprobación de posición válida
+        if(pos<0||pos>11){
+          System.out.print("\nLa posición introducida no es válida.");
+        }else{
+          // variable auxiliar
+            int aux;
+            int aux2;
+
+          /***************/
+
+          // inserción
+            aux=array[pos];
+
+            array[pos]=num;
+
+          /***************/
+
+          // inserción
+            for(int i=array[pos]; i<12-pos; i++){
+              aux2=array[pos+1];
+
+              array[pos+1]=aux;
+
+              array[pos]=array[pos+1];
+            }
+
+          /***************/
+
+          // debug
+            indice=0;
+
+            System.out.print("\nIndice ");
+            for(int i=0; i<12; i++){
+              System.out.printf(" %3d ", indice);
+      
+              indice++;
+            }
+    
+            System.out.print("\nValor  ");
+            for(int i=0; i<12; i++){
+              System.out.printf(" %3d ", array[i]);
+            }
         }
   }
 }
