@@ -81,7 +81,33 @@ public class Ej18{
       // array final
         int[] arrayFinal=new int[t];
 
-      // 
+      // usados
+        int mayoresUsados=0;
+        int menoresUsados=0;
+
+      // asignación de valores intercalados
+        for(int i=0; i<t; i++){
+          if(mayoresUsados<mayoresCont&&menoresUsados<menoresCont){
+            // par=mayores que 100
+            if(i%2==0){
+              arrayFinal[i]=mayores[mayoresUsados];
+
+              mayoresUsados++;
+            }else{
+              arrayFinal[i]=menores[menoresUsados];
+
+              menoresUsados++;
+            }
+          }else if(mayoresUsados<mayoresCont){
+            arrayFinal[i]=mayores[mayoresUsados];
+
+            mayoresUsados++;
+          }else if(menoresUsados<menoresCont){
+            arrayFinal[i]=menores[menoresUsados];
+
+            menoresUsados++;
+          }
+        }
 
     /*************************************/
 
