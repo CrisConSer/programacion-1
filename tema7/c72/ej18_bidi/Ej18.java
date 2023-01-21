@@ -67,20 +67,28 @@ public class Ej18{
       System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
       System.out.print("| Valor  ");
 
-      // array original
-        for(int i=0; i<10; i++){
-          System.out.printf("| %-3d ", array[i]);
-        }
+      for(int i=0; i<10; i++){
+        System.out.printf("| %-3d ", array[i]);
+      }
 
-        System.out.println("|");
-        System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
-        System.out.println();
-        System.out.println();
-        System.out.println();
+      System.out.println("|");
+      System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
+      System.out.println();
+      System.out.println();
+      System.out.println();
 
     /*************************************/
 
     // reordenamiento
+      for(int i=0; i<t; i++){
+        if(array[i]==0){
+          
+        }
+      }
+
+    /*************************************/
+
+    // debug
       indice=0;
 
       System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
@@ -96,19 +104,14 @@ public class Ej18{
       System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
       System.out.print("| Valor  ");
 
-      for(int i=0; i<t; i++){
-        if(mayoresCont>0){
-          System.out.printf("| %-3d ", mayores[i]);
-        }
-
-        if(menoresCont>0){
-          System.out.printf("| %-3d ", menores[i]);
-        }
-
+      for(int i=0; i<10; i++){
         System.out.printf("| %-3d ", array[i]);
       }
 
       System.out.println("|");
       System.out.println("+--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+");
+      System.out.println();
+      System.out.println();
+      System.out.println();
   }
 }
