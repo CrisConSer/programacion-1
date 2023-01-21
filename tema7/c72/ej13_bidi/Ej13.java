@@ -64,6 +64,9 @@ public class Ej13{
 
         suma=0;
 
+        max=Integer.MIN_VALUE;
+        min=Integer.MAX_VALUE;
+
         System.out.println();
       }
   }
