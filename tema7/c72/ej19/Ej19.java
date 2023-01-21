@@ -63,25 +63,18 @@ public class Ej19{
         }else{
           // variable auxiliar
             int aux;
-            int aux2;
 
           /***************/
 
-          // inserción
+          // inserción //! esto no funciona
             aux=array[pos];
 
             array[pos]=num;
 
-          /***************/
-
-          // inserción
-            for(int i=array[pos]; i<12-pos; i++){
-              aux2=array[pos+1];
-
-              array[pos+1]=aux;
-
-              array[pos]=array[pos+1];
+            for(int i=t-1; i>pos; i--){
+              array[i]=array[i-1];
             }
+          
 
           /***************/
 
