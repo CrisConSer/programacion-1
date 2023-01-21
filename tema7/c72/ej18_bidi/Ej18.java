@@ -78,8 +78,9 @@ public class Ej18{
     /*************************************/
 
     // reordenamiento
-      
-
+      // array final
+        int[] arrayFinal=new int[t];
+;
     /*************************************/
 
     // debug
@@ -99,7 +100,7 @@ public class Ej18{
       System.out.print("| Valor  ");
 
       for(int i=0; i<10; i++){
-        System.out.printf("| %-3d ", array[i]);
+        System.out.printf("| %-3d ", arrayFinal[i]);
       }
 
       System.out.println("|");
