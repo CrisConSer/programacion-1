@@ -31,12 +31,16 @@ public class Ej18{
       for(int i=0; i<t; i++){
         array[i]=(int)(Math.random()*201);
 
-        // mayores que 100
-          if(array[i]>100){
-            mayores[mayoresCont++]=array[i];
+        // menores o iguales que 100 a un array diferente
+          if(array[i]<=100){
+            menores[menoresCont]=array[i];
+
+            menoresCont++;
           }else{
-            // menores que 100
-              menores[menoresCont++]=array[i];
+            // mayores que 100 a un array diferente
+              mayores[mayoresCont]=array[i];
+
+              mayoresCont++;
           }
       }
 
