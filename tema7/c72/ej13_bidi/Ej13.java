@@ -55,12 +55,12 @@ public class Ej13{
             }
 
           // mínimo
-            if(estatura[i][j]>max){
-              max=estatura[i][j];
+            if(estatura[i][j]<min){
+              min=estatura[i][j];
             }
         }
 
-        System.out.printf(" |  %-3d ", suma/c);
+        System.out.printf(" |  %-3d %-3d %-3d", suma/c, min, max);
 
         suma=0;
 
