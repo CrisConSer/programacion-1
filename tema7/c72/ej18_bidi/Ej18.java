@@ -93,7 +93,7 @@ public class Ej18{
               arrayFinal[i]=mayores[mayoresUsados];
 
               mayoresUsados++;
-            }else{
+            }else{// impar=menores o iguales que 100
               arrayFinal[i]=menores[menoresUsados];
 
               menoresUsados++;
