@@ -98,7 +98,7 @@ public class Ej18{
 
               menoresUsados++;
             }
-          }else if(mayoresUsados<mayoresCont){
+          }else if(mayoresUsados<mayoresCont){// si ya no se cumple la anterior, es que un array está vacío
             arrayFinal[i]=mayores[mayoresUsados];
 
             mayoresUsados++;
