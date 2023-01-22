@@ -61,20 +61,15 @@ public class Ej19{
         if(pos<0||pos>11){
           System.out.print("\nLa posición introducida no es válida.");
         }else{
-          // variable auxiliar
-            int aux;
+          // mover hacia la derecha
+            for(int i=11; i>pos; i--){
+              array[i]=array[i-1];
+            }
 
           /***************/
 
-          // inserción //! esto no funciona
-            aux=array[pos];
-
+          // inserción del número
             array[pos]=num;
-
-            for(int i=t-1; i>pos; i--){
-              array[i]=array[i-1];
-            }
-          
 
           /***************/
 
