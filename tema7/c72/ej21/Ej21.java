@@ -34,7 +34,7 @@ public class Ej21{
 
     // cincuerización
       for(int i=0; i<t; i++){
-        for(int j=0; array[i]%5!=0; j++){
+        while(array[i]%5!=0){
           array[i]+=1;
         }
       }
