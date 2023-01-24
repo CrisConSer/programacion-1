@@ -48,9 +48,9 @@ public class Ejemplo6{
         for(int i=0; i<t; i++){
         if(array[i]>=max){
           System.out.printf("| **%-2d** ", array[i]);
-          }else{
-            System.out.printf("| %-2d ", array[i]);
-          }
+        }else{
+          System.out.printf("| %-2d ", array[i]);
+        }
         }
 
         System.out.print("|");
