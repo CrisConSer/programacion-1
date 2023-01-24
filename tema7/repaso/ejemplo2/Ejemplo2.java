@@ -1,7 +1,7 @@
 /**
   @author: Christian Millán Soria
   @file: Ejemplo2.java
-  @info: ejemplo 1
+  @info: ejemplo 2
 */
 
 package tema7.repaso.ejemplo2;
