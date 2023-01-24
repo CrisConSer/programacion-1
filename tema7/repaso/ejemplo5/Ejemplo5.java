@@ -1,14 +1,14 @@
 /**
   @author: Christian Millán Soria
-  @file: Ejemplo4.java
-  @info: ejemplo 4
+  @file: Ejemplo5.java
+  @info: ejemplo 5
 */
 
-package tema7.repaso.ejemplo4;
+package tema7.repaso.ejemplo5;
 
 import java.util.Scanner;
 
-public class Ejemplo4{
+public class Ejemplo5{
   public static void main(String[] args){
     // scanner
       Scanner s=new Scanner(System.in);
@@ -21,6 +21,12 @@ public class Ejemplo4{
 
     // cierre de scanner
       s.close();
+
+    /***********************************/
+    
+    // máximo y mínimo
+      int max=Integer.MIN_VALUE;
+      int min=Integer.MAX_VALUE;
     
     /***********************************/
 
@@ -31,15 +37,11 @@ public class Ejemplo4{
       // asignación de valores
         for(int i=0; i<t; i++){
           array[i]=(int)(Math.random()*11+50);
+
+          // debug
+            System.out.printf("| %-2d ", array[i]);
         }
 
-    /***********************************/
-
-    // debug
-      for(int i=0; i<t; i++){
-        System.out.printf("| %-2d ", array[i]);
-      }
-
-      System.out.print("|");
+        System.out.print("|");
   }
 }
