@@ -24,7 +24,7 @@ public class Ejemplo5{
 
     /***********************************/
     
-    // máximo y mínimo
+    // máximo
       int max=Integer.MIN_VALUE;
     
     /***********************************/
@@ -42,15 +42,15 @@ public class Ejemplo5{
           }
         }
 
-      /***********************************/
+    /***********************************/
 
       // debug
         for(int i=0; i<t; i++){
-        if(array[i]>=max){
-          System.out.printf("| **%-2d** ", array[i]);
-        }else{
-          System.out.printf("| %-2d ", array[i]);
-        }
+          if(array[i]>=max){
+            System.out.printf("| **%-2d** ", array[i]);
+          }else{
+            System.out.printf("| %-2d ", array[i]);
+          }
         }
 
         System.out.print("|");
