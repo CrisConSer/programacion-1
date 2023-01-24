@@ -30,9 +30,13 @@ public class Ejemplo8{
         int[][] array=new int[f][c];
 
       // asignación de valores
+        int aux=0;
+
         for(int i=0; i<f; i++){
           for(int j=0; j<c; j++){
-            array[i][j]=(int)(Math.random()*101+100);
+            array[i][j]=aux;
+
+            aux+=2;
           }
         }
 
