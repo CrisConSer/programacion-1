@@ -14,76 +14,37 @@ public class Ejemplo7{
       Scanner s=new Scanner(System.in);
 
     // tamaño array
-      System.out.print("Introduce el tamaño que debe tener el array: ");
-        int t=s.nextInt();
+      System.out.print("Introduce el tamaño de las filas del array: ");
+        int f=s.nextInt();
 
-      System.out.println();
+      System.out.print("Introduce el tamaño de las columnas del array: ");
+        int c=s.nextInt();
 
     // cierre de scanner
       s.close();
 
-    /***********************************/
-    
-    // máximo
-      int max=Integer.MIN_VALUE;
-    
-    /***********************************/
+    /*************************/
 
-    // array pares
-      int[] fila2=new int[t];
-
-    /***********************************/
-
-    // array original
+    // array
       // creación
-        int[] fila1=new int[t];
+        int[][] array=new int[f][c];
 
       // asignación de valores
-        for(int i=0; i<t; i++){
-          fila1[i]=(int)(Math.random()*11+50);
-
-          // máximo
-            if(fila1[i]>max){
-              max=fila1[i];
-            }
-        }
-
-    /***********************************/
-
-    // asignación de valores pares
-      int aux=t;
-
-      for(int i=0; i<t; i++){
-        if(fila1[i]%2==0){
-          fila2[aux-1]=fila1[i];
-
-          aux--;
-        }
-      }
-
-    /***********************************/
-
-      // debug original
-        for(int i=0; i<t; i++){
-          if(fila1[i]>=max){
-            System.out.printf("| **%-2d** ", fila1[i]);
-          }else{
-            System.out.printf("| %-2d ", fila1[i]);
+        for(int i=0; i<f; i++){
+          for(int j=0; j<c; j++){
+            array[i][j]=(int)(Math.random()*101+100);
           }
         }
 
-        System.out.print("|");
+    /*************************/
 
-        System.out.println();
-        System.out.println();
+    // debug
+    for(int i=0; i<f; i++){
+      for(int j=0; j<c; j++){
+        System.out.printf("| %-3d ", array[i][j]);
+      }
 
-      /**************/
-
-      // debug
-        for(int i=0; i<t; i++){
-          System.out.printf("| %-2d ", fila2[i]);
-        }
-
-        System.out.print("|");
+      System.out.println("|");
+    }
   }
 }
