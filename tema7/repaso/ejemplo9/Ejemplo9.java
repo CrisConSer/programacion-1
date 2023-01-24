@@ -26,7 +26,7 @@ public class Ejemplo9{
     /*************************/
 
     // array múltiplos 3
-      int[] multiplos3=new int[f];
+      int[] multiplos3=new int[f*c];
 
     /*************************/
 
@@ -44,10 +44,12 @@ public class Ejemplo9{
 
             aux+=2;
 
-            while(array[i][j]%3==0){
-              multiplos3[aux2]=array[i][j];
+            if(array[i][j]%3==0){
+              if(aux2%2==0){
+                  multiplos3[aux2]=array[i][j];
+              }
 
-              aux2+=2;
+              aux2++;
             }
           }
         }
