@@ -26,7 +26,6 @@ public class Ejemplo5{
     
     // máximo y mínimo
       int max=Integer.MIN_VALUE;
-      int min=Integer.MAX_VALUE;
     
     /***********************************/
 
@@ -38,8 +37,20 @@ public class Ejemplo5{
         for(int i=0; i<t; i++){
           array[i]=(int)(Math.random()*11+50);
 
-          // debug
+          if(array[i]>max){
+            max=array[i];
+          }
+        }
+
+      /***********************************/
+
+      // debug
+        for(int i=0; i<t; i++){
+        if(array[i]>=max){
+          System.out.printf("| **%-2d** ", array[i]);
+          }else{
             System.out.printf("| %-2d ", array[i]);
+          }
         }
 
         System.out.print("|");
