@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Ej1{
   /**
     @info: función para números capicúa
-    @param x : número
+    @param x: número
     @return:
       - true: el número es capicúa
       - false: el número no es capicúa
@@ -21,18 +21,24 @@ public class Ej1{
       // variable auxiliar
         int aux=x;
 
-      // número final
-        int numAlreves=0;
+      // número invertido
+        int rev=0;
 
       // volteo
-        while(aux>0){
-          int ultimoDigi=aux%10;
+        while(aux!=0) {
+            rev=rev*10+aux%10;
+            aux/=10;
+        }        
 
-          numAlreves=numAlreves*10+ultimoDigi;
-
-          aux=aux/10;
+      // comprobación
+        if(x==rev){
+          return true;
+        }else{
+          return false;
         }
     }
+
+  /***************************************************************/
 
   // main
     public static void main(String[] args){
@@ -43,8 +49,6 @@ public class Ej1{
         // obtención del número
           System.out.print("Introduce el número: ");
             int n=s.nextInt();
-
-          System.out.println();
 
         // cierre scanner
           s.close();
