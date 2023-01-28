@@ -1,7 +1,7 @@
 /**
   @author: Christian Millán Soria
   @file: ej2.java
-  @info: ejercicio 1
+  @info: ejercicio 2
 */
 
 package tema8.c81.ej2;
@@ -10,32 +10,28 @@ import java.util.Scanner;
 
 public class Ej2{
   /**
-    @info: función para números capicúa
+    @info: función para números primo
     @param x: número
     @return:
-      - true: el número es capicúa
-      - false: el número no es capicúa
+      - true: el número es primo
+      - false: el número no es primo
   */
 
-    public static boolean esCapicua(int x){
-      // variable auxiliar
-        int aux=x;
-
-      // número invertido
-        int rev=0;
-
-      // volteo
-        while(aux!=0) {
-            rev=rev*10+aux%10;
-            aux/=10;
-        }        
-
-      // comprobación
-        if(x==rev){
-          return true;
-        }else{
+    public static boolean esPrimo(int x){
+      // si es 1 o menor, no es primo
+        if(x<=1){
           return false;
         }
+    
+      // comprobación de divisores
+        for(int i=2; i<=x/2; i++){
+          if(x%i==0){
+            return false;
+          }
+        }
+
+      // de forma predeterminada es "true"
+      return true;
     }
 
   /***************************************************************/
@@ -55,11 +51,11 @@ public class Ej2{
 
       /************************************/
 
-      // función "esCapicua"
-        if(esCapicua(n)){
-          System.out.print("\nEl número "+n+" es capicúa.");
+      // función "esPrimo"
+        if(esPrimo(n)){
+          System.out.print("\nEl número "+n+" es primo.");
         }else{
-          System.out.print("\nEl número "+n+" no es capicúa.");
+          System.out.print("\nEl número "+n+" no es primo.");
         }
     }
 }
