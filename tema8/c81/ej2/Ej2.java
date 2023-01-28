@@ -7,5 +7,5 @@
 package tema8.c81.ej2;
 
 public class Ej2{
-  
+  ejemplo
 }
