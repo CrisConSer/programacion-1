@@ -19,7 +19,10 @@ public class Ej5{
       int numDigi;
 
       // conteo
-      numDigi=String.valueOf(x).length();
+        /*
+          alternativa: convertirlo a string y sacar su longitud:
+            numDigi=String.valueOf(x).length();
+        */
 
       return numDigi;
     }
