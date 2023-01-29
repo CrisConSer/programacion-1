@@ -16,53 +16,34 @@ public class Ej4{
       - true: el número es primo
       - false: el número no es primo
   */
-    public static int esPrimo(int x){
-      // siguiente número
-        int num=x+1;
+    public static int potencia(int x, int y){
+      int resultado=(int)(Math.pow(x, y));
 
-      // bucle infinito
-      while(true){
-        // de forma predeterminada, el número es primo
-          boolean primo=true;
-
-        // comprobación de si es primo
-          for(int i=2; i<=(num/2); i++){
-            // si no es primo, se acaba el bucle "for" y se sigue ejecutando el bucle "while"
-              if(num%i==0){
-                primo=false;
-
-                break;
-              }
-          }
-
-        // si el número sacado del "for" es primo, se devuelve al "main"
-          if(primo){
-            return num;
-          }
-
-        // si no es primo, no se devuelve al "main" y se aumenta en 1 unidad
-          num++;
-      }
+      return resultado;
     }
 
   /***************************************************************/
 
   // main
     public static void main(String[] args){
-      // número
+      // números
         // scanner
           Scanner s=new Scanner(System.in);
 
-        // obtención del número
-          System.out.print("Introduce el número: ");
-            int n=s.nextInt();
+        // obtención de la base
+          System.out.print("Introduce la base: ");
+            int b=s.nextInt();
+
+        // obtención del exponente
+          System.out.print("Introduce la base: ");
+            int e=s.nextInt();
 
         // cierre scanner
           s.close();
 
       /************************************/
 
-      // función "esPrimo"
-        System.out.println("\nEl siguiente valor primo es el "+esPrimo(n)+".");
+      // función "potencia"
+        System.out.println("\nEl resultado de la potencia de "+b+" elevado a "+e+" es "+potencia(b, e)+".");
     }
 }
