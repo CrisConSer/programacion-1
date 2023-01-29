@@ -13,27 +13,23 @@ public class Ej6{
     @info: función para números primo
     @param x: número
     @return:
-      - "numDigi": número de dígitos que tiene el número introducido
+      - "rev": número invertido
   */
-    public static int digitos(int x){
-      int numDigi=0;
+    public static int voltea(int x){
+      // variable auxiliar
+        int aux=x;
 
-      // conteo
-        // bucle
-          for(int i=0; i<x; i++){
-            while(x%10!=0){
-              x/=10;
+      // número invertido
+        int rev=0;
 
-              numDigi++;
-            }
-          }
+      // volteo
+        while(aux!=0){
+            rev=rev*10+aux%10;
+            aux/=10;
+        }
 
-        /*
-          alternativa: convertirlo a string y sacar su longitud:
-            numDigi=String.valueOf(x).length();
-        */
-
-      return numDigi;
+      // return
+        return rev;
     }
 
   /***************************************************************/
@@ -53,7 +49,7 @@ public class Ej6{
 
       /************************************/
 
-      // función "digitos"
-        System.out.println("\nEl número "+n+" tiene "+digitos(n)+" dígitos.");
+      // función "voltea"
+        System.out.println("\nEl número "+n+" al revés es "+voltea(n)+".");
     }
 }
