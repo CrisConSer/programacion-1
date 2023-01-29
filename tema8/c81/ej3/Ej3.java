@@ -16,7 +16,6 @@ public class Ej3{
       - true: el número es primo
       - false: el número no es primo
   */
-
     public static int esPrimo(int x){
       // comprobación de divisores
         for(int i=2; i<=x/2; i++){
@@ -26,6 +25,7 @@ public class Ej3{
             return x;
           }
         }
+        return x;
     }
 
   /***************************************************************/
