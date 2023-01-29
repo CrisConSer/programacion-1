@@ -22,22 +22,26 @@ public class Ej3{
 
       // bucle infinito
       while(true){
-        boolean primo=true;
+        // de forma predeterminada, el número es primo
+          boolean primo=true;
 
         // comprobación de si es primo
           for(int i=2; i<=(num/2); i++){
-            if(num%i==0){
-              primo=false;
+            // si no es primo, se acaba el bucle "for" y se sigue ejecutando el bucle "while"
+              if(num%i==0){
+                primo=false;
 
-              break;
-            }
+                break;
+              }
           }
 
-        if(primo){
-          return num;
-        }
+        // si el número sacado del "for" es primo, se devuelve al "main"
+          if(primo){
+            return num;
+          }
 
-        num++;
+        // si no es primo, no se devuelve al "main" y se aumenta en 1 unidad
+          num++;
       }
     }
 
