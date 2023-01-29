@@ -10,11 +10,10 @@ import java.util.Scanner;
 
 public class Ej3{
   /**
-    @info: función para números primo
+    @info: función para el siguiente número primo
     @param x: número
     @return:
-      - true: el número es primo
-      - false: el número no es primo
+      - num: variable que contiene el siguiente número primo
   */
     public static int esPrimo(int x){
       // siguiente número

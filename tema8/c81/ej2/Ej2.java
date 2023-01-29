@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Ej2{
   /**
-    @info: función para números primo
+    @info: función para números primos
     @param x: número
     @return:
       - true: el número es primo
