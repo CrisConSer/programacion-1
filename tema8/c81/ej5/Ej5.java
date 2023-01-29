@@ -16,10 +16,10 @@ public class Ej5{
       - "numDigi": número de dígitos que tiene el número introducido
   */
     public static int digitos(int x){
-      int numDigi=0;
+      int numDigi;
 
       // conteo
-
+      numDigi=String.valueOf(x).length();
 
       return numDigi;
     }
@@ -33,7 +33,7 @@ public class Ej5{
           Scanner s=new Scanner(System.in);
 
         // obtención del número
-          System.out.print("Introduce la base: ");
+          System.out.print("Introduce el número: ");
             int n=s.nextInt();
 
         // cierre scanner
