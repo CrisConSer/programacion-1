@@ -19,6 +19,9 @@ public class Ej5{
       int numDigi;
 
       // conteo
+        // bucle
+          
+
         /*
           alternativa: convertirlo a string y sacar su longitud:
             numDigi=String.valueOf(x).length();
