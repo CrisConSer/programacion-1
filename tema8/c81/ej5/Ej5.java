@@ -16,10 +16,13 @@ public class Ej5{
       - true: el número es primo
       - false: el número no es primo
   */
-    public static int potencia(int x, int y){
-      int resultado=(int)(Math.pow(x, y));
+    public static int digitos(int x){
+      int numDigi=0;
 
-      return resultado;
+      // conteo
+
+
+      return numDigi;
     }
 
   /***************************************************************/
@@ -30,20 +33,16 @@ public class Ej5{
         // scanner
           Scanner s=new Scanner(System.in);
 
-        // obtención de la base
+        // obtención del número
           System.out.print("Introduce la base: ");
-            int b=s.nextInt();
-
-        // obtención del exponente
-          System.out.print("Introduce la base: ");
-            int e=s.nextInt();
+            int n=s.nextInt();
 
         // cierre scanner
           s.close();
 
       /************************************/
 
-      // función "potencia"
-        System.out.println("\nEl resultado de la potencia de "+b+" elevado a "+e+" es "+potencia(b, e)+".");
+      // función "digitos"
+        System.out.println("\nEl número "+n+" tiene "+digitos(n)+" dígitos.");
     }
 }
