@@ -16,11 +16,17 @@ public class Ej5{
       - "numDigi": número de dígitos que tiene el número introducido
   */
     public static int digitos(int x){
-      int numDigi;
+      int numDigi=0;
 
       // conteo
         // bucle
-          
+          for(int i=0; i<x; i++){
+            while(x%10!=0){
+              x/=10;
+
+              numDigi++;
+            }
+          }
 
         /*
           alternativa: convertirlo a string y sacar su longitud:
