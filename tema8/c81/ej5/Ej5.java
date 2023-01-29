@@ -13,14 +13,13 @@ public class Ej5{
     @info: función para números primo
     @param x: número
     @return:
-      - true: el número es primo
-      - false: el número no es primo
+      - "numDigi": número de dígitos que tiene el número introducido
   */
     public static int digitos(int x){
       int numDigi=0;
 
       // conteo
-        
+
 
       return numDigi;
     }
