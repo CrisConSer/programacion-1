@@ -17,15 +17,28 @@ public class Ej3{
       - false: el número no es primo
   */
     public static int esPrimo(int x){
-      // comprobación de divisores
-        for(int i=2; i<=x/2; i++){
-          x++;
+      // siguiente número
+        int num=x+1;
 
-          if(x%i==0){
-            return x;
+      // bucle infinito
+      while(true){
+        boolean primo=true;
+
+        // comprobación de si es primo
+          for(int i=2; i<=(num/2); i++){
+            if(num%i==0){
+              primo=false;
+
+              break;
+            }
           }
+
+        if(primo){
+          return num;
         }
-        return x;
+
+        num++;
+      }
     }
 
   /***************************************************************/
