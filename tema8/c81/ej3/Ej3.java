@@ -1,6 +1,6 @@
 /**
   @author: Christian Millán Soria
-  @file: ej3.java
+  @file: Ej3.java
   @info: ejercicio 3
 */
 
