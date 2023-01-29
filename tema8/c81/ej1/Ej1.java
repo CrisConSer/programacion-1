@@ -13,8 +13,8 @@ public class Ej1{
     @info: función para números capicúa
     @param x: número
     @return:
-      - true: el número es capicúa
-      - false: el número no es capicúa
+      - "true": el número es capicúa
+      - "false": el número no es capicúa
   */
 
     public static boolean esCapicua(int x){

@@ -13,8 +13,8 @@ public class Ej2{
     @info: función para números primos
     @param x: número
     @return:
-      - true: el número es primo
-      - false: el número no es primo
+      - "true": el número es primo
+      - "false": el número no es primo
   */
 
     public static boolean esPrimo(int x){
