@@ -20,12 +20,10 @@ public class Ej5{
 
       // conteo
         // bucle
-          for(int i=0; i<x; i++){
-            while(x%10!=0){
-              x/=10;
+          while(x>0){
+            x/=10;
 
-              numDigi++;
-            }
+            numDigi++;
           }
 
         /*
