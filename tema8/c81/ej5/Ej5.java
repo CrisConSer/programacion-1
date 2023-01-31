@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Ej5{
   /**
-    @info: función para números primo
+    @info: función para número de dígitos
     @param x: número
     @return:
       - "numDigi": número de dígitos que tiene el número introducido

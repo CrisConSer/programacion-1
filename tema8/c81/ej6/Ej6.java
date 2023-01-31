@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Ej6{
   /**
-    @info: función para números primo
+    @info: función para número invertido
     @param x: número
     @return:
       - "rev": número invertido

@@ -11,7 +11,9 @@ import java.util.Scanner;
 public class Ej4{
   /**
     @info: función para obtener la potencia
-    @param x: número
+    @param:
+      - "x": base
+      - "y": exponente
     @return:
       - "resultado": resultado de la potencia de la base y el exponente introducidos por teclado
   */
