@@ -10,15 +10,21 @@ import java.util.Scanner;
 
 public class Ej4{
   /**
-    @info: función para números primo
+    @info: función para obtener la potencia
     @param x: número
     @return:
       - "resultado": resultado de la potencia de la base y el exponente introducidos por teclado
   */
     public static int potencia(int x, int y){
-      int resultado=(int)(Math.pow(x, y));
+      // int resultado=(int)(Math.pow(x, y));
 
-      return resultado;
+      int acu=1;
+
+      for(int i=0; i<y; i++){
+        acu*=x;
+      }
+
+      return acu;
     }
 
   /***************************************************************/
