@@ -24,8 +24,8 @@ public class Ej6{
 
       // volteo
         while(aux!=0){
-            rev=rev*10+aux%10;
-            aux/=10;
+          rev=rev*10+aux%10;
+          aux/=10;
         }
 
       // return
