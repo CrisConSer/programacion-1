@@ -31,7 +31,7 @@ public class Ej2{
         }
 
       // de forma predeterminada es "true"
-      return true;
+        return true;
     }
 
   /***************************************************************/
