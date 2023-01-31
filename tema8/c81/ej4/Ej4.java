@@ -14,8 +14,7 @@ public class Ej4{
     @param:
       - "x": base
       - "y": exponente
-    @return:
-      - "resultado": resultado de la potencia de la base y el exponente introducidos por teclado
+    @return resultado: resultado de la potencia de la base y el exponente introducidos por teclado
   */
     public static int potencia(int x, int y){
       // int resultado=(int)(Math.pow(x, y));

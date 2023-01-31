@@ -12,8 +12,7 @@ public class Ej6{
   /**
     @info: función para número invertido
     @param x: número
-    @return:
-      - "rev": número invertido
+    @return rev: número invertido
   */
     public static int voltea(int x){
       // variable auxiliar

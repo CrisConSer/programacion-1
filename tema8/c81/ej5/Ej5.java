@@ -12,8 +12,7 @@ public class Ej5{
   /**
     @info: función para número de dígitos
     @param x: número
-    @return:
-      - "numDigi": número de dígitos que tiene el número introducido
+    @return numDigi: número de dígitos que tiene el número introducido
   */
     public static int digitos(int x){
       int numDigi=0;
