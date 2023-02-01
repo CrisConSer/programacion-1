@@ -1,14 +1,14 @@
 /**
   @author: Christian Millán Soria
-  @file: Ej21.java
-  @info: ejercicio 21
+  @file: Ej22.java
+  @info: ejercicio 22
 */
 
-package tema8.c81.ej21;
+package tema8.c81.ej22;
 
 import java.util.Scanner;
 
-public class Ej21{
+public class Ej22{
   /**
     @info:función para generar un array
     @param:
@@ -39,27 +39,27 @@ public class Ej21{
     /*******************************************************************************************/
 
     /**
-      @info: función para obtener el mínimo de array
-      @param int[] x: array del que se saca el mínimo
-      @return min: valor mínimo del array
+      @info: función para obtener el máximo de array
+      @param int[] x: array del que se saca el máximo
+      @return min: valor máximo del array
     */
-      public static int minimoArrayInt(int[] x){
-        // variable para el mínimo
-          int valorMin=Integer.MAX_VALUE;
+      public static int maximoArrayInt(int[] x){
+        // variable para el máximo
+          int valorMax=Integer.MIN_VALUE;
 
         /*********************/
 
         // recorrer array
           for(int i=0; i<x.length; i++){
-            if(x[i]<valorMin){
-              valorMin=x[i];
+            if(x[i]>valorMax){
+              valorMax=x[i];
             }
           }
 
         /*********************/
 
         // return
-          return valorMin;
+          return valorMax;
       }
 
     /*******************************************************************************************/
@@ -114,7 +114,7 @@ public class Ej21{
 
         /***********************************/
 
-        // mínimo
-          System.out.print("\nEl valor mínimo de este array es el "+minimoArrayInt(arrayGuardado)+".");
+        // máximo
+          System.out.print("\nEl valor máximo de este array es el "+maximoArrayInt(arrayGuardado)+".");
       }
 }
