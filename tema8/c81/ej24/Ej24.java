@@ -118,6 +118,34 @@ public class Ej24{
 
     /*******************************************************************************************/
 
+    /**
+      @info: función para obtener la posición de un valor en el array
+      @param:
+        - "int[] x": array
+        - "y": valor a encontrar en el array
+      @return pos: posición del valor en el array
+    */
+      public static int estaEnArrayInt(int[] x, int y){
+        // posición
+          int pos=0;
+
+        /*************/
+
+        // recorrer el array
+          for(int i=0; i<x.length; i++){
+            if(x[i]==y){
+              pos=i;
+            }
+          }
+
+        /*************/
+
+        // return
+          return pos;
+      }
+
+    /*******************************************************************************************/
+
     // main
       public static void main(String[] args) throws InterruptedException{
         // scanner
@@ -184,13 +212,21 @@ public class Ej24{
         /****************************************************/
 
         // posición de un número
+          Thread.sleep(5000);
+
           // scanner
             Scanner scanner2=new Scanner(System.in);
 
             // obtención del número
-              System.out.print("\nIntroduce el valor");
+              System.out.print("\nIntroduce un valor del array para encontrar su posición en el mismo: ");
+                int busca=scanner2.nextInt();
 
           // cierre de scanner
             scanner2.close();
+
+        /******************************/
+
+        // debug
+          System.out.print("\nLa posición del valor "+busca+" es la número"+estaEnArrayInt(arrayGuardado, busca)+".");
       }
 }
