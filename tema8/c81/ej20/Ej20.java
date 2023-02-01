@@ -72,7 +72,7 @@ public class Ej20{
           for(int i=0; i<ele; i++){
             System.out.printf("| %-5d", generaArrayInt(ele, min, max)[i]);
           }
-          
+
           System.out.print(" |");
       }
 }

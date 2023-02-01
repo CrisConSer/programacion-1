@@ -36,7 +36,7 @@ public class Ej21{
         return array;
     }
 
-    /***********************************************************/
+    /*******************************************************************************************/
 
     /**
       @info: función para obtener el mínimo de array
@@ -45,24 +45,24 @@ public class Ej21{
     */
       public static int minimoArrayInt(int[] x){
         // variable para el mínimo
-          int min=Integer.MAX_VALUE;
+          int valorMin=Integer.MAX_VALUE;
 
         /*********************/
 
         // recorrer array
           for(int i=0; i<x.length; i++){
-            if(x[i]<min){
-              min=x[i];
+            if(x[i]<valorMin){
+              valorMin=x[i];
             }
           }
 
         /*********************/
 
         // return
-          return min;
+          return valorMin;
       }
 
-    /***********************************************************/
+    /*******************************************************************************************/
 
     // main
       public static void main(String[] args){
@@ -93,12 +93,12 @@ public class Ej21{
         /***********************************/
 
         // debug
-          System.out.println("\n");
+          System.out.println("");
 
           for(int i=0; i<ele; i++){
             System.out.printf("| %-5d", generaArrayInt(ele, min, max)[i]);
           }
-          
+
           System.out.println(" |");
 
         /***********************************/
