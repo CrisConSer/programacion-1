@@ -149,28 +149,25 @@ public class Ej24{
     // main
       public static void main(String[] args) throws InterruptedException{
         // scanner
-          Scanner scanner1=new Scanner(System.in);
+          Scanner s=new Scanner(System.in);
 
           /************************/
 
           // nº de elementos
             System.out.print("Introduce el número de elementos que debe tener el array: ");
-              int ele=scanner1.nextInt();
+              int ele=s.nextInt();
 
           /************************/
 
           // intervalo menor
           System.out.print("Introduce el valor mínimo del intervalo de los valores: ");
-            int min=scanner1.nextInt();
+            int min=s.nextInt();
 
           /************************/
 
           // intervalo menor
           System.out.print("Introduce el valor máximo del intervalo de los valores: ");
-            int max=scanner1.nextInt();
-
-        // cierre de scanner
-          scanner1.close();
+            int max=s.nextInt();
 
         /****************************************************/
 
@@ -214,19 +211,16 @@ public class Ej24{
         // posición de un número
           Thread.sleep(5000);
 
-          // scanner
-            Scanner scanner2=new Scanner(System.in);
-
-            // obtención del número
-              System.out.print("\nIntroduce un valor del array para encontrar su posición en el mismo: ");
-                int busca=scanner2.nextInt();
+          // obtención del número
+            System.out.print("\nIntroduce un valor del array para encontrar su posición en el mismo: ");
+              int busca=s.nextInt();
 
           // cierre de scanner
-            scanner2.close();
+            s.close();
 
         /******************************/
 
         // debug
-          System.out.print("\nLa posición del valor "+busca+" es la número"+estaEnArrayInt(arrayGuardado, busca)+".");
+          System.out.print("\nLa posición del valor "+busca+" es la número "+estaEnArrayInt(arrayGuardado, busca)+".");
       }
 }
