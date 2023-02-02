@@ -119,29 +119,27 @@ public class Ej24{
     /*******************************************************************************************/
 
     /**
-      @info: función para obtener la posición de un valor en el array
+      @info: función para comprobar si un número está en el array
       @param:
         - "int[] x": array
         - "y": valor a encontrar en el array
-      @return pos: posición del valor en el array
+      @return:
+        - "true": el valor se encuentra en el array
+        - "false": el valor no se encuentra en el array
     */
-      public static int estaEnArrayInt(int[] x, int y){
-        // posición
-          int pos=0;
+      public static boolean estaEnArrayInt(int[] x, int y){
+        // variable booleana
+          boolean esta=false;
 
-        /*************/
-
-        // recorrer el array
+        // recorrer el array para encontrar el valor
           for(int i=0; i<x.length; i++){
             if(x[i]==y){
-              pos=i;
+              return true;
             }
           }
 
-        /*************/
-
-        // return
-          return pos;
+        // return predeterminado
+          return esta;
       }
 
     /*******************************************************************************************/
@@ -208,11 +206,11 @@ public class Ej24{
 
         /****************************************************/
 
-        // posición de un número
+        // está el número en el array o no?
           Thread.sleep(5000);
 
           // obtención del número
-            System.out.print("\nIntroduce un valor del array para encontrar su posición en el mismo: ");
+            System.out.print("\nIntroduce un valor del array para comprobar su existencia en el array: ");
               int busca=s.nextInt();
 
           // cierre de scanner
@@ -221,6 +219,10 @@ public class Ej24{
         /******************************/
 
         // debug
-          System.out.print("\nLa posición del valor "+busca+" es la número "+estaEnArrayInt(arrayGuardado, busca)+".");
+          if(estaEnArrayInt(arrayGuardado, busca)){
+            System.out.print("\nEl valor "+busca+" sí está en el array.");
+          }else{
+            System.out.print("\nEl valor "+busca+" no está en el array.");
+          }
       }
 }
