@@ -337,6 +337,9 @@ public class Ej27{
             System.out.print("\nIntroduce el número de posiciones hacia la derecha que el array debe rotar: ");
               int derecha=s.nextInt();
 
+          // cierre de scanner
+            s.close();
+
           /***********************************/
 
           // almacenar el array
