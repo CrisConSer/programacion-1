@@ -202,6 +202,19 @@ public class Ej27{
 
     /*******************************************************************************************/
 
+    /**
+      @info: función para rotar n posiciones a la derecha el array
+      @param:
+        - "int[] x": array
+        - "y": nº de elementos del array
+      @return arrayFinalDerecha: array rotado n posiciones a la derecha
+    */
+      public static int[] rotaDerechArrayInt(int[] x, int y){
+        
+      }
+
+    /*******************************************************************************************/
+
     // main
       public static void main(String[] args) throws InterruptedException{
         // scanner
