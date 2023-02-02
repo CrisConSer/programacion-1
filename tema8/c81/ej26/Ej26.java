@@ -172,6 +172,29 @@ public class Ej26{
 
     /*******************************************************************************************/
 
+    /**
+      @info: función para obtener el array de forma invertida
+      @param
+        - "int[] x": array a invertir
+        - "y": nº de elementos del array
+      @return arrayInvertido: array invertido
+    */
+      public static int[] volteaArrayInt(int[] x, int y){
+        // array invertido
+          // creación
+            int[] arrayInvertido=new int[y];
+
+          // volteo del array anterior
+            
+
+        /***********/
+
+        // return
+          return arrayInvertido;
+      }
+
+    /*******************************************************************************************/
+
     // main
       public static void main(String[] args) throws InterruptedException{
         // scanner
@@ -264,5 +287,9 @@ public class Ej26{
 
         // debug
           System.out.print("\nLa posición del valor "+encuentra+" es la número "+posicionEnArray(arrayGuardado, encuentra)+".");
+
+        /****************************************************/
+
+        // 
       }
 }
