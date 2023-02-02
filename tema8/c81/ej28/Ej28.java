@@ -208,7 +208,7 @@ public class Ej28{
         - "int[] x": array
         - "y": nº de elementos del array
         - "z": nº de posiciones a rotar
-      @return arrayFinalDerecha: array rotado n posiciones a la derecha
+      @return arrayDerecha: array rotado n posiciones a la derecha
     */
       public static int[] rotaDerechaArrayInt(int[] x, int y, int z){
           int[] arrayDerecha=new int[y];
@@ -223,21 +223,21 @@ public class Ej28{
     /*******************************************************************************************/
 
     /**
-      @info: función para rotar n posiciones a la derecha el array
+      @info: función para rotar n posiciones a la izquierda el array
       @param:
         - "int[] x": array
         - "y": nº de elementos del array
         - "z": nº de posiciones a rotar
-      @return arrayFinalDerecha: array rotado n posiciones a la derecha
+      @return arrayIzquierda: array rotado n posiciones a la izquierda
     */
-      public static int[] rotaDerechArrayInt(int[] x, int y, int z){
-          int[] arrayDerecha=new int[y];
+      public static int[] rotaIzquierdaArrayInt(int[] x, int y, int z){
+          int[] arrayIzquierda=new int[y];
 
           for(int i=0; i<y; i++){
-            arrayDerecha[(i+z)%y]=x[i];// el módulo calcula la nueva posición que debe obtener el valor en la posición actual, es decir, el elemento con posición "[(i+z)%y]" es igual al valor con posición 0 del array original, y así sucesivamente
+            arrayIzquierda[(i+z)%y]=x[i];// el módulo calcula la nueva posición que debe obtener el valor en la posición actual, es decir, el elemento con posición "[(i+z)%y]" es igual al valor con posición 0 del array original, y así sucesivamente
           }
 
-          return arrayDerecha;
+          return arrayIzquierda;
       }
 
     /*******************************************************************************************/
@@ -363,9 +363,6 @@ public class Ej28{
             System.out.print("\nIntroduce el número de posiciones hacia la derecha que el array debe rotar: ");
               int derecha=s.nextInt();
 
-          // cierre de scanner
-            s.close();
-
           /***********************************/
 
           // almacenar el array
@@ -385,6 +382,39 @@ public class Ej28{
 
             for(int i=0; i<ele; i++){
               System.out.printf("| %-5d", arrayDereGuardado[i]);
+            }
+
+            System.out.println(" |");
+
+        /****************************************************/
+
+        // array rotado hacia la izquierda
+          // nº de rotaciones
+            System.out.print("\nIntroduce el número de posiciones hacia la izquierda que el array debe rotar: ");
+              int izquierda=s.nextInt();
+
+          // cierre de scanner
+            s.close();
+
+          /***********************************/
+
+          // almacenar el array
+            // nuevo array
+            int[] arrayIzquiGuardado=new int[ele];
+
+            // asignación de valores
+              for(int i=0; i<ele; i++){
+                arrayIzquiGuardado[i]=rotaIzquierdaArrayInt(arrayInvertGuardado, ele, izquierda)[i];
+              }
+
+          /***********************************/
+
+          // debug
+            System.out.println("\nEl array rotado hacia la izquierda "+izquierda+" veces es el siguiente:");
+            System.out.println();
+
+            for(int i=0; i<ele; i++){
+              System.out.printf("| %-5d", arrayIzquiGuardado[i]);
             }
 
             System.out.println(" |");

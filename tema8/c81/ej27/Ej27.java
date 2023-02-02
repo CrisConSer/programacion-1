@@ -208,7 +208,7 @@ public class Ej27{
         - "int[] x": array
         - "y": nº de elementos del array
         - "z": nº de posiciones a rotar
-      @return arrayFinalDerecha: array rotado n posiciones a la derecha
+      @return arrayDerecha: array rotado n posiciones a la derecha
     */
       public static int[] rotaDerechaArrayInt(int[] x, int y, int z){
           int[] arrayDerecha=new int[y];
