@@ -298,7 +298,9 @@ public class Ej26{
               int[] arrayInvertGuardado=new int[ele];
 
             // asignación de valores
-              arrayInvertGuardado=volteaArrayInt(arrayGuardado, ele);
+              for(int i=ele-1; i<=0; i--){
+                arrayInvertGuardado[i]=volteaArrayInt(arrayGuardado, ele)[i];
+              }
 
         /***********************************/
 
