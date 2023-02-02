@@ -241,23 +241,18 @@ public class Ej25{
             System.out.print("\nIntroduce un valor del array para comprobar su existencia en el array: ");
               int busca=s.nextInt();
 
-          // cierre de scanner
-            s.close();
-
         /******************************/
 
         // debug
           if(estaEnArrayInt(arrayGuardado, busca)){
-            System.out.print("\nEl valor "+busca+" sí está en el array.");
+            System.out.println("\nEl valor "+busca+" sí está en el array.");
           }else{
-            System.out.print("\nEl valor "+busca+" no está en el array.");
+            System.out.println("\nEl valor "+busca+" no está en el array.");
           }
 
         /****************************************************/
 
         // posición de un número
-          Thread.sleep(5000);
-
           // obtención del número
             System.out.print("\nIntroduce un valor del array para encontrar su posición en el mismo: ");
               int encuentra=s.nextInt();
