@@ -210,7 +210,7 @@ public class Ej27{
         - "z": nº de posiciones a rotar
       @return arrayFinalDerecha: array rotado n posiciones a la derecha
     */
-      public static int[] rotaDerechArrayInt(int[] x, int y, int z){
+      public static int[] rotaDerechaArrayInt(int[] x, int y, int z){
           int[] arrayDerecha=new int[y];
 
           for(int i=0; i<y; i++){
@@ -354,7 +354,7 @@ public class Ej27{
 
             // asignación de valores
               for(int i=0; i<ele; i++){
-                arrayDereGuardado[i]=rotaDerechArrayInt(arrayInvertGuardado, ele, derecha)[i];
+                arrayDereGuardado[i]=rotaDerechaArrayInt(arrayInvertGuardado, ele, derecha)[i];
               }
 
           /***********************************/

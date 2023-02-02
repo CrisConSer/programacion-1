@@ -210,6 +210,26 @@ public class Ej28{
         - "z": nº de posiciones a rotar
       @return arrayFinalDerecha: array rotado n posiciones a la derecha
     */
+      public static int[] rotaDerechaArrayInt(int[] x, int y, int z){
+          int[] arrayDerecha=new int[y];
+
+          for(int i=0; i<y; i++){
+            arrayDerecha[(i+z)%y]=x[i];// el módulo calcula la nueva posición que debe obtener el valor en la posición actual, es decir, el elemento con posición "[(i+z)%y]" es igual al valor con posición 0 del array original, y así sucesivamente
+          }
+
+          return arrayDerecha;
+      }
+
+    /*******************************************************************************************/
+
+    /**
+      @info: función para rotar n posiciones a la derecha el array
+      @param:
+        - "int[] x": array
+        - "y": nº de elementos del array
+        - "z": nº de posiciones a rotar
+      @return arrayFinalDerecha: array rotado n posiciones a la derecha
+    */
       public static int[] rotaDerechArrayInt(int[] x, int y, int z){
           int[] arrayDerecha=new int[y];
 
@@ -354,7 +374,7 @@ public class Ej28{
 
             // asignación de valores
               for(int i=0; i<ele; i++){
-                arrayDereGuardado[i]=rotaDerechArrayInt(arrayInvertGuardado, ele, derecha)[i];
+                arrayDereGuardado[i]=rotaDerechaArrayInt(arrayInvertGuardado, ele, derecha)[i];
               }
 
           /***********************************/
