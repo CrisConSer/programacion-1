@@ -185,7 +185,18 @@ public class Ej26{
             int[] arrayInvertido=new int[y];
 
           // volteo del array anterior
-            
+            for(int i=0; i<y/2; i++){
+              int temp=x[i];
+
+              x[i]=x[y-i-1];
+
+              x[y-i-1]=temp;
+            }
+
+        /***********/
+
+        // almacenaje
+          arrayInvertido=x;
 
         /***********/
 
@@ -232,7 +243,7 @@ public class Ej26{
         /****************************************************/
 
         // debug
-          System.out.println("");
+          System.out.println();
 
           for(int i=0; i<ele; i++){
             System.out.printf("| %-5d", arrayGuardado[i]);
@@ -290,6 +301,26 @@ public class Ej26{
 
         /****************************************************/
 
-        // 
+        // array invertido
+          // almacenar el array
+            // nuevo array
+              int[] arrayInvertGuardado=new int[ele];
+
+            // asignación de valores
+              for(int i=0; i<ele; i++){
+                arrayInvertGuardado[i]=volteaArrayInt(arrayGuardado, ele)[i];
+              }
+
+        /***********************************/
+
+        // debug
+          System.out.println("\nEl array invertido es el siguiente:");
+          System.out.println();
+
+          for(int i=0; i<ele; i++){
+            System.out.printf("| %-5d", arrayInvertGuardado[i]);
+          }
+
+          System.out.println(" |");
       }
 }
