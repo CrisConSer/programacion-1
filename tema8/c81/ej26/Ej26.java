@@ -184,19 +184,10 @@ public class Ej26{
           // creación
             int[] arrayInvertido=new int[y];
 
-          // volteo del array anterior
-            for(int i=0; i<y/2; i++){
-              int temp=x[i];
-
-              x[i]=x[y-i-1];
-
-              x[y-i-1]=temp;
+          // guardando los valores de forma inversa
+            for(int i=y-1; i>=0; i--){
+              arrayInvertido[i]=x[i];
             }
-
-        /***********/
-
-        // almacenaje
-          arrayInvertido=x;
 
         /***********/
 
@@ -297,7 +288,7 @@ public class Ej26{
         /******************************/
 
         // debug
-          System.out.print("\nLa posición del valor "+encuentra+" es la número "+posicionEnArray(arrayGuardado, encuentra)+".");
+          System.out.println("\nLa posición del valor "+encuentra+" es la número "+posicionEnArray(arrayGuardado, encuentra)+".");
 
         /****************************************************/
 
@@ -307,9 +298,7 @@ public class Ej26{
               int[] arrayInvertGuardado=new int[ele];
 
             // asignación de valores
-              for(int i=0; i<ele; i++){
-                arrayInvertGuardado[i]=volteaArrayInt(arrayGuardado, ele)[i];
-              }
+              arrayInvertGuardado=volteaArrayInt(arrayGuardado, ele);
 
         /***********************************/
 
