@@ -211,7 +211,13 @@ public class Ej27{
       @return arrayFinalDerecha: array rotado n posiciones a la derecha
     */
       public static int[] rotaDerechArrayInt(int[] x, int y, int z){
-        
+          int[] arrayDerecha=new int[y];
+
+          for(int i=0; i<y; i++){
+            arrayDerecha[(i+z)%y]=x[i];// el módulo calcula la nueva posición que debe obtener el valor en la posición actual, es decir, el elemento con posición "[(i+z)%y]" es igual al valor con posición 0 del array original, y así sucesivamente
+          }
+
+          return arrayDerecha;
       }
 
     /*******************************************************************************************/
