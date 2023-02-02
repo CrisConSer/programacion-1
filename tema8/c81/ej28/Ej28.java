@@ -231,13 +231,13 @@ public class Ej28{
       @return arrayIzquierda: array rotado n posiciones a la izquierda
     */
       public static int[] rotaIzquierdaArrayInt(int[] x, int y, int z){
-          int[] arrayIzquierda=new int[y];
+        int[] arrayIzquierda=new int[y];
 
-          for(int i=0; i<y; i++){
-            arrayIzquierda[(i+z)%y]=x[i];// el módulo calcula la nueva posición que debe obtener el valor en la posición actual, es decir, el elemento con posición "[(i+z)%y]" es igual al valor con posición 0 del array original, y así sucesivamente
-          }
+        for(int i=0; i<y; i++){
+          arrayIzquierda[i]=x[(i+y-z)%y];// el módulo se encarga de calcular el índice exacto donde se debe colocar el valor del array original, de forma similar a la función anterior. se suma el índice actual y la longitud total del array para obtener la posición del elementos después de rotar todo el array hacia la izquierda una vez, que añadiendo el nº de rotaciones ("z"), da como resultado la posición después de rotar "z" veces hacia la izquierda
+        }
 
-          return arrayIzquierda;
+        return arrayIzquierda;
       }
 
     /*******************************************************************************************/
