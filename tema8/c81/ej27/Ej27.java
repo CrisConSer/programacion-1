@@ -210,7 +210,7 @@ public class Ej27{
       @return arrayFinalDerecha: array rotado n posiciones a la derecha
     */
       public static int[] rotaDerechArrayInt(int[] x, int y){
-        
+
       }
 
     /*******************************************************************************************/
@@ -300,9 +300,6 @@ public class Ej27{
             System.out.print("\nIntroduce un valor del array para encontrar su posición en el mismo: ");
               int encuentra=s.nextInt();
 
-          // cierre de scanner
-            s.close();
-
         /******************************/
 
         // debug
@@ -320,16 +317,46 @@ public class Ej27{
                 arrayInvertGuardado[i]=volteaArrayInt(arrayGuardado, ele)[i];
               }
 
-        /***********************************/
+          /***********************************/
 
-        // debug
-          System.out.println("\nEl array invertido es el siguiente:");
-          System.out.println();
+          // debug
+            System.out.println("\nEl array invertido es el siguiente:");
+            System.out.println();
 
-          for(int i=0; i<ele; i++){
-            System.out.printf("| %-5d", arrayInvertGuardado[i]);
-          }
+            for(int i=0; i<ele; i++){
+              System.out.printf("| %-5d", arrayInvertGuardado[i]);
+            }
 
-          System.out.println(" |");
+            System.out.println(" |");
+
+        /****************************************************/
+
+        // array rotado hacia la derecha
+          // almacenar el array
+            // nuevo array
+              int[] arrayDereGuardado=new int[ele];
+
+            // asignación de valores
+              for(int i=0; i<ele; i++){
+                arrayDereGuardado[i]=rotaDerechArrayInt(arrayInvertGuardado, ele)[i];
+              }
+
+          /***********************************/
+
+          // nº de rotaciones
+            System.out.print("\nIntroduce el número de posiciones hacia la derecha que el array debe rotar: ");
+              int derecha=s.nextInt();
+
+          /***********************************/
+
+          // debug
+            System.out.println("\nEl array rotado hacia la derecha "+derecha+" veces es el siguiente:");
+            System.out.println();
+
+            for(int i=0; i<ele; i++){
+              System.out.printf("| %-5d", arrayDereGuardado[i]);
+            }
+
+            System.out.println(" |");
       }
 }
