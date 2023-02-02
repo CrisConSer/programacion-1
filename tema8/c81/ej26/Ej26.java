@@ -184,9 +184,14 @@ public class Ej26{
           // creación
             int[] arrayInvertido=new int[y];
 
+          // variable auxiliar
+            int j=0;
+
           // guardando los valores de forma inversa
             for(int i=y-1; i>=0; i--){
-              arrayInvertido[i]=x[i];
+              arrayInvertido[j]=x[i];
+
+              j++;
             }
 
         /***********/
@@ -298,7 +303,7 @@ public class Ej26{
               int[] arrayInvertGuardado=new int[ele];
 
             // asignación de valores
-              for(int i=ele-1; i<=0; i--){
+              for(int i=0; i<ele; i++){
                 arrayInvertGuardado[i]=volteaArrayInt(arrayGuardado, ele)[i];
               }
 
