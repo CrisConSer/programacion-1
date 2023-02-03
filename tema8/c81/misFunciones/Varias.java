@@ -180,4 +180,30 @@ public class Varias{
           num++;
       }
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para obtener la potencia
+    @param:
+      - "x": base
+      - "y": exponente
+    @return resultado: resultado de la potencia de la base y el exponente introducidos por teclado
+  */
+    public static int potencia(int x, int y){
+      // variable acumulador
+        int acu=1;
+
+      // se realiza tantas veces como indica el exponente
+        for(int i=0; i<y; i++){
+          acu*=x;
+        }
+
+      // return
+        return acu;
+    }
+
+  /***************************************************/
+
+  
 }
