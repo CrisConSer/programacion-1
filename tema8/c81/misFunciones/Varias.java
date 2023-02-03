@@ -341,13 +341,16 @@ public class Varias{
       @return producto: producto resultante de todos los factoriales de 1 a "n"
     */
       public static int producto1aN(int n){
-        int result = 1;
+        // variable para el resultado
+          int producto=1;
 
-        for(int i=1; i<=n; i++){
-            result*=i;
-        }
+        // bucle para obtener el resultado
+          for(int i=1; i<=n; i++){
+            producto*=i;
+          }
 
-        return result;
+        // return
+          return producto;
       }
 
   /***************************************************/
