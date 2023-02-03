@@ -48,10 +48,6 @@ public class Ej9Func{
       /************/
 
       // comprobación con el tercero
-        if(aux>num3){
-          System.out.println("\nEl número "+aux+" es el mayor de los tres.");
-        }else{
-          System.out.println("\nEl número "+num3+" es el mayor de los tres.");
-        }
+        System.out.println("\nEl número "+Varias.maximo(aux, num3)+" es el mayor de los tres.");
   }
 }
