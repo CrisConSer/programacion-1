@@ -19,7 +19,7 @@ public class Ej4Func{
 
       // número
         System.out.print("Introduce el primer número: ");
-          int num1=s.nextInt();
+          int n=s.nextInt();
 
       /**********************/
 
@@ -29,6 +29,12 @@ public class Ej4Func{
     /*********************************/
 
     // debug
-      System.out.print("\nEl menor de estos dos números es el "+Varias.minimo(num1, num2));
+      if(Varias.dimeSigno(n)==-1){
+        System.out.print("\nEl número introducido es negativo.");
+      }else if(Varias.dimeSigno(n)==0){
+        System.out.print("\nEl número introducido es igual a 0.");
+      }else{
+        System.out.print("\nEl número introducido es positivo.");
+      }
   }
 }
