@@ -35,11 +35,17 @@ public class Ej8Func{
     /****************************************/
 
     // producto
-      System.out.println("\nEl producto de los factoriales de cada número desde 1 a "+n+" es: "+Varias.producto1aN(n));
+      // System.out.println("\nEl producto de los factoriales de cada número desde 1 a "+n+" es: "+Varias.producto1aN(n));
 
     /****************************************/
 
     // intermedio
-      System.out.print("\nEl valor intermedio entre 1 y"+n+" es: "+Varias.intermedio1aN(n)+".");
+      if(Varias.intermedio1aN(n)==0){
+        System.out.print("\nEl valor introducido es el 1, por lo que no hay ningún valor intermedio.");
+      }else if(Varias.intermedio1aN(n)==1){
+        System.out.print("\nEl valor intermedio entre 1 y "+n+" es el 1.5");
+      }else{
+        System.out.print("\nEl valor intermedio entre 1 y "+n+" es el "+Varias.intermedio1aN(n)+".");
+      }
   }
 }
