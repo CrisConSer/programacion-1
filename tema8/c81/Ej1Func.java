@@ -33,6 +33,6 @@ public class Ej1Func{
     /**************************************/
 
     // debug
-      System.out.print("El resultado de "+num1+"*"+num2+" es: "+Varias.multiplica(num1, num2));
+      System.out.print("\nEl resultado de "+num1+"*"+num2+" es: "+Varias.multiplica(num1, num2));
   }
 }
