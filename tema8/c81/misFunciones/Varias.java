@@ -311,18 +311,18 @@ public class Varias{
 
   /***************************************************/
 
-  
+    
 
   /***************************************************/
 
     /**
-    @info: función para sacar el menor de entre dos valores
+    @info: función para sacar el mayor de entre dos valores
     @param:
       - "a": primer número
       - "b": segundo número
     @return:
-      - "a": el primer número es el menor
-      - "b": el segundo número es el menor
+      - "a": el primer número es el mayor
+      - "b": el segundo número es el mayor
   */
     public static int maximo(int a, int b){
       if(a>b){
