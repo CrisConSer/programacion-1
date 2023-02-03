@@ -1,14 +1,14 @@
 /**
   @author: Christian Millán Soria
-  @file: Ej27.java
-  @info: ejercicio 27
+  @file: Ej24.java
+  @info: ejercicio 24
 */
 
-package tema8.c81.ej27;
+package tema8.c81;
 
 import java.util.Scanner;
 
-public class Ej27{
+public class Ej24{
   /**
     @info:función para generar un array
     @param:
@@ -144,84 +144,6 @@ public class Ej27{
 
     /*******************************************************************************************/
 
-    /**
-      @info: función para obtener la posición de un valor en el array
-      @param:
-        - "int[] x": array
-        - "y": valor a encontrar en el array
-      @return pos: posición del valor en el array
-    */
-      public static int posicionEnArray(int[] x, int y){
-        // posición
-          int pos=0;
-
-        /*************/
-
-        // recorrer el array
-          for(int i=0; i<x.length; i++){
-            if(x[i]==y){
-              pos=i;
-            }
-          }
-
-        /*************/
-
-        // return
-          return pos;
-      }
-
-    /*******************************************************************************************/
-
-    /**
-      @info: función para obtener el array de forma invertida
-      @param
-        - "int[] x": array a invertir
-        - "y": nº de elementos del array
-      @return arrayInvertido: array invertido
-    */
-      public static int[] volteaArrayInt(int[] x, int y){
-        // array invertido
-          // creación
-            int[] arrayInvertido=new int[y];
-
-          // variable auxiliar
-            int j=0;
-
-          // guardando los valores de forma inversa
-            for(int i=y-1; i>=0; i--){
-              arrayInvertido[j]=x[i];
-
-              j++;
-            }
-
-        /***********/
-
-        // return
-          return arrayInvertido;
-      }
-
-    /*******************************************************************************************/
-
-    /**
-      @info: función para rotar n posiciones a la derecha el array
-      @param:
-        - "int[] x": array
-        - "y": nº de elementos del array
-        - "z": nº de posiciones a rotar
-      @return arrayDerecha: array rotado n posiciones a la derecha
-    */
-      public static int[] rotaDerechaArrayInt(int[] x, int y, int z){
-          int[] arrayDerecha=new int[y];
-
-          for(int i=0; i<y; i++){
-            arrayDerecha[(i+z)%y]=x[i];// el módulo calcula la nueva posición que debe obtener el valor en la posición actual, es decir, el elemento con posición "[(i+z)%y]" es igual al valor con posición 0 del array original, y así sucesivamente
-          }
-
-          return arrayDerecha;
-      }
-
-    /*******************************************************************************************/
-
     // main
       public static void main(String[] args) throws InterruptedException{
         // scanner
@@ -259,7 +181,7 @@ public class Ej27{
         /****************************************************/
 
         // debug
-          System.out.println();
+          System.out.println("");
 
           for(int i=0; i<ele; i++){
             System.out.printf("| %-5d", arrayGuardado[i]);
@@ -291,82 +213,16 @@ public class Ej27{
             System.out.print("\nIntroduce un valor del array para comprobar su existencia en el array: ");
               int busca=s.nextInt();
 
+          // cierre de scanner
+            s.close();
+
         /******************************/
 
         // debug
           if(estaEnArrayInt(arrayGuardado, busca)){
-            System.out.println("\nEl valor "+busca+" sí está en el array.");
+            System.out.print("\nEl valor "+busca+" sí está en el array.");
           }else{
-            System.out.println("\nEl valor "+busca+" no está en el array.");
+            System.out.print("\nEl valor "+busca+" no está en el array.");
           }
-
-        /****************************************************/
-
-        // posición de un número
-          // obtención del número
-            System.out.print("\nIntroduce un valor del array para encontrar su posición en el mismo: ");
-              int encuentra=s.nextInt();
-
-        /******************************/
-
-        // debug
-          System.out.println("\nLa posición del valor "+encuentra+" es la número "+posicionEnArray(arrayGuardado, encuentra)+".");
-
-        /****************************************************/
-
-        // array invertido
-          // almacenar el array
-            // nuevo array
-              int[] arrayInvertGuardado=new int[ele];
-
-            // asignación de valores
-              for(int i=0; i<ele; i++){
-                arrayInvertGuardado[i]=volteaArrayInt(arrayGuardado, ele)[i];
-              }
-
-          /***********************************/
-
-          // debug
-            System.out.println("\nEl array invertido es el siguiente:");
-            System.out.println();
-
-            for(int i=0; i<ele; i++){
-              System.out.printf("| %-5d", arrayInvertGuardado[i]);
-            }
-
-            System.out.println(" |");
-
-        /****************************************************/
-
-        // array rotado hacia la derecha
-          // nº de rotaciones
-            System.out.print("\nIntroduce el número de posiciones hacia la derecha que el array debe rotar: ");
-              int derecha=s.nextInt();
-
-          // cierre de scanner
-            s.close();
-
-          /***********************************/
-
-          // almacenar el array
-            // nuevo array
-            int[] arrayDereGuardado=new int[ele];
-
-            // asignación de valores
-              for(int i=0; i<ele; i++){
-                arrayDereGuardado[i]=rotaDerechaArrayInt(arrayInvertGuardado, ele, derecha)[i];
-              }
-
-          /***********************************/
-
-          // debug
-            System.out.println("\nEl array rotado hacia la derecha "+derecha+" veces es el siguiente:");
-            System.out.println();
-
-            for(int i=0; i<ele; i++){
-              System.out.printf("| %-5d", arrayDereGuardado[i]);
-            }
-
-            System.out.println(" |");
       }
 }

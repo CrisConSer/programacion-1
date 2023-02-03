@@ -4,7 +4,7 @@
   @info: ejercicio 3
 */
 
-package tema8.c81.ej3;
+package tema8.c81;
 
 import java.util.Scanner;
 

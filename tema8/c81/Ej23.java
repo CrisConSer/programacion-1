@@ -1,14 +1,14 @@
 /**
   @author: Christian Millán Soria
-  @file: Ej24.java
-  @info: ejercicio 24
+  @file: Ej23.java
+  @info: ejercicio 23
 */
 
-package tema8.c81.ej24;
+package tema8.c81;
 
 import java.util.Scanner;
 
-public class Ej24{
+public class Ej23{
   /**
     @info:función para generar un array
     @param:
@@ -118,34 +118,8 @@ public class Ej24{
 
     /*******************************************************************************************/
 
-    /**
-      @info: función para comprobar si un número está en el array
-      @param:
-        - "int[] x": array
-        - "y": valor a encontrar en el array
-      @return:
-        - "true": el valor se encuentra en el array
-        - "false": el valor no se encuentra en el array
-    */
-      public static boolean estaEnArrayInt(int[] x, int y){
-        // variable booleana
-          boolean esta=false;
-
-        // recorrer el array para encontrar el valor
-          for(int i=0; i<x.length; i++){
-            if(x[i]==y){
-              return true;
-            }
-          }
-
-        // return predeterminado
-          return esta;
-      }
-
-    /*******************************************************************************************/
-
     // main
-      public static void main(String[] args) throws InterruptedException{
+      public static void main(String[] args){
         // scanner
           Scanner s=new Scanner(System.in);
 
@@ -166,6 +140,9 @@ public class Ej24{
           // intervalo menor
           System.out.print("Introduce el valor máximo del intervalo de los valores: ");
             int max=s.nextInt();
+
+        // cierre de scanner
+          s.close();
 
         /****************************************************/
 
@@ -202,27 +179,6 @@ public class Ej24{
         /****************************************************/
 
         // media
-          System.out.println("\nLa media de todos los valores del array es "+mediaArrayInt(arrayGuardado, ele)+".");
-
-        /****************************************************/
-
-        // está el número en el array o no?
-          Thread.sleep(5000);
-
-          // obtención del número
-            System.out.print("\nIntroduce un valor del array para comprobar su existencia en el array: ");
-              int busca=s.nextInt();
-
-          // cierre de scanner
-            s.close();
-
-        /******************************/
-
-        // debug
-          if(estaEnArrayInt(arrayGuardado, busca)){
-            System.out.print("\nEl valor "+busca+" sí está en el array.");
-          }else{
-            System.out.print("\nEl valor "+busca+" no está en el array.");
-          }
+          System.out.print("\nLa media de todos los valores del array es "+mediaArrayInt(arrayGuardado, ele)+".");
       }
 }

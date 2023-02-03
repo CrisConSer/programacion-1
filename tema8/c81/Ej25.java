@@ -1,14 +1,14 @@
 /**
   @author: Christian Millán Soria
-  @file: Ej28.java
-  @info: ejercicio 28
+  @file: Ej25.java
+  @info: ejercicio 25
 */
 
-package tema8.c81.ej28;
+package tema8.c81;
 
 import java.util.Scanner;
 
-public class Ej28{
+public class Ej25{
   /**
     @info:función para generar un array
     @param:
@@ -172,76 +172,6 @@ public class Ej28{
 
     /*******************************************************************************************/
 
-    /**
-      @info: función para obtener el array de forma invertida
-      @param
-        - "int[] x": array a invertir
-        - "y": nº de elementos del array
-      @return arrayInvertido: array invertido
-    */
-      public static int[] volteaArrayInt(int[] x, int y){
-        // array invertido
-          // creación
-            int[] arrayInvertido=new int[y];
-
-          // variable auxiliar
-            int j=0;
-
-          // guardando los valores de forma inversa
-            for(int i=y-1; i>=0; i--){
-              arrayInvertido[j]=x[i];
-
-              j++;
-            }
-
-        /***********/
-
-        // return
-          return arrayInvertido;
-      }
-
-    /*******************************************************************************************/
-
-    /**
-      @info: función para rotar n posiciones a la derecha el array
-      @param:
-        - "int[] x": array
-        - "y": nº de elementos del array
-        - "z": nº de posiciones a rotar
-      @return arrayDerecha: array rotado n posiciones a la derecha
-    */
-      public static int[] rotaDerechaArrayInt(int[] x, int y, int z){
-          int[] arrayDerecha=new int[y];
-
-          for(int i=0; i<y; i++){
-            arrayDerecha[(i+z)%y]=x[i];// el módulo calcula la nueva posición que debe obtener el valor en la posición actual, es decir, el elemento con posición "[(i+z)%y]" es igual al valor con posición 0 del array original, y así sucesivamente
-          }
-
-          return arrayDerecha;
-      }
-
-    /*******************************************************************************************/
-
-    /**
-      @info: función para rotar n posiciones a la izquierda el array
-      @param:
-        - "int[] x": array
-        - "y": nº de elementos del array
-        - "z": nº de posiciones a rotar
-      @return arrayIzquierda: array rotado n posiciones a la izquierda
-    */
-      public static int[] rotaIzquierdaArrayInt(int[] x, int y, int z){
-        int[] arrayIzquierda=new int[y];
-
-        for(int i=0; i<y; i++){
-          arrayIzquierda[i]=x[(i+y-z)%y];// el módulo se encarga de calcular el índice exacto donde se debe colocar el valor del array original, de forma similar a la función anterior. se suma el índice actual y la longitud total del array para obtener la posición del elementos después de rotar todo el array hacia la izquierda una vez, que añadiendo el nº de rotaciones ("z"), da como resultado la posición después de rotar "z" veces hacia la izquierda
-        }
-
-        return arrayIzquierda;
-      }
-
-    /*******************************************************************************************/
-
     // main
       public static void main(String[] args) throws InterruptedException{
         // scanner
@@ -279,7 +209,7 @@ public class Ej28{
         /****************************************************/
 
         // debug
-          System.out.println();
+          System.out.println("");
 
           for(int i=0; i<ele; i++){
             System.out.printf("| %-5d", arrayGuardado[i]);
@@ -327,96 +257,12 @@ public class Ej28{
             System.out.print("\nIntroduce un valor del array para encontrar su posición en el mismo: ");
               int encuentra=s.nextInt();
 
-        /******************************/
-
-        // debug
-          System.out.println("\nLa posición del valor "+encuentra+" es la número "+posicionEnArray(arrayGuardado, encuentra)+".");
-
-        /****************************************************/
-
-        // array invertido
-          // almacenar el array
-            // nuevo array
-              int[] arrayInvertGuardado=new int[ele];
-
-            // asignación de valores
-              for(int i=0; i<ele; i++){
-                arrayInvertGuardado[i]=volteaArrayInt(arrayGuardado, ele)[i];
-              }
-
-          /***********************************/
-
-          // debug
-            System.out.println("\nEl array invertido es el siguiente:");
-            System.out.println();
-
-            for(int i=0; i<ele; i++){
-              System.out.printf("| %-5d", arrayInvertGuardado[i]);
-            }
-
-            System.out.println(" |");
-
-        /****************************************************/
-
-        // array rotado hacia la derecha
-          // nº de rotaciones
-            System.out.print("\nIntroduce el número de posiciones hacia la derecha que el array debe rotar: ");
-              int derecha=s.nextInt();
-
-          /***********************************/
-
-          // almacenar el array
-            // nuevo array
-            int[] arrayDereGuardado=new int[ele];
-
-            // asignación de valores
-              for(int i=0; i<ele; i++){
-                arrayDereGuardado[i]=rotaDerechaArrayInt(arrayInvertGuardado, ele, derecha)[i];
-              }
-
-          /***********************************/
-
-          // debug
-            System.out.println("\nEl array rotado hacia la derecha "+derecha+" veces es el siguiente:");
-            System.out.println();
-
-            for(int i=0; i<ele; i++){
-              System.out.printf("| %-5d", arrayDereGuardado[i]);
-            }
-
-            System.out.println(" |");
-
-        /****************************************************/
-
-        // array rotado hacia la izquierda
-          // nº de rotaciones
-            System.out.print("\nIntroduce el número de posiciones hacia la izquierda que el array debe rotar: ");
-              int izquierda=s.nextInt();
-
           // cierre de scanner
             s.close();
 
-          /***********************************/
+        /******************************/
 
-          // almacenar el array
-            // nuevo array
-            int[] arrayIzquiGuardado=new int[ele];
-
-            // asignación de valores
-              for(int i=0; i<ele; i++){
-                arrayIzquiGuardado[i]=rotaIzquierdaArrayInt(arrayInvertGuardado, ele, izquierda)[i];
-              }
-
-          /***********************************/
-
-          // debug
-            System.out.println("\nEl array rotado hacia la izquierda "+izquierda+" veces es el siguiente:");
-            System.out.println();
-
-            for(int i=0; i<ele; i++){
-              System.out.printf("| %-5d", arrayIzquiGuardado[i]);
-            }
-
-            System.out.println(" |");
+        // debug
+          System.out.print("\nLa posición del valor "+encuentra+" es la número "+posicionEnArray(arrayGuardado, encuentra)+".");
       }
 }
