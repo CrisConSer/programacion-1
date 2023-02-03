@@ -194,13 +194,51 @@ public class Varias{
       // variable acumulador
         int acu=1;
 
+      /*************/
+
       // se realiza tantas veces como indica el exponente
         for(int i=0; i<y; i++){
           acu*=x;
         }
 
+      /*************/
+
       // return
         return acu;
+    }
+
+  /***************************************************/
+
+  /**
+    @info: función para número de dígitos
+    @param x: número
+    @return numDigi: número de dígitos que tiene el número introducido
+  */
+    public static int digitos(int x){
+      // variable para el total de dígitos
+        int numDigi=0;
+
+      /***************/
+
+      // conteo
+        // bucle
+          while(x>0){
+            x/=10;
+
+            numDigi++;
+          }
+
+      /***************/
+
+      /*
+        alternativa: convertirlo a string y sacar su longitud:
+          numDigi=String.valueOf(x).length();
+      */
+
+      /***************/
+
+      // return
+        return numDigi;
     }
 
   /***************************************************/
