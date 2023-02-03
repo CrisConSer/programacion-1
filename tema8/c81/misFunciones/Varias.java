@@ -347,7 +347,7 @@ public class Varias{
   /***************************************************/
 
     /**
-      @info: función para calcular la suma desde 1 a "n"
+      @info: función para obtener el valor intermedio entre 1 y "n"
       @param n: número "n"
       @return intermedio: valor intermedio de los enteros de 1 a "n"
     */
@@ -370,7 +370,11 @@ public class Varias{
           }else if(dif==1){
             return 1;
           }else{
-            
+            // valor intermedio
+              double intermedio=(1+n)/2.0;
+
+            // return
+              return intermedio;
           }
       }
 

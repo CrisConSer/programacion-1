@@ -35,7 +35,7 @@ public class Ej8Func{
     /****************************************/
 
     // producto
-      // System.out.println("\nEl producto de los factoriales de cada número desde 1 a "+n+" es: "+Varias.producto1aN(n));
+      System.out.println("\nEl producto de los factoriales de cada número desde 1 a "+n+" es: "+Varias.producto1aN(n));
 
     /****************************************/
 
