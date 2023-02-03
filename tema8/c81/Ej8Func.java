@@ -30,6 +30,6 @@ public class Ej8Func{
     /****************************************/
 
     // suma
-      System.out.println("La suma de los números desde 1 a "+n+" es: "+Varias.suma1aN(n)+".");
+      System.out.println("\nLa suma de los números desde 1 a "+n+" es: "+Varias.suma1aN(n)+".");
   }
 }
