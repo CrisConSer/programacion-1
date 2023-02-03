@@ -16,7 +16,6 @@ public class Ej1{
       - "true": el número es capicúa
       - "false": el número no es capicúa
   */
-
     public static boolean esCapicua(int x){
       // variable auxiliar
         int aux=x;
