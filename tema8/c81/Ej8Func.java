@@ -12,6 +12,19 @@ import java.util.Scanner;
 
 public class Ej8Func{
   public static void main(String[] args){
-    
+    // número
+      // scanner
+        Scanner s=new Scanner(System.in);
+
+      /***************/
+
+        // obtención de números
+          System.out.print("Introduce el número: ");
+            int n=s.nextInt();
+
+      /***************/
+
+      // cierre de scanner
+        s.close();
   }
 }
