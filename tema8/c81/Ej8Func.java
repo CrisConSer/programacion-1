@@ -31,5 +31,15 @@ public class Ej8Func{
 
     // suma
       System.out.println("\nLa suma de los números desde 1 a "+n+" es: "+Varias.suma1aN(n)+".");
+
+    /****************************************/
+
+    // producto
+      System.out.println("\nEl producto de los factoriales de cada número desde 1 a "+n+" es: "+Varias.producto1aN(n));
+
+    /****************************************/
+
+    // intermedio
+      System.out.print("\nEl valor intermedio entre 1 y"+n+" es: "+Varias.intermedio1aN(n)+".");
   }
 }
