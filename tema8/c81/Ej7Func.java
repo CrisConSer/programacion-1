@@ -6,7 +6,7 @@
 
 package tema8.c81;
 
-import tema8.c81.misFunciones.Varias;
+import tema8.c81.misFunciones.Geometria;
 
 import java.util.Scanner;
 
@@ -35,9 +35,9 @@ public class Ej7Func{
 
     // debug
       // perímetro
-        System.out.println("\nEl perímetro de un rectángulo de ancho "+ancho+" y alto "+alto+" es: "+Varias.perimetroRectangulo(ancho,alto));
+        System.out.println("\nEl perímetro de un rectángulo de ancho "+ancho+" y alto "+alto+" es: "+Geometria.perimetroRectangulo(ancho,alto));
 
       // área
-        System.out.print("\nEl área de un rectángulo de ancho "+ancho+" y alto "+alto+" es: "+Varias.areaRectangulo(ancho,alto));
+        System.out.print("\nEl área de un rectángulo de ancho "+ancho+" y alto "+alto+" es: "+Geometria.areaRectangulo(ancho,alto));
   }
 }
