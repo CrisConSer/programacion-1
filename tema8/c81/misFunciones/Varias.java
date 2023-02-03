@@ -336,6 +336,28 @@ public class Varias{
   /***************************************************/
 
     /**
+      @info: función para calcular el producto de los factoriales desde 1 a n
+      @param n: número n
+      @return producto: producto resultante de todos los factoriales de 1 a n
+    */
+      public static int producto1aN(int n){
+        
+      }
+
+  /***************************************************/
+
+    /**
+      @info: función para calcular la suma desde 1 a n
+      @param n: número n
+      @return intermedio: valor intermedio de los enteros de 1 a n
+    */
+      public static double intermedio1aN(int n){
+        
+      }
+
+  /***************************************************/
+
+    /**
     @info: función para sacar el mayor de entre dos valores
     @param:
       - "a": primer número
