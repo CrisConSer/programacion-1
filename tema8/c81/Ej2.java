@@ -16,7 +16,6 @@ public class Ej2{
       - "true": el número es primo
       - "false": el número no es primo
   */
-
     public static boolean esPrimo(int x){
       // si es 1 o menor, no es primo
         if(x<=1){

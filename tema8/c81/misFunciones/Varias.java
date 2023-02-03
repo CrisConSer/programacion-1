@@ -106,4 +106,34 @@ public class Varias{
           return false;
         }
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para números primos
+    @param x: número
+    @return:
+      - "true": el número es primo
+      - "false": el número no es primo
+  */
+    public static boolean esPrimo(int x){
+      // si es 1 o menor, no es primo
+        if(x<=1){
+          return false;
+        }
+
+      /********************/
+    
+      // comprobación de divisores
+        for(int i=2; i<=x/2; i++){
+          if(x%i==0){
+            return false;
+          }
+        }
+
+      /********************/
+
+      // de forma predeterminada es "true"
+        return true;
+    }
 }
