@@ -38,5 +38,10 @@ public class Ej9Func{
 
       // cierre de scanner
         s.close();
+
+    /******************************************/
+
+    // debug
+      
   }
 }
