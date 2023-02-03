@@ -8,6 +8,18 @@ package tema8.c81;
 
 import tema8.c81.misFunciones.Varias;
 
+import java.util.Scanner;
+
 public class Ej1Func{
-  
+  public static void main(String[] args) {
+    // scanner
+      Scanner s=new Scanner(System.in);
+
+      // primer número
+        System.out.print("Introduce el primer número a multiplicar: ");
+          double num1=s.nextDouble();
+
+    // cierre de scanner
+      s.close();
+  }
 }
