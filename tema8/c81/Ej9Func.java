@@ -43,7 +43,7 @@ public class Ej9Func{
 
     // comprobación de los 2 primeros
       // variable auxiliar
-        int aux=Varias.minimo(num1, num2);
+        int aux=Varias.maximo(num1, num2);
 
       /************/
 
