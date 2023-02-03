@@ -243,5 +243,31 @@ public class Varias{
 
   /***************************************************/
 
-  
+  /**
+    @info: función para número invertido
+    @param x: número
+    @return rev: número invertido
+  */
+    public static int voltea(int x){
+      // variable auxiliar
+        int aux=x;
+
+      /***************/
+
+      // número invertido
+        int rev=0;
+
+      /***************/
+
+      // volteo
+        while(aux!=0){
+          rev=rev*10+aux%10;
+          aux/=10;
+        }
+
+      /***************/
+
+      // return
+        return rev;
+    }
 }
