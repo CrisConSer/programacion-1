@@ -31,5 +31,8 @@ public class Ej3Func{
       s.close();
 
     /*********************************/
+
+    // debug
+      System.out.print("\nEl menor de estos dos números es el "+Varias.minimo(num1, num2));
   }
 }
