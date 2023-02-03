@@ -136,4 +136,48 @@ public class Varias{
       // de forma predeterminada es "true"
         return true;
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para el siguiente número primo
+    @param x: número
+    @return num: variable que contiene el siguiente número primo
+  */
+    public static int siguientePrimo(int x){
+      // siguiente número
+        int num=x+1;
+
+      /*********************/
+
+      // bucle infinito
+      while(true){
+        // de forma predeterminada, el número es primo
+          boolean primo=true;
+
+        /**************/
+
+        // comprobación de si es primo
+          for(int i=2; i<=(num/2); i++){
+            // si no es primo, se acaba el bucle "for" y se sigue ejecutando el bucle "while"
+              if(num%i==0){
+                primo=false;
+
+                break;
+              }
+          }
+
+        /**************/
+
+        // si el número sacado del "for" es primo, se devuelve al "main"
+          if(primo){
+            return num;
+          }
+
+        /**************/
+
+        // si no es primo, no se devuelve al "main" y se aumenta en 1 unidad
+          num++;
+      }
+    }
 }

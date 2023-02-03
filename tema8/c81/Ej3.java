@@ -14,7 +14,7 @@ public class Ej3{
     @param x: número
     @return num: variable que contiene el siguiente número primo
   */
-    public static int esPrimo(int x){
+    public static int siguientePrimo(int x){
       // siguiente número
         int num=x+1;
 
@@ -61,6 +61,6 @@ public class Ej3{
       /************************************/
 
       // función "esPrimo"
-        System.out.println("\nEl siguiente valor primo es el "+esPrimo(n)+".");
+        System.out.println("\nEl siguiente valor primo es el "+siguientePrimo(n)+".");
     }
 }
