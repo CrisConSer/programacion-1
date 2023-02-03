@@ -341,7 +341,13 @@ public class Varias{
       @return producto: producto resultante de todos los factoriales de 1 a "n"
     */
       public static int producto1aN(int n){
-        
+        // variable acumuladora
+          int acu=2;
+
+        /***************/
+
+        // cálculo de factoriales y acumulación
+          
       }
 
   /***************************************************/
