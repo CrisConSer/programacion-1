@@ -26,5 +26,10 @@ public class Ej8Func{
 
       // cierre de scanner
         s.close();
+
+    /****************************************/
+
+    // suma
+      System.out.println("La suma de los números desde 1 a "+n+" es: "+Varias.suma1aN(n)+".");
   }
 }

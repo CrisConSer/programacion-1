@@ -311,7 +311,27 @@ public class Varias{
 
   /***************************************************/
 
-    
+    /**
+      @info: función para calcular la suma desde 1 a n
+      @param n: número n
+      @return suma: suma de los enteros de 1 a n
+    */
+      public static int suma1aN(int n){
+        // variable acumuladora
+          int suma=0;
+
+        /***************/
+
+        // bucle
+          for(int i=1; i<=n; i++){
+            suma+=i;
+          }
+
+        /***************/
+
+        // return
+          return suma;
+      }
 
   /***************************************************/
 
