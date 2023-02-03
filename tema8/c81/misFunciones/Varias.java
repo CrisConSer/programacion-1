@@ -311,6 +311,10 @@ public class Varias{
 
   /***************************************************/
 
+  
+
+  /***************************************************/
+
     /**
     @info: función para sacar el menor de entre dos valores
     @param:
