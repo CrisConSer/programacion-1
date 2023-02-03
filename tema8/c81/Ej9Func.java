@@ -41,7 +41,17 @@ public class Ej9Func{
 
     /******************************************/
 
-    // debug
-      
+    // comprobación de los 2 primeros
+      // variable auxiliar
+        int aux=Varias.minimo(num1, num2);
+
+      /************/
+
+      // comprobación con el tercero
+        if(aux>num3){
+          System.out.println("El número"+aux+" es el mayor de los tres.");
+        }else{
+          System.out.println("El número"+num3+" es el mayor de los tres.");
+        }
   }
 }
