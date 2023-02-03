@@ -10,5 +10,14 @@ public class Varias{
   */
     public static double multiplica(double a, double b){
       return a*b;
+
+      /*
+        otra forma de hacerlo es almacenar el resultado en una variable:
+          // resultado
+            double result=a*b;
+
+          // return
+            return result;
+      */
     }
 }
