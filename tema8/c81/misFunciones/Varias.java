@@ -367,4 +367,14 @@ public class Varias{
         return b;
       }
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para tabla de multiplicar
+    @param x: número del que se sca la tabla de multiplicar
+  */
+    public static void tablaMultiplicar(int x){
+
+    }
 }
