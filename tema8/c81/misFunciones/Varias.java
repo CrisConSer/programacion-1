@@ -388,4 +388,13 @@ public class Varias{
             x=aux;
         }
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para imprimir un triángulo de n líneas
+    @param:
+      - "c": caracter a utilizar
+      - "n": número de líneas
+  */
 }
