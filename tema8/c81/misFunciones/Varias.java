@@ -394,7 +394,7 @@ public class Varias{
   /**
     @info: función para imprimir un triángulo de n líneas
     @param:
-      - "c": caracter a utilizar
+      - "c": carácter a utilizar
       - "n": número de líneas
   */
     public static void printTiangulo(char c, int n){

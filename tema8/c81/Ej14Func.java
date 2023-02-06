@@ -12,14 +12,14 @@ import java.util.Scanner;
 
 public class Ej14Func{
   public static void main(String[] args){
-    // caracter y nº de líneas
+    // carácter y nº de líneas
       // scanner
         Scanner s=new Scanner(System.in);
 
         /***************/
 
-        // caracter
-          System.out.print("Introduce el caracter a utilizar para imprimir el triángulo: ");
+        // carácter
+          System.out.print("Introduce el carácter a utilizar para imprimir el triángulo: ");
             char c=s.next().charAt(0);
 
         // nº de líneas
