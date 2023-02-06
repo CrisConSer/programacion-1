@@ -10,6 +10,8 @@ import tema8.c81.misFunciones.Varias;
 
 import tema8.c81.misFunciones.Geometria;
 
+import java.util.Scanner;
+
 public class Ej21Func{
   public static void main(String[] args){
     // menú
