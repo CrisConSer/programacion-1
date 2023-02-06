@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Ej17Func{
   public static void main(String[] args){
     // variable para el número a leer
-      int num;
+      int num=1;
 
     /**********************************************/
 
@@ -37,9 +37,9 @@ public class Ej17Func{
 
         // comprobación de si es primo
           if(Varias.esPrimo(num)){
-            System.out.println("El número "+num+" es primo");
+            System.out.println("El número "+num+" es primo.");
           }else{
-            System.out.println("El número "+num+" no es primo");
+            System.out.println("El número "+num+" no es primo.");
           }
       }while(num!=0);
 
