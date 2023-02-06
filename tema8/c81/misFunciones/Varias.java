@@ -419,81 +419,117 @@ public class Varias{
     @return letra: letra correspondiente
   */
     public static char obtenerLetra(int dni){
-      int resto = dni % 23;
-      char letra;
-      switch (resto) {
-        case 0:
-          letra = 'T';
+      // resto del dni
+        int resto = dni % 23;
+
+      /***************/
+
+      // variable para la letra
+        char letra;
+
+      /***************/
+
+      // switch para cada letra
+        switch(resto){
+          case 0:
+            letra='T';
           break;
-        case 1:
-          letra = 'R';
+
+          case 1:
+            letra='R';
           break;
-        case 2:
-          letra = 'W';
+
+          case 2:
+            letra='W';
           break;
-        case 3:
-          letra = 'A';
+
+          case 3:
+            letra='A';
           break;
-        case 4:
-          letra = 'G';
+
+          case 4:
+            letra='G';
           break;
-        case 5:
-          letra = 'M';
+
+          case 5:
+            letra='M';
           break;
-        case 6:
-          letra = 'Y';
+
+          case 6:
+            letra='Y';
           break;
-        case 7:
-          letra = 'F';
+
+          case 7:
+            letra='F';
           break;
-        case 8:
-          letra = 'P';
+
+          case 8:
+            letra='P';
           break;
-        case 9:
-          letra = 'D';
+
+          case 9:
+            letra='D';
           break;
-        case 10:
-          letra = 'X';
+
+          case 10:
+            letra='X';
           break;
-        case 11:
-          letra = 'B';
+
+          case 11:
+            letra='B';
           break;
-        case 12:
-          letra = 'N';
+
+          case 12:
+            letra='N';
           break;
-        case 13:
-          letra = 'J';
+
+          case 13:
+            letra='J';
           break;
-        case 14:
-          letra = 'Z';
+
+          case 14:
+            letra='Z';
           break;
-        case 15:
-          letra = 'S';
+
+          case 15:
+            letra='S';
           break;
-        case 16:
-          letra = 'Q';
+
+          case 16:
+            letra='Q';
           break;
-        case 17:
-          letra = 'V';
+
+          case 17:
+            letra='V';
           break;
-        case 18:
-          letra = 'H';
+
+          case 18:
+            letra='H';
           break;
-        case 19:
-          letra = 'L';
+
+          case 19:
+            letra='L';
           break;
-        case 20:
-          letra = 'C';
+
+          case 20:
+            letra='C';
           break;
-        case 21:
-          letra = 'K';
+
+          case 21:
+            letra='K';
           break;
-        case 22:
-          letra = 'E';
+
+          case 22:
+            letra='E';
           break;
-        default:
-          letra = ' ';
-      }
-      return letra;
+
+          default:
+            letra=' ';
+        }
+
+      /***************/
+
+      // return
+        return letra;
     }
 }
