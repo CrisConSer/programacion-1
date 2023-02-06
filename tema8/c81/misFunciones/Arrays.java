@@ -255,8 +255,8 @@ public class Arrays{
       /*****************/
 
       // recorrer el array
-        for(int i=1; aux<100; i++){
-          arrayNaturales[i]=i;
+        for(int i=1; aux<x; i++){
+          arrayNaturales[aux]=i;
 
           aux++;
         }
