@@ -550,6 +550,7 @@ public class Varias{
       // obtención de la opción
         Scanner sc=new Scanner(System.in);
           int opcion=sc.nextInt();
+        sc.close();
 
       // return
         return opcion;
