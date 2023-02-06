@@ -33,7 +33,7 @@ public class Ej15Func{
 
     // debug
       for(int i=0; i<t; i++){
-        System.out.printf("| %-3d ", Arrays.arrayNaturales(t));
+        System.out.printf("| %-3d ", Arrays.arrayNaturales(t)[i]);
       }
 
       System.out.print("|");

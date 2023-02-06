@@ -249,9 +249,16 @@ public class Arrays{
 
       /*****************/
 
+      // variable auxiliar  
+        int aux=0;
+
+      /*****************/
+
       // recorrer el array
-        for(int i=1; i<=x; i++){
+        for(int i=1; aux<100; i++){
           arrayNaturales[i]=i;
+
+          aux++;
         }
 
       /*****************/
