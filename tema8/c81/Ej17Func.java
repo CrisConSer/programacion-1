@@ -18,30 +18,27 @@ public class Ej17Func{
     /**********************************************/
 
     // números mientras no sea un 0
-      do{
-        // scanner
-          Scanner s=new Scanner(System.in);
+      // scanner
+        Scanner s=new Scanner(System.in);
 
-          /*****************/
-
+      // bucle
+        do{
           // obtención
             System.out.print("Introduce un número: ");
               num=s.nextInt();
 
-          /*****************/
+          /******************************/
 
-        // cierre scanner
-          s.close();
+          // comprobación de si es primo
+            if(Varias.esPrimo(num)){
+              System.out.println("El número "+num+" es primo.");
+            }else{
+              System.out.println("El número "+num+" no es primo.");
+            }
+        }while(num!=0);
 
-        /******************************/
-
-        // comprobación de si es primo
-          if(Varias.esPrimo(num)){
-            System.out.println("El número "+num+" es primo.");
-          }else{
-            System.out.println("El número "+num+" no es primo.");
-          }
-      }while(num!=0);
+      // cierre de scanner
+        s.close();
 
     /**********************************************/
 
