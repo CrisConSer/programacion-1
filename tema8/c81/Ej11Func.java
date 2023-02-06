@@ -16,11 +16,22 @@ public class Ej11Func{
       // scanner
         Scanner s=new Scanner(System.in);
 
+        /***************/
+
         // obtención
           System.out.print("Introduce un número para ver su tabla de multiplicar: ");
             int num=s.nextInt();
 
+          System.out.println();
+
+        /***************/
+
       // cierre de scanner
         s.close();
+
+    /*****************************************/
+
+    // debug
+      Varias.tablaMultiplicar(num);
     }
 }
