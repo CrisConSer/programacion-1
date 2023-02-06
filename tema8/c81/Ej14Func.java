@@ -26,6 +26,8 @@ public class Ej14Func{
           System.out.print("Introduce el número de líneas que debe tener el triángulo: ");
             int n=s.nextInt();
 
+          System.out.println();
+
         /***************/
 
       // cierre scanner
