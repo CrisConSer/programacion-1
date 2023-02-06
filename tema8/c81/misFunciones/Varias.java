@@ -541,14 +541,17 @@ public class Varias{
     @info: función para imprimir un menú de dos opciones ("circunferencia" y "área")
     @return opcion: opción seleccionada
   */
-    public static int menu() {
-      System.out.println("1. Circunferencia");
-      System.out.println("2. Área");
-      System.out.print("Elige una opción: ");
+    public static int menu(){
+      // menú
+        System.out.println("1. Circunferencia");
+        System.out.println("2. Área");
+        System.out.print("\nElige una opción: ");
 
-      Scanner sc = new Scanner(System.in);
-      int opcion = sc.nextInt();
+      // obtención de la opción
+        Scanner sc=new Scanner(System.in);
+          int opcion=sc.nextInt();
 
-      return opcion;
+      // return
+        return opcion;
     }
 }
