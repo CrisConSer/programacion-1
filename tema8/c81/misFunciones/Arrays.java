@@ -239,6 +239,24 @@ public class Arrays{
   /*************************************************/
 
   /**
-    @info
+    @info: función para array de los primeros número naturales
+    @param x: tamaño del array
+    @return arrayNaturales: array de los primeros números naturales
   */
+    public static int[] arrayNaturales(int x){
+      // array de números naturales
+        int[] arrayNaturales=new int[x];
+
+      /*****************/
+
+      // recorrer el array
+        for(int i=1; i<=x; i++){
+          arrayNaturales[i]=i;
+        }
+
+      /*****************/
+
+      // return
+        return arrayNaturales;
+    }
 }
