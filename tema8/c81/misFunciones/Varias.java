@@ -375,6 +375,17 @@ public class Varias{
     @param x: número del que se sca la tabla de multiplicar
   */
     public static void tablaMultiplicar(int x){
+      // variable auxiliar para resetear el valor
+        int aux=x;
 
+      /***************/
+
+      // bucle de 10 elementos
+        for(int i=1; i<=10; i++){
+          System.out.println("- "+x+"*"+i+"= "+(x*=i));
+
+          // reseteo
+            x=aux;
+        }
     }
 }
