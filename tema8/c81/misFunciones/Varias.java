@@ -1,5 +1,7 @@
 package tema8.c81.misFunciones;
 
+import java.util.Scanner;
+
 public class Varias{
   /**
     @info: función para realizar la multiplicación de 2 números
@@ -531,5 +533,22 @@ public class Varias{
 
       // return
         return letra;
+    }
+
+  /***************************************************/
+
+  /**
+    @info: función para imprimir un menú de dos opciones ("circunferencia" y "área")
+    @return opcion: opción seleccionada
+  */
+    public static int menu() {
+      System.out.println("1. Circunferencia");
+      System.out.println("2. Área");
+      System.out.print("Elige una opción: ");
+
+      Scanner sc = new Scanner(System.in);
+      int opcion = sc.nextInt();
+
+      return opcion;
     }
 }
