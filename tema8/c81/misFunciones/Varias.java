@@ -544,7 +544,7 @@ public class Varias{
     public static int menu(){
       // menú
         System.out.println("1. Circunferencia");
-        System.out.println("2. Área");
+        System.out.println("2. Area");
         System.out.print("\nElige una opción: ");
 
       /******************/
