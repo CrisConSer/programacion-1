@@ -550,8 +550,8 @@ public class Varias{
       /******************/
 
       // obtención de la opción
-        Scanner sc=new Scanner(System.in);
-          int opcion=sc.nextInt();
+        Scanner opcionScanner=new Scanner(System.in);
+          int opcion=opcionScanner.nextInt();
 
       /******************/
 
@@ -572,8 +572,8 @@ public class Varias{
       /******************/
 
       // obtención
-        Scanner scanner=new Scanner(System.in);
-          double radio=scanner.nextDouble();
+        Scanner radioScanner=new Scanner(System.in);
+          double radio=radioScanner.nextDouble();
 
       /******************/
 
