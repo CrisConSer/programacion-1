@@ -17,16 +17,23 @@ public class Ej21Func{
 
     /********************/
 
-    // radio
-      double radio=Varias.pideRadio();
-
-    /********************/
-
     // comprobación de la opción elegida
       if(opcion==1){
-        System.out.println("La circunferencia es: "+Geometria.circunferencia(radio));
+        // radio
+          double radio=Varias.pideRadio();
+
+        /**************/
+
+        // debug
+          System.out.println("La circunferencia es: "+Geometria.circunferencia(radio));
       }else if(opcion==2){
-        System.out.println("El área es: "+Geometria.area(radio));
+        // radio
+          double radio=Varias.pideRadio();
+
+        /**************/
+
+        // debug
+          System.out.println("El área es: "+Geometria.area(radio));
       }else{
         System.out.println("Opción no válida");
       }
