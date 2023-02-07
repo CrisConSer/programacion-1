@@ -80,4 +80,26 @@ public class Geometria{
       // return
         return area;
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para calcular el volumen dado un radio
+    @param radio: radio introducido
+    @return volumen: volumen del radio
+  */
+    public static double volumen(double radio){
+      // constantes para pi
+        final double pi=3.14;
+
+      /*****************/
+
+      // cálculo del área
+        double volumen=(4/3)*pi*Math.pow(radio, 3);
+
+      /*****************/
+
+      // return
+        return volumen;
+    }
 }
