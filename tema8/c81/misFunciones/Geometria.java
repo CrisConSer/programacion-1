@@ -36,4 +36,48 @@ public class Geometria{
       // return
         return area;
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para calcular la circunferencia dado un radio
+    @param radio: radio introducido
+    @return circunferencia: circunferencia del radio
+  */
+    public static double circunferencia(double radio){
+      // constantes para pi
+        final double pi=3.14;
+
+      /*****************/
+
+      // cálculo de la circunferencia
+        double circunferencia=2*pi*radio;
+
+      /*****************/
+
+      // return
+        return circunferencia;
+    }
+
+  /***************************************************/
+
+  /**
+    @info: función para calcular el área dado un radio
+    @param radio: radio introducido
+    @return area: área del radio
+  */
+    public static double area(double radio){
+      // constantes para pi
+        final double pi=3.14;
+
+      /*****************/
+
+      // cálculo del área
+        double area=pi*Math.pow(radio, 2);
+
+      /*****************/
+
+      // return
+        return area;
+    }
 }

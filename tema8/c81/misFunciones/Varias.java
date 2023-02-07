@@ -547,12 +547,39 @@ public class Varias{
         System.out.println("2. Área");
         System.out.print("\nElige una opción: ");
 
+      /******************/
+
       // obtención de la opción
         Scanner sc=new Scanner(System.in);
           int opcion=sc.nextInt();
         sc.close();
 
+      /******************/
+
       // return
         return opcion;
+    }
+
+  /***************************************************/
+
+  /**
+    @info: función para obtener un radio y retornarlo
+    @return radio: radio introducido
+  */
+    public static double pideRadio(){
+      // print
+        System.out.print("Introduce el radio: ");
+
+      /******************/
+
+      // obtención
+        Scanner sc=new Scanner(System.in);
+          double radio=sc.nextDouble();
+        sc.close();
+
+      /******************/
+
+      // return
+        return radio;
     }
 }
