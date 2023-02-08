@@ -547,6 +547,7 @@ public class Varias{
         System.out.println("2. Area");
         System.out.println("3. Volumen");
         System.out.println("4. Todas");
+        System.out.println("5. Salir");
         System.out.print("\nElige una opción: ");
 
       /******************/
