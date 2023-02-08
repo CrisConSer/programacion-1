@@ -42,6 +42,16 @@ public class Mod2Func{
 
         // debug
           System.out.println("El volumen es: "+Geometria.volumen(radio));
+      }else if(opcion==4){
+        // radio
+          double radio=Varias.pideRadio();
+
+        /**************/
+
+        // debug
+          System.out.println("La circunferencia es: "+Geometria.circunferencia(radio));
+          System.out.println("El área es: "+Geometria.area(radio));
+          System.out.println("El volumen es: "+Geometria.volumen(radio));
       }else{
         System.out.println("Opción no válida");
       }
