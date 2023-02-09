@@ -680,6 +680,21 @@ public class Varias{
 
       /************/
 
-      // 
+      // factor (valor por el que se debe multiplicar el valor decimal para introducir la siguiente posición)
+        int factor=1;
+
+      /************/
+
+      // bucle para obtener el resto en cada iteración e insertarlo al final
+        while(decimal>0){
+          binario+=(decimal%2)*factor;
+          decimal=decimal/2;
+          factor*=10;
+        }
+
+      /************/
+
+      // return
+        return binario;
     }
 }
