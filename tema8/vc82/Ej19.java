@@ -7,5 +7,7 @@
 package tema8.vc82;
 
 public class Ej19{
-  
+  public static void main(String[] args){
+    
+  }
 }
