@@ -629,4 +629,41 @@ public class Varias{
       // return
         return esBinario;
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para transformar de binario a decimal
+    @param num: número a transformar
+    @return decimal: número transformado
+  */
+    public static int binarioADecimal(int binario){
+      // número final
+        int decimal=0;
+
+      /********************/
+
+      // variable para la potencia de cada posición
+        int potencia=0;
+
+      /********************/
+
+      // se empieza desde el último dígito, el cual es igual a 2 elevado a la potencia correspondiente a su posición
+        while(binario!=0){
+          int ultimoBit=binario%10;
+
+          if(ultimoBit==1){
+            decimal+=Math.pow(2, potencia);
+          }
+
+          binario=binario/10;
+
+          potencia++;
+        }
+
+      /********************/
+
+      // return
+        return decimal;
+    }
 }

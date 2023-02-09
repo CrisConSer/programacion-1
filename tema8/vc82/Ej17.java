@@ -23,9 +23,9 @@ public class Ej17{
 
     // comprobación de si es binario
       if(!Varias.esBinario(num)){
-        System.out.println("El número "+num+" no es binario.");
+        System.out.println("\nEl número "+num+" no es binario.");
       }else{
-        
+        System.out.print("\nEl numero binario "+num+" en decimal es "+Varias.binarioADecimal(num)+".");
       }
   }
 }
