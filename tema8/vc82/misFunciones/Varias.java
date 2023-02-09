@@ -583,4 +583,50 @@ public class Varias{
       // return
         return radio;
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para comprobar si un número es binario
+    @param num: número a comprobar
+    @return "esBinario":
+      - "true": es binario
+      - "false": no es binario
+  */
+    public static boolean esBinario(int num){
+      // variable comprobante
+        boolean esBinario=true;
+
+      /****************/
+
+      // variable auxiliar
+        int aux=num;
+
+      /****************/
+
+      // comprobación
+        while(aux!=0){
+          // variable para el último dígito, para ir comprobando dígito a dígito
+            int ultDigi=aux%10;
+
+          /**************/
+
+          // si no es 0 o 1 no es binario
+            if(ultDigi!=0&&ultDigi!=1){
+              esBinario=false;
+
+              break;
+            }
+
+          /**************/
+
+          // disminución de la copia
+            aux/=10;
+        }
+
+      /****************/
+
+      // return
+        return esBinario;
+    }
 }
