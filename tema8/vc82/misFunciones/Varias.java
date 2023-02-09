@@ -1,4 +1,4 @@
-package tema8.c81.misFunciones;
+package tema8.vc82.misFunciones;
 
 import java.util.Scanner;
 
