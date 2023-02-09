@@ -687,9 +687,18 @@ public class Varias{
 
       // bucle para obtener el resto en cada iteración e insertarlo al final
         while(decimal>0){
-          binario+=(decimal%2)*factor;
-          decimal=decimal/2;
-          factor*=10;
+          // resto de la división y multiplicación por el factor (el primer resto es el último dígito binario)
+            binario+=(decimal%2)*factor;
+
+          /**********/
+
+          // 
+            decimal=decimal/2;
+
+          /**********/
+
+          // 
+            factor*=10;
         }
 
       /************/
