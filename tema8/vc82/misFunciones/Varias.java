@@ -674,31 +674,21 @@ public class Varias{
     @param num: número a transformar
     @return binario: número transformado
   */
-    public static int decimalABinario(int decimal){
-      // número final
-        int binario=0;
-
-      /************/
-
-      // factor (valor por el que se debe multiplicar el valor decimal para introducir la siguiente posición)
-        int factor=1;
+    public static String decimalABinario(int decimal){
+      // número final en formato de cadena
+        String binario="";
 
       /************/
 
       // bucle para obtener el resto en cada iteración e insertarlo al final
         while(decimal>0){
-          // resto de la división y multiplicación por el factor (el primer resto es el último dígito binario)
-            binario+=(decimal%2)*factor;
+          // resto de la división (el primer resto es el último dígito binario)
+            binario=(decimal%2)+binario;
 
           /**********/
 
           // "decimal" pasa a ser la mitad
             decimal/=2;
-
-          /**********/
-
-          // el factor cambia en cada iteración para colocar cada resto en la posición correcta
-            factor*=10;
         }
 
       /************/
@@ -706,4 +696,32 @@ public class Varias{
       // return
         return binario;
     }
+
+    /*****************************/
+
+    /*
+      alternativa: utilizar la variable binario como un entero (no me funciona correctamente)
+        public static int decimalABinario(int decimal){
+          // número final
+            int binario=0;
+
+          // factor (valor por el que se debe multiplicar el valor decimal para introducir la siguiente posición)
+            int factor=1;
+
+          // bucle para obtener el resto en cada iteración e insertarlo al final
+            while(decimal>0){
+              // resto de la división y multiplicación por el factor (el primer resto es el último dígito binario)
+                binario+=(decimal%2)*factor;
+
+              // "decimal" pasa a ser la mitad
+                decimal/=2;
+
+              // el factor cambia en cada iteración para colocar cada resto en la posición correcta
+                factor*=10;
+            }
+
+          // return
+            return binario;
+        }
+    */
 }
