@@ -692,12 +692,12 @@ public class Varias{
 
           /**********/
 
-          // 
-            decimal=decimal/2;
+          // "decimal" pasa a ser la mitad
+            decimal/=2;
 
           /**********/
 
-          // 
+          // el factor cambia en cada iteración para colocar cada resto en la posición correcta
             factor*=10;
         }
 
