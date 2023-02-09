@@ -666,4 +666,20 @@ public class Varias{
       // return
         return decimal;
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para transformar de decimal a binario
+    @param num: número a transformar
+    @return binario: número transformado
+  */
+    public static int decimalABinario(int decimal){
+      // número final
+        int binario=0;
+
+      /************/
+
+      // 
+    }
 }

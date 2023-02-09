@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Ej18{
   public static void main(String[] args){
     // número a convertir
-      System.out.print("Introduce el número decimal ");
+      System.out.print("Introduce el número decimal: ");
 
       // scanner
         Scanner s=new Scanner(System.in);
@@ -21,6 +21,7 @@ public class Ej18{
 
     /***************************************/
 
-    // 
+    // debug
+      System.out.print("\nEl número decimal "+num+" es "+Varias.decimalABinario(num)+".");
   }
 }
