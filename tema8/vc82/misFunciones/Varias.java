@@ -875,7 +875,7 @@ public class Varias{
 
           // coma
             if(n>=10){
-              palabras=palabras+", ";
+              palabras=", "+palabras;
             }
 
           /**********/
