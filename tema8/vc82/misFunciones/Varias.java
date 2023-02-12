@@ -768,4 +768,44 @@ public class Varias{
       // return
         return palotes;
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para convertir un número a morse
+    @param n: número a convertir
+    @return morse: número convertido
+  */
+    public static String convierteEnMorse(int n){
+      // variable para retornar
+        String morse="";
+
+      /**************/
+
+      // array para almacenar todos los códigos morse
+        String[] codigoMorse={"_ _ _ _ _", ". _ _ _ _", ". . _ _ _", ". . . _ _", ". . . . _", ". . . . .", "_ . . . .", "_ _ . . .", "_ _ _ . .", "_ _ _ _ ."};
+
+      /**************/
+
+      // inserción del código correspondiente desde dentro del array a la variable que se retorna
+        while(n>0){
+          // dígito actual
+            int digit=n%10;
+
+          /********/
+
+          // inserción
+            morse=codigoMorse[digit]+" "+morse;
+
+          /********/
+
+          // eliminación del dígito usado
+            n/=10;
+        }
+
+      /**************/
+
+      // return
+        return morse;
+    }
 }
