@@ -6,6 +6,10 @@
 
 package tema8.vc82;
 
+import tema8.c81.misFunciones.Varias;
+
+import java.util.Scanner;
+
 public class Ej35{
   
 }

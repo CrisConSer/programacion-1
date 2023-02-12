@@ -733,6 +733,39 @@ public class Varias{
     @return palotes: número convertido
   */
     public static String convierteEnPalotes(int n){
-      
+      // variable para retornar
+        String palotes="";
+
+      /**************/
+
+      // bucle que itera a través de cada dígito del número
+        while(n>0){
+          // dígito actual
+            int digito=n%10;
+
+          /**********/
+
+          // número correspondiente de líneas verticales
+            for(int i=0; i<digito; i++){
+              palotes="|"+palotes;
+            }
+
+          /**********/
+          
+          // línea horizontal para separar dígitos
+            if(n>=10){
+              palotes="-"+palotes;
+            }
+
+          /**********/
+
+          // siguiente dígito
+            n/=10;
+        }
+
+      /**************/
+
+      // return
+        return palotes;
     }
 }
