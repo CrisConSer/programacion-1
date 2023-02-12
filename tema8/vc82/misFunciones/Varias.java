@@ -724,4 +724,15 @@ public class Varias{
             return binario;
         }
     */
+
+  /***************************************************/
+
+  /**
+    @info: función para convertir un número al sistema de palotes
+    @param n: número a convertir
+    @return palotes: número convertido
+  */
+    public static String convierteEnPalotes(int n){
+      
+    }
 }
