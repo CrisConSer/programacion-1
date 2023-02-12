@@ -808,4 +808,85 @@ public class Varias{
       // return
         return morse;
     }
+
+  /***************************************************/
+
+  /**
+    @info: función para convertir un número a palabras
+    @param n: número a convertir
+    @return palabras: número convertido a palabras
+  */
+    public static String convierteEnPalabras(int n){
+      // variable para retornar
+        String palabras="";
+
+      /****************/
+
+      // conversión e inserción
+        while(n>0){
+          // dígito actual
+            int digi=n%10;
+
+          /**********/
+
+          // según el dígito actual
+            switch(digi){
+              case 1:
+                palabras="uno"+palabras;
+              break;
+
+              case 2:
+                palabras="dos"+palabras;
+              break;
+
+              case 3:
+                palabras="tres"+palabras;
+              break;
+
+              case 4:
+                palabras="cuatro"+palabras;
+              break;
+
+              case 5:
+                palabras="cinco"+palabras;
+              break;
+
+              case 6:
+                palabras="seis"+palabras;
+              break;
+
+              case 7:
+                palabras="siete"+palabras;
+              break;
+
+              case 8:
+                palabras="ocho"+palabras;
+              break;
+
+              case 9:
+                palabras="nueve"+palabras;
+              break;
+
+              default:
+              palabras="cero"+palabras;
+            }
+
+          /**********/
+
+          // coma
+            if(n>=10){
+              palabras=palabras+", ";
+            }
+
+          /**********/
+
+          // eliminación del dígito usado
+            n/=10;
+        }
+
+      /****************/
+
+      // return
+        return palabras;
+    }
 }
