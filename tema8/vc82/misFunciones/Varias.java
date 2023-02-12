@@ -759,7 +759,7 @@ public class Varias{
 
           /**********/
 
-          // siguiente dígito
+          // eliminación del dígito usado
             n/=10;
         }
 
