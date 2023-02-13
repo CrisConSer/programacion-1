@@ -266,4 +266,36 @@ public class Arrays{
       // return
         return arrayNaturales;
     }
+
+  /*************************************************/
+
+  /**
+    @info: función para filtrar los elementos que contienen un 7
+    @param int[] x: array a filtrar
+    @return resultado: array resultante
+  */
+    public static int[] filtraCon7(int[] x) {
+      int contador = 0;
+      for (int i = 0; i < x.length; i++) {
+          if (x[i] % 10 == 7 || x[i] / 10 == 7) {
+              contador++;
+          }
+      }
+
+      int[] resultado = new int[contador];
+      int j = 0;
+      for (int i = 0; i < x.length; i++) {
+          if (x[i] % 10 == 7 || x[i] / 10 == 7) {
+              resultado[j] = x[i];
+              j++;
+          }
+      }
+
+      if (resultado.length == 0) {
+          int[] resultadoFinal = {-1};
+          return resultadoFinal;
+      } else {
+          return resultado;
+      }
+    }
 }
