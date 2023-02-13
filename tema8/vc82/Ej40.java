@@ -48,9 +48,19 @@ public class Ej40{
     /*****************************************/
 
     // debug
-      System.out.println("\nEl array original es el siguiente:");
+      // array original
+        System.out.println("\nEl array original es el siguiente:");
+          for(int i=0; i<t; i++){
+            System.out.print("| "+x[i]);
+          }
+          System.out.println(" |");
+
+      /****************/
+
+      // array filtrado
+      System.out.println("\nEl array filtrado es el siguiente:");
         for(int i=0; i<t; i++){
-          System.out.print("| "+x[i]);
+          System.out.print("| "+Arrays.filtraCon7(x)[i]);
         }
         System.out.println(" |");
   }
