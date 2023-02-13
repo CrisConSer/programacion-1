@@ -282,8 +282,24 @@ public class Arrays{
 
       // recorre el array y verifica si cada elemento contiene un 7
         for(int i=0; i<x.length; i++){
-          if(x[i]%10==7||x[i]/10==7){
-            contador++;
+          // elemento actual
+            int n=x[i];
+
+          /*********/
+
+          // se verifica si el último valor es 7
+            while(n>0){
+              // si es 7, se aumenta el contador
+                if(n%10==7){
+                  contador++;
+
+                  break;
+                }
+
+              /*********/
+
+              // eliminación del dígito verificado
+                n /= 10;
           }
         }
 
@@ -298,11 +314,39 @@ public class Arrays{
 
       // recorre el array y agrega a "resultado" los números con un 7
         for(int i=0; i<x.length; i++){
-          if(x[i]%10==7||x[i]/10==7){
-            resultado[j]=x[i];
+          // elemento actual
+            int n=x[i];
 
-            j++;
-          }
+          /*********/
+
+          // verifica si contiene o no un 7
+            boolean contiene7=false;
+
+          /*********/
+
+          // verifica si el último dígito es 7
+            while(n>0){
+              // si es 7, se establece "contiene7" como "true" y se termina el bucle
+                if(n%10==7){
+                  contiene7=true;
+
+                  break;
+                }
+
+              /******/
+
+              // eliminación del dígito verificado
+                n/=10;
+            }
+
+          /*********/
+
+          // si es "true", se incluye en el nuevo array
+            if(contiene7){
+              resultado[j]=x[i];
+
+              j++;
+            }
         }
 
       /*************/
