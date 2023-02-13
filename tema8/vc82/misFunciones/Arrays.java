@@ -274,28 +274,46 @@ public class Arrays{
     @param int[] x: array a filtrar
     @return resultado: array resultante
   */
-    public static int[] filtraCon7(int[] x) {
-      int contador = 0;
-      for (int i = 0; i < x.length; i++) {
-          if (x[i] % 10 == 7 || x[i] / 10 == 7) {
-              contador++;
-          }
-      }
+    public static int[] filtraCon7(int[] x){
+      // variable contador
+        int contador=0;
 
-      int[] resultado = new int[contador];
-      int j = 0;
-      for (int i = 0; i < x.length; i++) {
-          if (x[i] % 10 == 7 || x[i] / 10 == 7) {
-              resultado[j] = x[i];
-              j++;
-          }
-      }
+      /*************/
 
-      if (resultado.length == 0) {
-          int[] resultadoFinal = {-1};
+      // recorre el array y verifica si cada elemento contiene un 7
+        for(int i=0; i<x.length; i++){
+          if(x[i]%10==7||x[i]/10==7){
+            contador++;
+          }
+        }
+
+      /*************/
+
+      // array resultado 
+        int[] resultado=new int[contador];
+
+        int j=0;
+
+      /*************/
+
+      // recorre el array y agrega a "resultado" los números con un 7
+        for(int i=0; i<x.length; i++){
+          if(x[i]%10==7||x[i]/10==7){
+            resultado[j]=x[i];
+
+            j++;
+          }
+        }
+
+      /*************/
+
+      // si "resultado" está vacío, solo contiene un -1, sino, se devuelve con el contenido
+        if(resultado.length==0){
+          int[] resultadoFinal={-1};
+
           return resultadoFinal;
-      } else {
+        }else{
           return resultado;
-      }
+        }
     }
 }
