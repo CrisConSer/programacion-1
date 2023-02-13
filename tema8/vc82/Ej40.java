@@ -42,9 +42,16 @@ public class Ej40{
           Scanner maxScanner=new Scanner(System.in);
             int max=maxScanner.nextInt();
 
-      // bucle
+      // función para generar el array
+        x=Arrays.generaArrayInt(t, min, max);
+
+    /*****************************************/
+
+    // debug
+      System.out.println("\nEl array original es el siguiente:");
         for(int i=0; i<t; i++){
-          x[i]=(int)(Math.random()*(max-min+1)-min);
+          System.out.print("| "+x[i]);
         }
+        System.out.println(" |");
   }
 }
