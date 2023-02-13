@@ -58,10 +58,12 @@ public class Ej40{
       /****************/
 
       // array filtrado
-      System.out.println("\nEl array filtrado es el siguiente:");
-        for(int i=0; i<t; i++){
-          System.out.print("| "+Arrays.filtraCon7(x)[i]);
-        }
-        System.out.println(" |");
+        int[] filtrado=Arrays.filtraCon7(x);
+
+        System.out.println("\nEl array filtrado es el siguiente:");
+          for(int i=0; i<filtrado.length; i++){
+            System.out.print("| "+filtrado[i]);
+          }
+          System.out.println(" |");
   }
 }
