@@ -360,4 +360,28 @@ public class Arrays{
           return resultado;
         }
     }
+
+  /*************************************************/
+
+  /**
+    @info: función para convertir un array a string
+    @param int[] a: array a convertir
+    @return resutado: array resultado
+  */
+    public static String convierteArrayEnString(int[] a) {
+      // variable a retornar
+        String resultado="";
+
+      /*************/
+
+      // conversión
+        for(int i=0; i<a.length; i++){
+          resultado+=Integer.toString(a[i]);
+        }
+
+      /*************/
+
+      // return
+        return resultado;
+  }
 }
