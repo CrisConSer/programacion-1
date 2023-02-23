@@ -18,34 +18,41 @@ public abstract class Vehiculo{
 
   /***************************************/
 
-  // 
+  // @info: constructor de la clase "Vehiculo"
     public Vehiculo(){
       this.kmRecorridos=0;
     }
 
   /*****************/
 
-  // 
-    public int getKmRecorridos(){
-      return this.kmRecorridos;
-    }
+  // métodos
+    /**
+      @info: obtiene la distancia recorrida por el vehículo
+      @return this.kmRecorridos: distancia recorrida por el vehículo
+    */
+      public int getKmRecorridos(){
+        return this.kmRecorridos;
+      }
 
-  /*****************/
+    /*****************/
 
-  // 
-    public static int getKmTotales(){
-      return Vehiculo.kmTotales;
-    }
+    /**
+      @info: obtiene el número total de kilómetros recorridos por todos los vehículos
+      @return Vehiculo.kmTotales: número total de kilómetros recorridos por todos los vehículos
+    */
+      public static int getKmTotales(){
+        return Vehiculo.kmTotales;
+      }
 
-  /***************************************/
+    /*****************/
 
-  /**
-    @info: distancia recorrida por un vehículo
-    @param k: kilómetros a recorrer
-  */
-    public void recorre(int k){
-      this.kmRecorridos+=k;
+    /**
+      @info: recorre una distancia determinada en kilómetros
+      @param k: kilómetros a recorrer
+    */
+      public void recorre(int k){
+        this.kmRecorridos+=k;
 
-      Vehiculo.kmTotales+=k;
-    }
+        Vehiculo.kmTotales+=k;
+      }
 }

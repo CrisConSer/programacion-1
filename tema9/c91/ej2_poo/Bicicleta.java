@@ -12,7 +12,10 @@ public class Bicicleta extends Vehiculo{
 
   /*************************************/
 
-  // 
+  /**
+    @info: constructor de la clase "Bicicleta"
+    @param p: número de piñones de la bicicleta
+  */
     public Bicicleta(int p){
       super();
 
@@ -21,8 +24,9 @@ public class Bicicleta extends Vehiculo{
 
   /*************************************/
 
-  // 
-    public void hazCaballito(){
-      System.out.print("Estoy haciendo el caballito.");
-    }
+  // métodos
+    // realiza la acción de hacer un caballito con la bicicleta
+      public void hazCaballito(){
+        System.out.print("Estoy haciendo el caballito.");
+      }
 }
