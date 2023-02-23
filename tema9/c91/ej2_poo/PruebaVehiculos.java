@@ -52,7 +52,7 @@ public class PruebaVehiculos{
         // switch
           switch(opcion){
             case 1:
-              System.out.print("¿Cuántos kilómetros quieres recorrer?");
+              System.out.print("¿Cuántos kilómetros quieres recorrer? -> ");
 
               km=s.nextInt();
 
@@ -68,7 +68,7 @@ public class PruebaVehiculos{
             /***************/
 
             case 3:
-              System.out.print("¿Cuántos kilómetros quieres recorrer?");
+              System.out.print("¿Cuántos kilómetros quieres recorrer? -> ");
 
               km=s.nextInt();
 
