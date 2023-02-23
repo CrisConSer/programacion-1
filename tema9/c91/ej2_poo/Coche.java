@@ -30,5 +30,6 @@ public class Coche extends Vehiculo{
     // hace que el coche queme rueda
       public void quemaRueda(){
         System.out.print("*Quemando rueda*");
+        System.out.println();
       }
 }
