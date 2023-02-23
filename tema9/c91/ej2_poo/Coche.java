@@ -1,7 +1,7 @@
 /**
   @author: Christian Millán Soria
   @file: Coche.java
-  @info: clase "Coche" del ejercicio 2
+  @info: clase "Coche" - ejercicio 2
 */
 
 package tema9.c91.ej2_poo;
