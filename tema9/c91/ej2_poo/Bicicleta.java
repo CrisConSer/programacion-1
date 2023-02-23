@@ -30,5 +30,6 @@ public class Bicicleta extends Vehiculo{
     // realiza la acción de hacer un caballito con la bicicleta
       public void hazCaballito(){
         System.out.print("Estoy haciendo el caballito.");
+        System.out.println();
       }
 }
