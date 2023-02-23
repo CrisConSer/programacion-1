@@ -45,12 +45,14 @@ public class PruebaVehiculos{
           Scanner s=new Scanner(System.in);
             opcion=s.nextInt();
 
+        System.out.println();
+
         /*************************/
 
         // switch
           switch(opcion){
             case 1:
-              System.out.print("¿Cuántos kilómetros quiere recorrer?");
+              System.out.print("¿Cuántos kilómetros quieres recorrer?");
 
               km=s.nextInt();
 
@@ -66,7 +68,7 @@ public class PruebaVehiculos{
             /***************/
 
             case 3:
-              System.out.print("¿Cuántos kilómetros quiere recorrer?");
+              System.out.print("¿Cuántos kilómetros quieres recorrer?");
 
               km=s.nextInt();
 
@@ -84,7 +86,7 @@ public class PruebaVehiculos{
             case 5:
               System.out.print("La bicicleta lleva recorridos ");
 
-              System.out.println(bici1.getKmRecorridos()+" Km");
+              System.out.println(bici1.getKmRecorridos()+" Km.");
             break;
 
             /***************/
@@ -92,7 +94,7 @@ public class PruebaVehiculos{
             case 6:
               System.out.print("El coche lleva recorridos ");
 
-              System.out.println(coche1.getKmRecorridos()+" Km");
+              System.out.println(coche1.getKmRecorridos()+" Km.");
             break;
 
             /***************/
@@ -100,7 +102,7 @@ public class PruebaVehiculos{
             case 7:
               System.out.print("Los vehículos llevan recorridos ");
 
-              System.out.println(Vehiculo.getKmTotales()+" Km");
+              System.out.println(Vehiculo.getKmTotales()+" Km.");
 
             /***************/
 
