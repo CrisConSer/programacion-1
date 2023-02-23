@@ -17,9 +17,11 @@ public class Bicicleta extends Vehiculo{
     @param p: número de piñones de la bicicleta
   */
     public Bicicleta(int p){
-      super();
+      // llama al constructor sin argumentos de la superclase "Vehiculo"
+        super();
 
-      this.pinones=p;
+      // asigna el valor de "p" al atributo "pinones"
+        this.pinones=p;
     }
 
   /*************************************/

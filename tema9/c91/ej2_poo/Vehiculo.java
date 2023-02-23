@@ -20,7 +20,8 @@ public abstract class Vehiculo{
 
   // @info: constructor de la clase "Vehiculo"
     public Vehiculo(){
-      this.kmRecorridos=0;
+      // inicializa el atributo "kmRecorridos" del objeto actual a 0
+        this.kmRecorridos=0;
     }
 
   /*****************/
