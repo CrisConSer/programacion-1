@@ -4,7 +4,7 @@
   @info: ejemplo 1 - gato simple
 */
 
-package tema9.ejemplos.gato;
+package tema9.c91.ejemplo;
 
 public class GatoSimple{
   // atributos
@@ -31,7 +31,7 @@ public class GatoSimple{
 
   // gato maulla
     void maulla(){
-      System.out.print("Miau");
+      System.out.println("Miau");
     }
 
   // gato ronronea
@@ -49,9 +49,9 @@ public class GatoSimple{
       comida=comida.toLowerCase();
 
       if(comida.equals("pescado")){
-        System.out.print("Hmmm, gracias");
+        System.out.println("*Hmmm, gracias*");
       }else{
-        System.out.print("Lo siento, solo como pescado");
+        System.out.println("*Lo siento, solo como pescado*");
       }
     }
 
@@ -62,15 +62,13 @@ public class GatoSimple{
     @param contrincante: gato contra el que pelea el primer gato
   */
     void peleaCon(GatoSimple contrincante){
-      contrincante=contrincante.toLowerCase();
-
       if(this.sexo.equals("hembra")){
-        System.out.print("No me gusta pelear");
+        System.out.println("*No me gusta pelear*");
       }else{
-        if(contrincante.getSexo().equals("hembra")){
-          System.out.print("No peleo contra gatitas");
+        if(contrincante.getSexo().toLowerCase().equals("hembra")){
+          System.out.println("*No peleo contra gatitas*");
         }else{
-          System.out.print("Ven aquí que te vas a enterar");
+          System.out.println("*Ven aquí que te vas a enterar*");
         }
       }
     }
