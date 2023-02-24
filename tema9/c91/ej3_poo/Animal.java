@@ -23,6 +23,20 @@ public abstract class Animal{
   /***********************************/
 
   // métodos
+    // getNombre
+      public String getNombre(){
+        return nombre;
+      }
+
+    /*******************/
+
+    // getEdad
+      public int getEdad(){
+        return edad;
+      }
+
+    /*******************/
+
     // comer
       public void comer(){
         System.out.print("El animal llamado "+this.nombre+" está comiendo.");
