@@ -6,7 +6,7 @@
 
 package tema9.c91.ej3_poo;
 
-public class Gato extends Animal{
+public class Gato extends Mamifero{
   // constructor
     public Gato(String nombre, int edad){
       super(nombre, edad);
@@ -17,13 +17,13 @@ public class Gato extends Animal{
   // métodos
     // arañar
       public void arañar(){
-        System.out.print("El ave está arañando.");
+        System.out.print("El gato está arañando.");
       }
 
     /****************/
 
     // maullar
       public void maullar(){
-        System.out.print("El ave está maullando.");
+        System.out.print("El gato está maullando.");
       }
 }
