@@ -17,13 +17,13 @@ public class Lagarto extends Animal{
   // métodos
     // tomarElSol
       public void tomarElSol(){
-        System.out.print("El lagarto está tomando el sol.");
+        System.out.println("El lagarto está tomando el sol.");
       }
 
     /****************/
 
     // cazar
       public void cazar(){
-        System.out.print("El lagarto está cazando..");
+        System.out.println("El lagarto está cazando..");
       }
 }

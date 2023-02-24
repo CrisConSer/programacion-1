@@ -17,13 +17,13 @@ public class Ave extends Animal{
   // métodos
     // volar
       public void volar(){
-        System.out.print("El ave está volando.");
+        System.out.println("El ave está volando.");
       }
 
     /****************/
 
     // picotear
       public void picotear(){
-        System.out.print("El ave está picoteando.");
+        System.out.println("El ave está picoteando.");
       }
 }

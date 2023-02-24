@@ -17,13 +17,13 @@ public class Gato extends Mamifero{
   // métodos
     // arañar
       public void arañar(){
-        System.out.print("El gato está arañando.");
+        System.out.println("El gato está arañando.");
       }
 
     /****************/
 
     // maullar
       public void maullar(){
-        System.out.print("El gato está maullando.");
+        System.out.println("El gato está maullando.");
       }
 }

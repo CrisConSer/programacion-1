@@ -18,11 +18,11 @@ public class Mamifero extends Animal{
   // métodos
     // amamantar
       public void amamantar(){
-        System.out.print("El mamífero está amantando.");
+        System.out.println("El mamífero está amantando.");
       }
     
     // correr
       public void correr(){
-        System.out.print("El mamífero está corriendo.");
+        System.out.println("El mamífero está corriendo.");
       }
 }

@@ -17,13 +17,13 @@ public class Canario extends Ave{
   // métodos
     // cantar
       public void cantar(){
-        System.out.print("El canario está cantando.");
+        System.out.println("El canario está cantando.");
       }
 
     /****************/
 
     // picar
       public void picar(){
-        System.out.print("El canario está picando.");
+        System.out.println("El canario está picando.");
       }
 }

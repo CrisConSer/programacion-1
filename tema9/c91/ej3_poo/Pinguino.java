@@ -17,13 +17,13 @@ public class Pinguino extends Ave{
   // métodos
     // nadar
       public void nadar(){
-        System.out.print("El pingüino está nadando.");
+        System.out.println("El pingüino está nadando.");
       }
 
     /****************/
 
     // deslizarse
       public void deslizarse(){
-        System.out.print("El pingüino está deslizándose.");
+        System.out.println("El pingüino está deslizándose.");
       }
 }

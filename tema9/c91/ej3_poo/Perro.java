@@ -17,13 +17,13 @@ public class Perro extends Mamifero{
   // métodos
     // ladrar
       public void ladrar(){
-        System.out.print("El perro está ladrando.");
+        System.out.println("El perro está ladrando.");
       }
 
     /****************/
 
     // morder
       public void morder(){
-        System.out.print("El perro está mordiendo.");
+        System.out.println("El perro está mordiendo.");
       }
 }
