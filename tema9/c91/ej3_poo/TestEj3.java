@@ -15,7 +15,7 @@ public class TestEj3{
 
     // interacciones
       ave1.volar();
-      System.out.println("Nombre de la ave: " + ave1.getNombre());
-      System.out.println("Edad de la ave: " + ave1.getEdad());
+      System.out.println("Nombre de la ave: "+ave1.getNombre());
+      System.out.println("Edad de la ave: "+ave1.getEdad());
   }
 }
