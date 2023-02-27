@@ -12,6 +12,7 @@ public class Pizza{
     private String tamano;
     private String estado;
 
+    // total pedidas y servidas
     private static int totalPedidas=0;
     private static int totalServidas=0;
 
@@ -23,7 +24,7 @@ public class Pizza{
 
         this.tamano=tamano;
 
-        this.estado="pedida";
+        this.estado="pedida.";
 
         totalPedidas++;// se incrementa el total de pizzas pedidas al crear una nueva instancia de la clase "Pizza"
     }
@@ -68,12 +69,14 @@ public class Pizza{
 
     // sirve una pizza
       public void sirve(){
-        if (this.estado.equals("pedida")){
-          this.estado="servida";
+        if (this.estado.equals("pedida.")){
+          this.estado="servida.";
 
           totalServidas++;
         }
       }
+
+  /************************************************/
 
   // sobreescritura del método "toString" para imprimir información sobre la instancia de "Pizza"
     @Override

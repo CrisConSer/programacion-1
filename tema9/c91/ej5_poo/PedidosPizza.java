@@ -31,7 +31,7 @@ public class PedidosPizza{
     /***************************************/
 
     // total de pizzas pedidas y servidas
-      System.out.println("pedidas: "+Pizza.getTotalPedidas());
-      System.out.println("servidas: "+Pizza.getTotalServidas());
+      System.out.println("\nPedidas: "+Pizza.getTotalPedidas());
+      System.out.print("Servidas: "+Pizza.getTotalServidas());
   }
 }
