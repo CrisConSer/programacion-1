@@ -69,7 +69,7 @@ public class Pizza{
 
     // sirve una pizza
       public void sirve(){
-        if (this.estado.equals("pedida.")){
+        if(this.estado.equals("pedida.")){
           this.estado="servida.";
 
           totalServidas++;
