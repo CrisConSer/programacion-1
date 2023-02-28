@@ -14,5 +14,3 @@ public class ExpocochesCampanillas{
       Zona zonaVip=new Zona(25);
   }
 }
-
-hola
