@@ -33,13 +33,13 @@ public class Zona{
     */
       public void vender(int n){
         if(this.entradasPorVender==0){// si no hay entradas disponibles en la zona
-          System.out.print("Lo siento, las entradas para esa zona están agotadas.");
+          System.out.println("Lo siento, las entradas para esa zona están agotadas.");
         }else if(this.entradasPorVender<n){// si no hay suficientes entradas disponibles en la zona
-          System.out.print("Sólo quedan "+this.entradasPorVender+" entradas para esa zona.");
+          System.out.println("Sólo quedan "+this.entradasPorVender+" entradas para esa zona.");
         }else if(this.entradasPorVender>=n){// si hay suficientes entradas disponibles en la zona
           entradasPorVender-=n;// eliminación de las entradas que se van a vender
 
-          System.out.print("Aquí tienes tus "+n+" entradas, gracias.");
+          System.out.println("Aquí tienes tus "+n+" entradas, gracias.");
         }
       }
 }
