@@ -10,11 +10,12 @@ public class TarjetaRegalo{
   // atributos
     private double saldo;
     private int digitos;
+    private double nuevoSaldo;
 
   /****************************/
 
   // constructor
-    public TarjetaRegalo(int s){
+    public TarjetaRegalo(double s){
       this.saldo=s;
 
       this.digitos=(int)(Math.random()*(99999-10000+1)+10000);
@@ -36,7 +37,7 @@ public class TarjetaRegalo{
     */
       public void gasta(double g){
         if(g>this.saldo){// si el gasto es mayor que el saldo
-          System.out.println("No tienes suficiente saldo para gastar "+String.format("%.2f", g)+"\u20AC");
+          System.out.println("No tienes suficiente saldo para gastar "+String.format("%.2f", g)+" euros");
         }else{
           this.saldo-=g;
         }
@@ -53,6 +54,20 @@ public class TarjetaRegalo{
 
     // método "toString"
       public String toString(){
-        return "Tarjeta nº "+getDigitos()+" - Saldo "+String.format("%.2f", getSaldo())+"\u20AC";// el "String.format()" me permite mostrar el saldo con 2 decimales
+        return "Tarjeta nº "+getDigitos()+" - Saldo "+String.format("%.2f", getSaldo())+" euros";// el "String.format()" me permite mostrar el saldo con 2 decimales
+      }
+
+    /***************/
+
+    /**
+      @info: método para fusionar dos tarjetas
+      @param t: tarjeta a fusionar
+    */
+      public void fusionaCon(TarjetaRegalo t){
+        this.nuevoSaldo+=this.saldo;
+        this.nuevoSaldo+=t.getSaldo();
+
+        this.saldo=0;
+        t.getSaldo()=0;
       }
 }

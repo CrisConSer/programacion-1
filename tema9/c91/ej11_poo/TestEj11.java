@@ -29,6 +29,12 @@ public class TestEj11{
 
     /********************************************/
 
-    
+    // output 2
+      // nueva instancia
+      TarjetaRegalo t3=t1.fusionaCon(t2);
+
+      System.out.println(t1);
+      System.out.println(t2);
+      System.out.println(t3);
   }
 }
