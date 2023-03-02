@@ -1,14 +1,14 @@
 /**
   @author: Christian Millán Soria
-  @file: PruebaVehiculos.java
-  @info: clase "PruebaVehiculos" - ejercicio 2
+  @file: TestEj2.java
+  @info: clase "TestEj2" - ejercicio 2
 */
 
 package tema9.c91.ej2_poo;
 
 import java.util.Scanner;
 
-public class PruebaVehiculos{
+public class TestEj2{
   public static void main(String[] args){
     // variable para la opción
       int opcion=0;
@@ -107,7 +107,12 @@ public class PruebaVehiculos{
             /***************/
 
             default:
-        }
+          }
+
+        /*************************/
+
+        // cierre de scanner
+          s.close();
       }
   }
 }
