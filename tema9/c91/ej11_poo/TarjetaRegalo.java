@@ -36,7 +36,7 @@ public class TarjetaRegalo{
     */
       public void gasta(double g){
         if(g>this.saldo){// si el gasto es mayor que el saldo
-          System.out.println("No tienes suficiente saldo para gastar "+g+" euros");
+          System.out.println("No tienes suficiente saldo para gastar "+String.format("%.2f", g)+"\u20AC");
         }else{
           this.saldo-=g;
         }
@@ -53,6 +53,6 @@ public class TarjetaRegalo{
 
     // método "toString"
       public String toString(){
-        return "Tarjeta nº "+getDigitos()+" - Saldo "+getSaldo()+" euros";
+        return "Tarjeta nº "+getDigitos()+" - Saldo "+String.format("%.2f", getSaldo())+"\u20AC";// el "String.format()" me permite mostrar el saldo con 2 decimales
       }
 }
