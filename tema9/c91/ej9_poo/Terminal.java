@@ -23,9 +23,25 @@ public class Terminal{
     /*****************************/
 
     // métodos
+      // getter para el número
+        public String getNumero() {
+          return numero;
+        }
+
+      /**************/
+
+      // getter para el tiempo de conversación
+        public int getTiempoConversacion(){
+          return tiempoConversacion;
+        }
+
+      /**************/
+
       /**
         @info: genera una llamada de un terminal a otro
-        @param n: segundos de la conversación
+        @param:
+          - "t": segundos de la conversación
+          - "segundos": segundos de la conversación
       */
         public void llama(Terminal t, int segundos){
           tiempoConversacion+=segundos;

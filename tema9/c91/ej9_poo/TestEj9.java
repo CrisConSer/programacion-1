@@ -24,8 +24,8 @@ public class TestEj9{
         m1.llama(m3, 200);
         m2.llama(m3, 550);
 
-        System.out.println(m1);
-        System.out.println(m2);
-        System.out.println(m3);
+      System.out.println(m1);
+      System.out.println(m2);
+      System.out.println(m3);
   }
 }
