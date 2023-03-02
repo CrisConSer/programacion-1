@@ -18,14 +18,14 @@ public class TestEj11{
       System.out.println(t1);
       System.out.println(t2);
 
-      // 
+      // método "gasta" para quitar saldo a las tarjetas
         t1.gasta(45.90);
         t2.gasta(5);
         t2.gasta(200);
         t1.gasta(0.55);
 
-        System.out.println(t1);
-        System.out.println(t2);
+      System.out.println(t1);
+      System.out.println(t2);
 
     /********************************************/
 
