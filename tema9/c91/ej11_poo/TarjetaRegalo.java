@@ -10,7 +10,6 @@ public class TarjetaRegalo{
   // atributos
     private double saldo;
     private int digitos;
-    private double nuevoSaldo;
 
   /****************************/
 
@@ -60,14 +59,17 @@ public class TarjetaRegalo{
     /***************/
 
     /**
-      @info: método para fusionar dos tarjetas
+      @info: método para fusionar dos tarjetas y crear una nueva a partir de ellas
       @param t: tarjeta a fusionar
     */
-      public void fusionaCon(TarjetaRegalo t){
-        this.nuevoSaldo+=this.saldo;
-        this.nuevoSaldo+=t.getSaldo();
+      public TarjetaRegalo fusionaCon(TarjetaRegalo t){
+        double nuevoSaldo=this.saldo+t.getSaldo();
+
+        int nuevosDigitos=(int)(Math.random()*(99999-10000+1)+10000);
 
         this.saldo=0;
-        t.getSaldo()=0;
+        t.saldo=0;
+
+        return new TarjetaRegalo(nuevoSaldo);
       }
 }
