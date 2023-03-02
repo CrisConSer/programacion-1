@@ -65,8 +65,6 @@ public class TarjetaRegalo{
       public TarjetaRegalo fusionaCon(TarjetaRegalo t){
         double nuevoSaldo=this.saldo+t.getSaldo();
 
-        int nuevosDigitos=(int)(Math.random()*(99999-10000+1)+10000);
-
         this.saldo=0;
         t.saldo=0;
 
