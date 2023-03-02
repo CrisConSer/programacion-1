@@ -1,14 +1,14 @@
 /**
   @author: Christian Millán Soria
-  @file: ExpocochesCampanillas.java
-  @info: clase "ExpocochesCampanillas" - ejercicio 7
+  @file: TestEj7.java
+  @info: clase "TestEj7" - ejercicio 7
 */
 
 package tema9.c91.ej7_poo;
 
 import java.util.Scanner;
 
-public class ExpocochesCampanillas{
+public class TestEj7{
   public static void main(String[] args){
     // instancias
       Zona zonaPrincipal=new Zona(1000);

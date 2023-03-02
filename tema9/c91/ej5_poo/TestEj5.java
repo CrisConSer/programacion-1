@@ -1,12 +1,12 @@
 /**
   @author: Christian Millán Soria
-  @file: PedidosPizza.java
-  @info: clase "PedidosPizza" - ejercicio 5
+  @file: TestEj5.java
+  @info: clase "TestEj5" - ejercicio 5
 */
 
 package tema9.c91.ej5_poo;
 
-public class PedidosPizza{
+public class TestEj5{
   public static void main(String[] args){
     // creación de 3 instancias
       Pizza pizza1=new Pizza("margarita", "mediana");
