@@ -27,7 +27,10 @@ public class Zona{
 
     /******************/
 
-    // método para vender un número de entradas (comprueba si quedan entradas libres antes de realizar la venta)
+    /**
+      @info: método para vender un número de entradas (comprueba si quedan entradas libres antes de realizar la venta)
+      @param n: número de entradas a vender
+    */
       public void vender(int n){
         if(this.entradasPorVender==0){// si no hay entradas disponibles en la zona
           System.out.print("Lo siento, las entradas para esa zona están agotadas.");
