@@ -20,8 +20,9 @@ public class TestEj8{
       System.out.println(t1);
       System.out.println(t2);
 
-      t1.llama(t2, 320);
-      t1.llama(t3, 200);
+      // aumento de los segundos de conversación del primer, segundo y tercer terminal
+        t1.llama(t2, 320);
+        t1.llama(t3, 200);
 
       System.out.println(t1);
       System.out.println(t2);
