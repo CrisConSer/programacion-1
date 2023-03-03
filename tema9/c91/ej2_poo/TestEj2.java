@@ -28,6 +28,11 @@ public class TestEj2{
 
     /********************************/
 
+    // scanner
+      Scanner s=new Scanner(System.in);
+
+    /********************************/
+
     // menú de opciones
       while(opcion!=8){
         System.out.println("\n1. Anda con la bicicleta");
@@ -40,10 +45,7 @@ public class TestEj2{
         System.out.println("8. Salir");
 
         System.out.print("\nElige una opción (1-8): ");
-
-        // scanner
-          Scanner s=new Scanner(System.in);
-            opcion=s.nextInt();
+          opcion=s.nextInt();
 
         System.out.println();
 
@@ -108,11 +110,6 @@ public class TestEj2{
 
             default:
           }
-
-        /*************************/
-
-        // cierre de scanner
-          s.close();
       }
   }
 }
