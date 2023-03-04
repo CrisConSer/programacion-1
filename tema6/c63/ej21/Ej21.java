@@ -7,7 +7,7 @@
 package tema6.c63.ej21;
 
 public class Ej21{
-  public static void main(String[] args) {
+  public static void main(String[] args){
     // arrays con los tipos de monedas y las posiciones posibles
       String[] monedas={"1 céntimo", "2 céntimos", "5 céntimos", "10 céntimos", "20 céntimos", "50 céntimos", "1 euro", "2 euros"};
       String[] posiciones={"cara", "cruz"};
