@@ -1,7 +1,7 @@
 /**
   @author: Christian Millán Soria
   @file: Ej7.java
-  @info: ejercicio 7 - tema 6
+  @info: ejercicio 7
 */
 
 package tema6.c63.ej7;
