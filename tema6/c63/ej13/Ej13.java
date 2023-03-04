@@ -7,7 +7,7 @@
 package tema6.c63.ej13;
 
 public class Ej13{
-  public static void main(String[] args) {
+  public static void main(String[] args){
     // declaración de variables y constantes
       final int limiteDados=6;
       int dado1, dado2, contador=0;

@@ -7,7 +7,7 @@
 package tema6.c63.ej15;
 
 public class Ej15{
-  public static void main(String[] args) {
+  public static void main(String[] args){
     // declaración de variables y constantes
       final String[] notas={"do", "re", "mi", "fa", "sol", "la", "si"};
       int notasMelodia=((int)(Math.random()*7)+1)*4;
