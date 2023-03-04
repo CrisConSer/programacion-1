@@ -23,5 +23,5 @@ public class Ej9{
       }while(numero!=24);
 
       System.out.print("Se han generado "+contador+" números.");
-    }
+  }
 }

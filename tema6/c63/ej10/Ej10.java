@@ -31,5 +31,5 @@ public class Ej10{
           }
             System.out.println();
       }
-    }
+  }
 }

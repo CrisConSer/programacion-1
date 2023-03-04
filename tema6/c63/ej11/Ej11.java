@@ -53,5 +53,5 @@ public class Ej11{
       System.out.println("Bien: "+contador[2]);
       System.out.println("Notables: "+contador[3]);
       System.out.print("Sobresalientes: "+contador[4]);
-    }
+  }
 }
