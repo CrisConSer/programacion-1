@@ -17,7 +17,7 @@ public class TarjetaRegalo{
     public TarjetaRegalo(double s){
       this.saldo=s;
 
-      this.digitos=(int)(Math.random()*(99999-10000+1)+10000);
+      this.digitos=Integer.parseInt(String.format("%05d", (int)(Math.random()*100000)));// !esto es incorrecto, está pendiente de arreglar todavía
     }
 
   /****************************/
