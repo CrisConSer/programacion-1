@@ -12,7 +12,7 @@ public class TestEj5{
       Pizza pizza1=new Pizza("margarita", "mediana");
 
       Pizza pizza2=new Pizza("funghi", "familiar");
-      pizza2.sirve();
+        pizza2.sirve();
 
       Pizza pizza3=new Pizza("cuatro quesos", "mediana");
 
@@ -21,6 +21,7 @@ public class TestEj5{
     // información sobre las 3 pizzas creadas
       System.out.println(pizza1);
       System.out.println(pizza2);
+        System.out.println("¡La pizza "+pizza2.getTipo()+" "+pizza2.getTamano()+" ha sido servida!");
       System.out.println(pizza3);
 
     /***************************************/
