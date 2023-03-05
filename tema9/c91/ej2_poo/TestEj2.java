@@ -34,15 +34,16 @@ public class TestEj2{
     /********************************/
 
     // menú de opciones
-      while(opcion!=8){
+      while(opcion!=9){
         System.out.println("\n1. Anda con la bicicleta");
         System.out.println("2. Haz el caballito con la bicicleta");
         System.out.println("3. Anda con el coche");
         System.out.println("4. Quema rueda con el coche");
-        System.out.println("5. Ver kilometraje de la bicicleta");
-        System.out.println("6. Ver kilometraje del coche");
-        System.out.println("7. Ver kilometraje total");
-        System.out.println("8. Salir");
+        System.out.println("5. Pintar vehículo");
+        System.out.println("6. Ver kilometraje de la bicicleta");
+        System.out.println("7. Ver kilometraje del coche");
+        System.out.println("8. Ver kilometraje total");
+        System.out.println("9. Salir");
 
         System.out.print("\nElige una opción (1-8): ");
           opcion=s.nextInt();
@@ -86,6 +87,25 @@ public class TestEj2{
             /***************/
 
             case 5:
+              System.out.println("¿Qué vehículo quieres pintar?");
+                System.out.println("1. Coche");
+                System.out.println("2. Bicicleta");
+
+              System.out.print("Elige una opción (1-2): ");
+                int pintar=s.nextInt();
+
+                if(pintar==1){
+                  coche1.pinta();
+                }else if(pintar==2){
+                  bici1.pinta();
+                }else{
+                  System.out.println("Opción inválida.");
+                }
+            break;
+
+            /***************/
+
+            case 6:
               System.out.print("La bicicleta lleva recorridos ");
 
               System.out.println(bici1.getKmRecorridos()+" Km.");
@@ -93,7 +113,7 @@ public class TestEj2{
 
             /***************/
 
-            case 6:
+            case 7:
               System.out.print("El coche lleva recorridos ");
 
               System.out.println(coche1.getKmRecorridos()+" Km.");
@@ -101,14 +121,10 @@ public class TestEj2{
 
             /***************/
 
-            case 7:
+            case 8:
               System.out.print("Los vehículos llevan recorridos ");
 
               System.out.println(Vehiculo.getKmTotales()+" Km.");
-
-            /***************/
-
-            default:
           }
       }
   }

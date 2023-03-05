@@ -29,7 +29,14 @@ public class Coche extends Vehiculo{
   // métodos
     // hace que el coche queme rueda
       public void quemaRueda(){
-        System.out.print("*Quemando rueda*");
-        System.out.println();
+        System.out.println("*Quemando rueda*");
       }
+
+    /*********************/
+
+    // método "pinta"
+      @Override
+        public void pinta(){
+          System.out.println("\nEl coche ha sido pintado de otro color.");
+        }
 }

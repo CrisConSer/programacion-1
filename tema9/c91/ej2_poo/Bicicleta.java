@@ -32,4 +32,12 @@ public class Bicicleta extends Vehiculo{
         System.out.print("Estoy haciendo el caballito.");
         System.out.println();
       }
+
+    /*********************/
+
+    // método "pinta"
+      @Override
+        public void pinta(){
+          System.out.println("\nLa bicicleta ha sido pintada de otro color.");
+        }
 }
