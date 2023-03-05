@@ -52,8 +52,12 @@ public class Movil extends Terminal{
 
         double coste=this.costeMinuto*segundos/60.0;
 
-        String costeStr=String.format("%.2f", coste);
-
-        System.out.println("Nº "+getNumero()+" - "+getTiempoConversacion()+"s de conversación - tarificados "+costeStr+" euros.");
+        // no se debe imprimir nada aquí
       }
+
+    // método "toString" sobrecargado para incluir información de la tarifa y coste de llamada
+    public String toString(){
+      String costeStr=String.format("%.2f", costeMinuto);
+      return "Nº "+getNumero()+" - "+getTiempoConversacion()+"s de conversación - Tarifa "+tarifa+" - Coste por minuto "+costeStr+" euros.";
+    }
 }

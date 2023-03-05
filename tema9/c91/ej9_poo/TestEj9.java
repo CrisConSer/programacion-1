@@ -16,16 +16,16 @@ public class TestEj9{
     /***************************************/
 
     // output
-      System.out.println(m1);
-      System.out.println(m2);
+      System.out.println(m1.toString());
+      System.out.println(m2.toString());
 
       // aumento del tiempo de conversación del primer, segundo y tercer móvil
         m1.llama(m2, 320);
         m1.llama(m3, 200);
         m2.llama(m3, 550);
 
-      System.out.println(m1);
-      System.out.println(m2);
-      System.out.print(m3);
+      System.out.println(m1.toString());
+      System.out.println(m2.toString());
+      System.out.print(m3.toString());
   }
 }
