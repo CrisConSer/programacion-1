@@ -3,7 +3,7 @@
   description: Tema 6 - Ejercicio 4
 */
 
-package ej4;
+package tema6.c62.ej4;
 
 public class Ejercicio4{
   public static void main(String[] args){

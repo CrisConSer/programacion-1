@@ -3,7 +3,7 @@
   description: Tema 6 - Ejercicio 5
 */
 
-package ej5;
+package tema6.c62.ej5;
 
 public class Ejercicio5{
   public static void main(String[] args){

@@ -4,7 +4,7 @@
  * description: Punto 6.1 - Ejemplo 3
  */
 
-package ejemplo3;
+package tema6.c61.ejemplo3;
 
 public class Ejemplo3{
   public static void main(String[] args){

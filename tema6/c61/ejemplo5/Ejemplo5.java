@@ -1,9 +1,10 @@
-package ejemplo5;
 /*
  * 2author: Christian Millán Soria
  * date: 20/12/2022
  * description: Punto 6.1 - Ejemplo 5
  */
+
+package tema6.c61.ejemplo5;
 
 public class Ejemplo5{
   public static void main(String[] args){

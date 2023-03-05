@@ -3,7 +3,7 @@
   description: Tema 6 - Ejercicio 6
 */
 
-package ej6;
+package tema6.c62.ej6;
 
 import java.util.Scanner;
 
