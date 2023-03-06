@@ -9,7 +9,7 @@ package tema9.c91.ej11_poo;
 public class TarjetaRegalo{
   // atributos
     private double saldo;
-    private int digitos;
+    private String digitos;
 
   /****************************/
 
@@ -17,14 +17,17 @@ public class TarjetaRegalo{
     public TarjetaRegalo(double s){
       this.saldo=s;
 
-      this.digitos=Integer.parseInt(String.format("%05d", (int)(Math.random()*100000)));// !esto es incorrecto, está pendiente de arreglar todavía
+      this.digitos="";
+        for(int i=0; i<5; i++){
+          this.digitos+=(int)(Math.random()*10);
+        }
     }
 
   /****************************/
 
   // métodos
     // getter para obtener los 5 dígitos de una tarjeta
-      public int getDigitos(){
+      public String getDigitos(){
         return digitos;
       }
 
