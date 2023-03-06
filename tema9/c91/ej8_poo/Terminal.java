@@ -15,9 +15,9 @@ public class Terminal{
 
   // constructor
     public Terminal(String n){
-      numero=n;
+      this.numero=n;
 
-      tiempoConversacion=0;
+      this.tiempoConversacion=0;
     }
 
     /*****************************/
@@ -28,13 +28,13 @@ public class Terminal{
         @param n: segundos de la conversación
       */
         public void llama(Terminal t, int segundos){
-          tiempoConversacion+=segundos;
+          this.tiempoConversacion+=segundos;
 
           t.tiempoConversacion+=segundos;
         }
 
       // método "toString"
         public String toString(){
-          return "Nº "+numero+" - "+tiempoConversacion+"s de conversación.";
+          return "Nº "+this.numero+" - "+this.tiempoConversacion+"s de conversación.";
         }
 }

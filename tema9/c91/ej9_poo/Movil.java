@@ -46,18 +46,18 @@ public class Movil extends Terminal{
         - "t": segundos de la conversación
         - "segundos": segundos de la conversación
     */
-    @Override
-      public void llama(Terminal t, int segundos){
-        super.llama(t, segundos);
+      @Override
+        public void llama(Terminal t, int segundos){
+          super.llama(t, segundos);
 
-        double coste=this.costeMinuto*segundos/60.0;
+          double coste=this.costeMinuto*segundos/60.0;
 
-        // no se debe imprimir nada aquí
-      }
+          // no se debe imprimir nada aquí
+        }
 
     // método "toString" sobrecargado para incluir información de la tarifa y coste de llamada
-    public String toString(){
-      String costeStr=String.format("%.2f", costeMinuto);
-      return "Nº "+getNumero()+" - "+getTiempoConversacion()+"s de conversación - Tarifa "+tarifa+" - Coste por minuto "+costeStr+" euros.";
-    }
+      public String toString(){
+        String costeStr=String.format("%.2f", costeMinuto);
+        return "Nº "+getNumero()+" - "+getTiempoConversacion()+"s de conversación - Tarifa "+this.tarifa+" - Coste por minuto "+costeStr+" euros.";
+      }
 }
