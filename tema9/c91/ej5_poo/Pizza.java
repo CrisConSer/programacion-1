@@ -26,7 +26,7 @@ public class Pizza{
 
         this.estado="pedida.";
 
-        totalPedidas++;// se incrementa el total de pizzas pedidas al crear una nueva instancia de la clase "Pizza"
+        this.totalPedidas++;// se incrementa el total de pizzas pedidas al crear una nueva instancia de la clase "Pizza"
     }
 
   /************************************************/
