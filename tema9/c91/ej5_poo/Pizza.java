@@ -72,7 +72,7 @@ public class Pizza{
         if(this.estado.equals("pedida.")){
           this.estado="servida.";
 
-          totalServidas++;
+          this.totalServidas++;
         }
       }
 
