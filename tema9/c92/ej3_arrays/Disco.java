@@ -41,4 +41,9 @@ public class Disco{
       // duración
         this.duracion=d;
     }
+
+  /*****************************************/
+
+  // métodos
+    
 }
