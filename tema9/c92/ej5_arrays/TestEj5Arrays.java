@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class TestEj5Arrays{
   public static void main(String[] args){
     // array
-      
+      Gestisimal[] productos=new Gestisimal[1];
 
     /*************************************/
 
@@ -39,8 +39,16 @@ public class TestEj5Arrays{
         /******************/
 
         case 2:
-          System.out.print("Introduce la descripción del nuevo producto: ");
-            String descripcion=input.next();
+          // obtención de datos
+            System.out.print("Introduce la descripción del nuevo producto: ");
+              String descripcion=input.next();
+            System.out.print("Introduce el precio de compra del nuevo producto: ");
+              double precioCompra=input.nextDouble();
+            System.out.print("Introduce el precio de venta del nuevo producto: ");
+              double precioVenta=input.nextDouble();
+
+          // creación de la nueva instancia
+            Gestisimal nuevoProducto=new Gestisimal(descripcion, precioCompra, precioVenta);
         break;
       }
   }
