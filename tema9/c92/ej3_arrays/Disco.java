@@ -77,4 +77,19 @@ public class Disco{
       public int getDuracion(){
         return this.duracion;
       }
+
+    /******************/
+
+    // método "toString"
+      public String toString(){
+        String info="----------------------------";
+          info+="\nCódigo: "+this.codigo;
+          info+="\nAutor: "+this.autor;
+          info+="\nTítulo: "+this.titulo;
+          info+="\nGénero: "+this.genero;
+          info+="\nDuración: "+this.duracion;
+          info+="\n----------------------------";
+
+        return info;
+      }
 }
