@@ -10,6 +10,11 @@ import java.util.Scanner;
 
 public class TestEj5Arrays{
   public static void main(String[] args){
+    // array
+    Gestisimal[] productos=new Gestisimal[10];
+
+    /**************************************/
+
     // menú
       System.out.println("1. Listado");
       System.out.println("2. Alta");
@@ -28,7 +33,7 @@ public class TestEj5Arrays{
 
       switch(opcion){
         case 1:
-          
+          Gestisimal.listado();
         break;
       }
   }
