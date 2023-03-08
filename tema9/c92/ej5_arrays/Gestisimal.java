@@ -52,4 +52,20 @@ public class Gestisimal{
       public static void listado(){
         
       }
+
+    /*******************/
+
+    // método para dar de alta un producto
+      public Gestisimal alta(String d, double pC, double pV){
+        String descripcion=d;
+        double precioCompra=pC;
+        double precioVenta=pV;
+
+        return new Gestisimal(descripcion, precioCompra, precioVenta);
+      }
+
+    /*******************/
+
+    // método para dar de baja un producto
+      
 }
