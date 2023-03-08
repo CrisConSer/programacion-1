@@ -7,14 +7,20 @@
 package tema9.c92.ej1_arrays;
 
 public class Gato{
-  // atributo
-    private String sexo;
+  // atributos
+    private String color, raza, sexo;
+    private int edad;
+    private double peso;
 
   /******************************************/
 
   // constructor
-    public Gato(String s){
+    public Gato(String c, String r, String s, int e, double p){
+      this.color=c.toLowerCase();
+      this.raza=r.toLowerCase();
       this.sexo=s.toLowerCase();
+      this.edad=e;
+      this.peso=p;
     }
 
   /******************************************/
@@ -29,7 +35,7 @@ public class Gato{
 
     // método para mostrar la información del gato
       public String toString(int numeroGato){
-        String info="Gato "+numeroGato+" -> "+this.sexo+".";
+        String info="Gato "+numeroGato+" -> "+this.color+" - "+this.raza+" - "+this.sexo+" - "+this.edad+" - "+this.peso;
 
         return info;
       }
