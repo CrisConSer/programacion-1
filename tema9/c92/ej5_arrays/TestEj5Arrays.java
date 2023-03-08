@@ -10,6 +10,11 @@ import java.util.Scanner;
 
 public class TestEj5Arrays{
   public static void main(String[] args){
+    // array
+      
+
+    /*************************************/
+
     // menú
       System.out.println("1. Listado");
       System.out.println("2. Alta");
@@ -24,7 +29,7 @@ public class TestEj5Arrays{
           Scanner input=new Scanner(System.in);
             int opcion=input.nextInt();
 
-      /**************************************/
+      /****** **********************/
 
       switch(opcion){
         case 1:
@@ -34,7 +39,8 @@ public class TestEj5Arrays{
         /******************/
 
         case 2:
-          
+          System.out.print("Introduce la descripción del nuevo producto: ");
+            String descripcion=input.next();
         break;
       }
   }
