@@ -7,10 +7,8 @@
 package tema9.c92.ej1_arrays;
 
 public class Gato{
-  // atributos
-    private String color, raza, sexo;
-    private int edad;
-    private double peso;
+  // atributo
+    private String sexo;
 
   /******************************************/
 

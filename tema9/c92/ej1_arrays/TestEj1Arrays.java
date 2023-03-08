@@ -7,5 +7,12 @@
 package tema9.c92.ej1_arrays;
 
 public class TestEj1Arrays{
-  
+  // array
+    // creación
+      Gato[] gatos=new Gato[4];
+
+    /**********************/
+
+    // generación de instancias
+      
 }
