@@ -27,6 +27,15 @@ public class Gato{
 
     /***********************/
 
+    // método para mostrar la información del gato
+      public String toString(int numeroGato){
+        String info="Gato "+numeroGato+" -> "+this.sexo+".";
+
+        return info;
+      }
+
+    /***********************/
+
     // método para hacer que el gato maulle
       public String maulla(){
         String miau="Miau";
