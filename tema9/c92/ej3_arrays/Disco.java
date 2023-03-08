@@ -45,5 +45,36 @@ public class Disco{
   /*****************************************/
 
   // métodos
-    
+    // getter para el código
+      public String getCodigo(){
+        return this.codigo;
+      }
+
+    /******************/
+
+    // getter para el autor
+      public String getAutor(){
+        return this.autor;
+      }
+
+    /******************/
+
+    // getter para el título
+      public String getTitulo(){
+        return this.titulo;
+      }
+
+    /******************/
+
+    // getter para el género
+      public String getGenero(){
+        return this.genero;
+      }
+
+    /******************/
+
+    // getter para el duración
+      public int getDuracion(){
+        return this.duracion;
+      }
 }
