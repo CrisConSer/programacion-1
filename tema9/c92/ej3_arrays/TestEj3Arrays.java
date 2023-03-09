@@ -19,6 +19,9 @@ public class TestEj3Arrays{
 
       /***************/
 
-      // 
+      // instancias
+        for(int i=0; i<t; i++){
+          discos[i]=new Disco();
+        }
   }
 }

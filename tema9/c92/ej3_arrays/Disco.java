@@ -16,31 +16,23 @@ public class Disco{
 
   /*****************************************/
 
-  // constructor
-    public Disco(String c, String a, String t, String g, int d){
+  /* constructor
+    public Disco(String c, String a, String t, String g, int d){//! el constructor personalizado no funciona debido al código del programa principal
       // código
         this.codigo=c;
-
-      /****************/
 
       // autor
         this.autor=a;
 
-      /****************/
-
       // título
         this.titulo=t;
-
-      /****************/
 
       // género
         this.genero=g;
 
-      /****************/
-
       // duración
         this.duracion=d;
-    }
+    }*/
 
   /*****************************************/
 
@@ -76,6 +68,41 @@ public class Disco{
     // getter para el duración
       public int getDuracion(){
         return this.duracion;
+      }
+
+    /******************/
+
+    //setter para el código
+      public void setCodigo(String c){
+        this.codigo=c;
+      }
+
+    /******************/
+
+    // setter para el autor
+      public void setAutor(String a){
+        this.autor=a;
+      }
+
+    /******************/
+
+    // setter para el título
+      public void setTitulo(String t){
+        this.titulo=t;
+      }
+
+    /******************/
+
+    // setter para el género
+      public void setGenero(String g){
+        this.genero=g;
+      }
+
+    /******************/
+
+    // setter para el duración
+      public void setDuracion(int d){
+        this.duracion=d;
       }
 
     /******************/
