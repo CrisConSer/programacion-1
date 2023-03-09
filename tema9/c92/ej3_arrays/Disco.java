@@ -16,8 +16,8 @@ public class Disco{
 
   /*****************************************/
 
-  /* constructor
-    public Disco(String c, String a, String t, String g, int d){//! el constructor personalizado no funciona debido al código del programa principal
+  // constructor
+    public Disco(String c, String a, String t, String g, int d){
       // código
         this.codigo=c;
 
@@ -32,7 +32,7 @@ public class Disco{
 
       // duración
         this.duracion=d;
-    }*/
+    }
 
   /*****************************************/
 
