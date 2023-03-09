@@ -7,5 +7,18 @@
 package tema9.c92.ej3_arrays;
 
 public class TestEj3Arrays{
-  
+  public static void main(String[] args){
+    // array
+      // tamaño
+        final int t=100;
+
+      /***************/
+
+      // creación
+        Disco[] discos=new Disco[t];
+
+      /***************/
+
+      // 
+  }
 }
