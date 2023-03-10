@@ -17,21 +17,21 @@ public class TestEj3Arrays{
       /***************/
 
       // creación
-        Disco[] discos=new Disco[t];
+        Disco[] album=new Disco[t];
 
       /***************/
 
       // instancias de base
         for(int i=0; i<t; i++){
-          discos[i]=new Disco();
+          album[i]=new Disco();
         }
 
       /***************/
 
       // discos nuevos
-        discos[0]=new Disco("R4T8K9", "The Electric Sunflowers", "Midnight in the Metropolis", "Synthwave", 4);
-        discos[1]=new Disco("J6M9P2", "The Cosmic Wanderers", "Interstellar Dreams", "Space Rock", 5);
-        discos[2]=new Disco("L8B3N6", "The Neon Nights", "City of Dreams", "Retrowave", 3);
+        album[0]=new Disco("R4T8K9", "The Electric Sunflowers", "Midnight in the Metropolis", "Synthwave", 4);
+        album[1]=new Disco("J6M9P2", "The Cosmic Wanderers", "Interstellar Dreams", "Space Rock", 5);
+        album[2]=new Disco("L8B3N6", "The Neon Nights", "City of Dreams", "Retrowave", 3);
 
     /*****************************************/
 
@@ -64,7 +64,7 @@ public class TestEj3Arrays{
             System.out.println("LISTADO");
             System.out.println("=======");
 
-            for(Disco d:discos){
+            for(Disco d:album){
               if(!d.getCodigo().equals("LIBRE")){
                 System.out.println(d);
               }
@@ -79,7 +79,7 @@ public class TestEj3Arrays{
               int primeraLibre=-1;
                 do{
                   primeraLibre++;
-                }while(!((discos[primeraLibre].getCodigo()).equals("LIBRE")));
+                }while(!((album[primeraLibre].getCodigo()).equals("LIBRE")));
 
               System.out.println("Por favor, introduzca los datos del disco.");
                 System.out.print("Código: ");
@@ -100,7 +100,7 @@ public class TestEj3Arrays{
             /********************/
 
             // creación de la instancia con los datos introducidos
-              discos[primeraLibre]=new Disco(codigoIntroducido, autorIntroducido, tituloIntroducido, generoIntroducido, duracionIntroducida);
+              album[primeraLibre]=new Disco(codigoIntroducido, autorIntroducido, tituloIntroducido, generoIntroducido, duracionIntroducida);
           break;
 
           case 3:
@@ -113,43 +113,43 @@ public class TestEj3Arrays{
             int i=-1;
               do{
                 i++;
-              }while(!((discos[i].getCodigo()).equals(codigoIntroducido)));
+              }while(!((album[i].getCodigo()).equals(codigoIntroducido)));
 
             System.out.println("Introduce los nuevos datos del disco o INTRO para dejarlos igual.");
 
-            System.out.println("Código: "+discos[i].getCodigo());
+            System.out.println("Código: "+album[i].getCodigo());
             System.out.print("Nuevo código: ");
               codigoIntroducido=input.nextLine();
                 if(!codigoIntroducido.equals("")){
-                  discos[i].setCodigo(codigoIntroducido);
+                  album[i].setCodigo(codigoIntroducido);
                 }
 
-            System.out.println("Autor: "+discos[i].getAutor());
+            System.out.println("Autor: "+album[i].getAutor());
             System.out.print("Nuevo autor: ");
               autorIntroducido=input.nextLine();
                 if(!autorIntroducido.equals("")){
-                  discos[i].setAutor(autorIntroducido);
+                  album[i].setAutor(autorIntroducido);
                 }
 
-            System.out.println("Título: "+discos[i].getTitulo());
+            System.out.println("Título: "+album[i].getTitulo());
             System.out.print("Nuevo título: ");
               tituloIntroducido=input.nextLine();
                 if(!tituloIntroducido.equals("")){
-                  discos[i].setTitulo(tituloIntroducido);
+                  album[i].setTitulo(tituloIntroducido);
                 }
 
-            System.out.println("Género: "+discos[i].getGenero());
+            System.out.println("Género: "+album[i].getGenero());
             System.out.print("Nuevo género: ");
               generoIntroducido=input.nextLine();
                 if(!generoIntroducido.equals("")){
-                  discos[i].setGenero(generoIntroducido);
+                  album[i].setGenero(generoIntroducido);
                 }
 
-            System.out.println("Duración: "+discos[i].getDuracion());
+            System.out.println("Duración: "+album[i].getDuracion());
             System.out.print("Duración: ");
               final String duracionIntroducidaString=input.nextLine();
                 if(!duracionIntroducidaString.equals("")){
-                  discos[i].setDuracion(Integer.parseInt(duracionIntroducidaString));
+                  album[i].setDuracion(Integer.parseInt(duracionIntroducidaString));
                 }
           break;
 
@@ -163,9 +163,9 @@ public class TestEj3Arrays{
             i=-1;
               do{
                 i++;
-              }while(!((discos[i].getCodigo()).equals(codigoIntroducido)));
+              }while(!((album[i].getCodigo()).equals(codigoIntroducido)));
 
-            discos[i].setCodigo("LIBRE");
+            album[i].setCodigo("LIBRE");
               System.out.println("Album borrado.");
           break;
         }
