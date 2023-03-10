@@ -16,7 +16,7 @@ public class Disco{
 
   /*****************************************/
 
-  // constructor
+  /* constructor
     public Disco(String c, String a, String t, String g, int d){
       // código
         this.codigo=c;
@@ -33,6 +33,7 @@ public class Disco{
       // duración
         this.duracion=d;
     }
+  */
 
   /*****************************************/
 

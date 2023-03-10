@@ -26,13 +26,6 @@ public class TestEj3Arrays{
           album[i]=new Disco();
         }
 
-      /***************/
-
-      // discos nuevos
-        album[0]=new Disco("R4T8K9", "The Electric Sunflowers", "Midnight in the Metropolis", "Synthwave", 4);
-        album[1]=new Disco("J6M9P2", "The Cosmic Wanderers", "Interstellar Dreams", "Space Rock", 5);
-        album[2]=new Disco("L8B3N6", "The Neon Nights", "City of Dreams", "Retrowave", 3);
-
     /*****************************************/
 
     // menú
@@ -64,9 +57,9 @@ public class TestEj3Arrays{
             System.out.println("LISTADO");
             System.out.println("=======");
 
-            for(Disco d:album){
-              if(!d.getCodigo().equals("LIBRE")){
-                System.out.println(d);
+            for(int i=0; i<t; i++){
+              if(!album[i].getCodigo().equals("LIBRE")){
+                System.out.println(album[i]);
               }
             }
           break;
@@ -84,23 +77,23 @@ public class TestEj3Arrays{
               System.out.println("Por favor, introduzca los datos del disco.");
                 System.out.print("Código: ");
                   codigoIntroducido=input.nextLine();
+                    album[primeraLibre].setCodigo(codigoIntroducido);
 
                 System.out.print("Autor: ");
                   autorIntroducido=input.nextLine();
+                    album[primeraLibre].setAutor(autorIntroducido);
 
                 System.out.print("Título: ");
                   tituloIntroducido=input.nextLine();
+                    album[primeraLibre].setTitulo(tituloIntroducido);
 
                 System.out.print("Género: ");
                   generoIntroducido=input.nextLine();
+                    album[primeraLibre].setGenero(generoIntroducido);
 
                 System.out.print("Duración: ");
                   duracionIntroducida=input.nextInt();
-
-            /********************/
-
-            // creación de la instancia con los datos introducidos
-              album[primeraLibre]=new Disco(codigoIntroducido, autorIntroducido, tituloIntroducido, generoIntroducido, duracionIntroducida);
+                    album[primeraLibre].setDuracion(duracionIntroducida);
           break;
 
           case 3:
