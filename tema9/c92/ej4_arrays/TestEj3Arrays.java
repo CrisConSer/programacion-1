@@ -12,7 +12,7 @@ public class TestEj3Arrays{
   public static void main(String[] args){
     // array
       // tamaño
-        final int t=100;
+        final int t=2;
 
       /***************/
 
@@ -74,9 +74,9 @@ public class TestEj3Arrays{
               int primeraLibre=-1;
                 do{
                   primeraLibre++;
-                }while(!((album[primeraLibre].getCodigo()).equals("LIBRE")));
+                }while(primeraLibre<t&&!((album[primeraLibre].getCodigo()).equals("LIBRE")));
 
-              if(primeraLibre==t){
+              if(primeraLibre>=t){
                 System.out.println("No hay ningún hueco libre para añadir un nuevo disco.");
               }else{
                 System.out.println("Introduce los datos del disco.");
