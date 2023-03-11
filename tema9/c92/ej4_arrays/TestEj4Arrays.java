@@ -8,7 +8,7 @@ package tema9.c92.ej4_arrays;
 
 import java.util.Scanner;
 
-public class TestEj3Arrays{
+public class TestEj4Arrays{
   public static void main(String[] args){
     // array
       // tamaño
@@ -82,24 +82,34 @@ public class TestEj3Arrays{
                 System.out.println("Introduce los datos del disco.");
                 System.out.print("Código: ");
                   codigoIntroducido=input.nextLine();
-                    album[primeraLibre].setCodigo(codigoIntroducido);
 
-                System.out.print("Autor: ");
-                  autorIntroducido=input.nextLine();
-                    album[primeraLibre].setAutor(autorIntroducido);
+                  // comprobación de si el código ya existe
+                    for(int i=0; i<t; i++){
+                      if(album[i].getCodigo().equals(codigoIntroducido)){
+                        System.out.println("El código ya existe.");
+                        break;
+                      }else{
+                        album[primeraLibre].setCodigo(codigoIntroducido);
 
-                System.out.print("Título: ");
-                  tituloIntroducido=input.nextLine();
-                    album[primeraLibre].setTitulo(tituloIntroducido);
+                        System.out.print("Autor: ");
+                          autorIntroducido=input.nextLine();
+                            album[primeraLibre].setAutor(autorIntroducido);
 
-                System.out.print("Género: ");
-                  generoIntroducido=input.nextLine();
-                    album[primeraLibre].setGenero(generoIntroducido);
+                        System.out.print("Título: ");
+                          tituloIntroducido=input.nextLine();
+                            album[primeraLibre].setTitulo(tituloIntroducido);
 
-                System.out.print("Duración: ");
-                  duracionIntroducida=input.nextInt();
-                    album[primeraLibre].setDuracion(duracionIntroducida);
-                    input.nextLine();// consumir buffer del teclado
+                        System.out.print("Género: ");
+                          generoIntroducido=input.nextLine();
+                            album[primeraLibre].setGenero(generoIntroducido);
+
+                        System.out.print("Duración: ");
+                          duracionIntroducida=input.nextInt();
+                            album[primeraLibre].setDuracion(duracionIntroducida);
+                            input.nextLine();// consumir buffer del teclado
+                      }
+                    }
+              }
               }
           break;
 
