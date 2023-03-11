@@ -161,13 +161,24 @@ public class TestEj3Arrays{
             System.out.print("Introduce el código del disco que desea borrar: ");
               codigoIntroducido=input.nextLine();
 
-            i=-1;
-              do{
-                i++;
-              }while(!((album[i].getCodigo()).equals(codigoIntroducido)));
+            // se busca el disco con el código indicado por el usuario
+              int indiceDisco=-1;
 
-            album[i].setCodigo("LIBRE");// no se elimina la instancia, sino que se marca como "libre" para poder ser usada de nuevo
-              System.out.println("Album borrado.");
+              for(int j=0; j<t; j++){
+                if(album[j].getCodigo().equals(codigoIntroducido)){
+                  indiceDisco=j;
+
+                  break;
+                }
+              }
+
+              if(indiceDisco==-1){
+                System.out.println("No se ha encontrado ningún disco con el código "+codigoIntroducido);
+              }else{
+                // se borra el disco encontrado
+                  album[indiceDisco].setCodigo("LIBRE");
+                    System.out.println("Se ha borrado el disco con el código "+codigoIntroducido);
+              }
           break;
         }
       }while(opcion!=5);
