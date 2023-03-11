@@ -44,6 +44,7 @@ public class TestEj3Arrays{
         System.out.println("5. Salir");
           System.out.print("Introduce una opción: ");
             opcion=input.nextInt();
+            input.nextLine();// consumir buffer del teclado
 
         /***********************/
 
@@ -71,7 +72,7 @@ public class TestEj3Arrays{
 
               System.out.println("Introduce los datos del disco.");
                 System.out.print("Código: ");
-                  String codigoIntroducido=input.nextLine();
+                  String codigoIntroducido=input.nextLine();//! esta línea no se ejecuta correctamente, y no veo cuál es el problema
                     album[primeraLibre].setCodigo(codigoIntroducido);
 
                 System.out.print("Autor: ");
@@ -89,6 +90,7 @@ public class TestEj3Arrays{
                 System.out.print("Duración: ");
                   int duracionIntroducida=input.nextInt();
                     album[primeraLibre].setDuracion(duracionIntroducida);
+                    input.nextLine();// consumir buffer del teclado
           break;
 
           case 3:
@@ -138,6 +140,7 @@ public class TestEj3Arrays{
               final String duracionIntroducidaString=input.nextLine();
                 if(!duracionIntroducidaString.equals("")){
                   album[i].setDuracion(Integer.parseInt(duracionIntroducidaString));
+                  input.nextLine();// consumir buffer del teclado
                 }
           break;
 
