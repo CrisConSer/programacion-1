@@ -31,6 +31,12 @@ public class TestEj3Arrays{
     // menú
       int opcion;
       Scanner input=new Scanner(System.in);
+      String codigoIntroducido;
+      String autorIntroducido;
+      String tituloIntroducido;
+      String generoIntroducido;
+      int duracionIntroducida;
+
 
       /*********************/
 
@@ -70,27 +76,31 @@ public class TestEj3Arrays{
                   primeraLibre++;
                 }while(!((album[primeraLibre].getCodigo()).equals("LIBRE")));
 
-              System.out.println("Introduce los datos del disco.");
+              if(primeraLibre==t){
+                System.out.println("No hay ningún hueco libre para añadir un nuevo disco.");
+              }else{
+                System.out.println("Introduce los datos del disco.");
                 System.out.print("Código: ");
-                  String codigoIntroducido=input.nextLine();//! esta línea no se ejecuta correctamente, y no veo cuál es el problema
+                  codigoIntroducido=input.nextLine();
                     album[primeraLibre].setCodigo(codigoIntroducido);
 
                 System.out.print("Autor: ");
-                  String autorIntroducido=input.nextLine();
+                  autorIntroducido=input.nextLine();
                     album[primeraLibre].setAutor(autorIntroducido);
 
                 System.out.print("Título: ");
-                  String tituloIntroducido=input.nextLine();
+                  tituloIntroducido=input.nextLine();
                     album[primeraLibre].setTitulo(tituloIntroducido);
 
                 System.out.print("Género: ");
-                  String generoIntroducido=input.nextLine();
+                  generoIntroducido=input.nextLine();
                     album[primeraLibre].setGenero(generoIntroducido);
 
                 System.out.print("Duración: ");
-                  int duracionIntroducida=input.nextInt();
+                  duracionIntroducida=input.nextInt();
                     album[primeraLibre].setDuracion(duracionIntroducida);
                     input.nextLine();// consumir buffer del teclado
+              }
           break;
 
           case 3:
