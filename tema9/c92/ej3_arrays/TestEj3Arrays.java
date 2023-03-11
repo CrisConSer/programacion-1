@@ -31,11 +31,6 @@ public class TestEj3Arrays{
     // menú
       int opcion;
       Scanner input=new Scanner(System.in);
-      String codigoIntroducido;
-      String autorIntroducido;
-      String tituloIntroducido;
-      String generoIntroducido;
-      int duracionIntroducida;
 
       /*********************/
 
@@ -74,25 +69,25 @@ public class TestEj3Arrays{
                   primeraLibre++;
                 }while(!((album[primeraLibre].getCodigo()).equals("LIBRE")));
 
-              System.out.println("Por favor, introduzca los datos del disco.");
+              System.out.println("Introduce los datos del disco.");
                 System.out.print("Código: ");
-                  codigoIntroducido=input.nextLine();
+                  String codigoIntroducido=input.nextLine();
                     album[primeraLibre].setCodigo(codigoIntroducido);
 
                 System.out.print("Autor: ");
-                  autorIntroducido=input.nextLine();
+                  String autorIntroducido=input.nextLine();
                     album[primeraLibre].setAutor(autorIntroducido);
 
                 System.out.print("Título: ");
-                  tituloIntroducido=input.nextLine();
+                  String tituloIntroducido=input.nextLine();
                     album[primeraLibre].setTitulo(tituloIntroducido);
 
                 System.out.print("Género: ");
-                  generoIntroducido=input.nextLine();
+                  String generoIntroducido=input.nextLine();
                     album[primeraLibre].setGenero(generoIntroducido);
 
                 System.out.print("Duración: ");
-                  duracionIntroducida=input.nextInt();
+                  int duracionIntroducida=input.nextInt();
                     album[primeraLibre].setDuracion(duracionIntroducida);
           break;
 
