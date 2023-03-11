@@ -12,7 +12,7 @@ public class TestEj3Arrays{
   public static void main(String[] args){
     // array
       // tamaño
-        final int t=2;
+        final int t=100;
 
       /***************/
 
