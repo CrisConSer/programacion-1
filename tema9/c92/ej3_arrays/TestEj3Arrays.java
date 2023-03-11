@@ -58,7 +58,7 @@ public class TestEj3Arrays{
             System.out.println("=======");
 
             for(int i=0; i<t; i++){
-              if(!album[i].getCodigo().equals("LIBRE")){
+              if(!album[i].getCodigo().equals("LIBRE")){// se muestran todas las instancias que no están libres
                 System.out.println(album[i]);
               }
             }
@@ -67,7 +67,7 @@ public class TestEj3Arrays{
           case 2:
             System.out.println("\nNUEVO DISCO");
             System.out.println("===========");
-            
+
             // busca la primera posición libre del array
               int primeraLibre=-1;
                 do{
@@ -158,7 +158,7 @@ public class TestEj3Arrays{
                 i++;
               }while(!((album[i].getCodigo()).equals(codigoIntroducido)));
 
-            album[i].setCodigo("LIBRE");
+            album[i].setCodigo("LIBRE");// no se elimina la instancia, sino que se marca como "libre" para poder ser usada de nuevo
               System.out.println("Album borrado.");
           break;
         }
