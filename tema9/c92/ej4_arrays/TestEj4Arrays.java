@@ -110,7 +110,6 @@ public class TestEj4Arrays{
                       }
                     }
               }
-              }
           break;
 
           case 3:
