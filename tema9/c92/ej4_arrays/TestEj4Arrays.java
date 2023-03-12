@@ -30,6 +30,9 @@ public class TestEj4Arrays{
 
     // menú
       int opcion;
+      int opcionListado;
+        int min;
+        int max;
       Scanner input=new Scanner(System.in);
       String codigoIntroducido;
       String autorIntroducido;
@@ -56,14 +59,55 @@ public class TestEj4Arrays{
 
         switch(opcion){
           case 1:
-            System.out.println("LISTADO");
-            System.out.println("=======");
+            do{
+              System.out.println("LISTADO");
+              System.out.println("=======");
+              System.out.println("1. Completo");
+              System.out.println("2. Por autor");
+              System.out.println("3. Por género");
+              System.out.println("4. En un rango de duración");
+              System.out.println("5. Menú principal");
+                System.out.print("Introduce una opción: ");
+                  opcionListado=input.nextInt();
 
-            for(int i=0; i<t; i++){
-              if(!album[i].getCodigo().equals("LIBRE")){// se muestran todas las instancias que no están libres
-                System.out.println(album[i]);
+              switch(opcionListado){
+                case 1:// completo
+                  for(int i=0; i<t; i++){
+                    if(!album[i].getCodigo().equals("LIBRE")){// se muestran todas las instancias que no están libres
+                      System.out.println(album[i]);
+                    }
+                  }
+                break;
+
+                case 2:// por autor
+                  System.out.print("Introduce el autor: ");
+                    autorIntroducido=input.nextLine();
+                    input.nextLine();// consumir buffer del teclado
+
+                  for(int i=0; i<t; i++){
+                    if((!album[i].getCodigo().equals("LIBRE"))&&(album[i].getAutor().equals(autorIntroducido))){
+                      System.out.println(album[i]);
+                    }
+                  }
+                break;
+
+                case 3:// por género
+                  System.out.print("Introduce el género: ");
+                    generoIntroducido=input.nextLine();
+                    input.nextLine();// consumir buffer del teclado
+
+                  for(int i=0; i<t; i++){
+                    if((!album[i].getCodigo().equals("LIBRE"))&&(album[i].getGenero().equals(generoIntroducido))){
+                      System.out.println(album[i]);
+                    }
+                  }
+                break;
+
+                case 4:// en un rango de duración
+                  
+                break;
               }
-            }
+            }while(opcionListado!=5);
           break;
 
           case 2:
