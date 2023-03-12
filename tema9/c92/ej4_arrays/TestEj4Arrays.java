@@ -107,6 +107,8 @@ public class TestEj4Arrays{
                           duracionIntroducida=input.nextInt();
                             album[primeraLibre].setDuracion(duracionIntroducida);
                             input.nextLine();// consumir buffer del teclado
+
+                        break;
                       }
                     }
               }
