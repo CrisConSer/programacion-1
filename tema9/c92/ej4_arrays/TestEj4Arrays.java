@@ -74,7 +74,7 @@ public class TestEj4Arrays{
                 case 1:// completo
                   for(int i=0; i<t; i++){
                     if(!album[i].getCodigo().equals("LIBRE")){// se muestran todas las instancias que no están libres
-                      System.out.println(album[i]);
+                      System.out.println(album[i]);//! esta línea no funciona correctamente, pendiente de arreglo
                     }
                   }
                 break;
@@ -86,7 +86,7 @@ public class TestEj4Arrays{
 
                   for(int i=0; i<t; i++){
                     if((!album[i].getCodigo().equals("LIBRE"))&&(album[i].getAutor().equals(autorIntroducido))){
-                      System.out.println(album[i]);
+                      System.out.println(album[i]);//! esta línea no funciona correctamente, pendiente de arreglo
                     }
                   }
                 break;
@@ -98,13 +98,23 @@ public class TestEj4Arrays{
 
                   for(int i=0; i<t; i++){
                     if((!album[i].getCodigo().equals("LIBRE"))&&(album[i].getGenero().equals(generoIntroducido))){
-                      System.out.println(album[i]);
+                      System.out.println(album[i]);//! esta línea no funciona correctamente, pendiente de arreglo
                     }
                   }
                 break;
 
                 case 4:// en un rango de duración
-                  
+                  System.out.println("Indica el intervalo de duración.");
+                    System.out.print("Introduce el límite inferior de duración en minutos: ");
+                      min=input.nextInt();
+                    System.out.print("Introduce el límite superior de duración en minutos: ");
+                      max=input.nextInt();
+
+                  for(int i=0; i<t; i++){
+                    if((!album[i].getCodigo().equals("LIBRE"))&&(album[i].getDuracion()<=max)&&(album[i].getDuracion()>=min)){
+                      System.out.println(album[i]);
+                    }
+                  }
                 break;
               }
             }while(opcionListado!=5);
