@@ -89,12 +89,4 @@ public class Gestisimal{
 
         return info;
       }
-
-    // método para dar de alta un producto
-      
-
-    /*******************/
-
-    // método para dar de baja un producto
-      
 }
