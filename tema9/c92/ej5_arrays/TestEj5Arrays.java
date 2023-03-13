@@ -22,8 +22,12 @@ public class TestEj5Arrays{
     /***********************************************/
 
     // variables necesarias
+      Scanner input=new Scanner(System.in);
+
       int primeraLibre;
       String codigo;
+
+      String codigoIntroducido;
 
     /***********************************************/
 
@@ -38,8 +42,7 @@ public class TestEj5Arrays{
 
       // scanner
         System.out.print("\nElige una opción: ");
-          Scanner input=new Scanner(System.in);
-            int opcion=input.nextInt();
+          int opcion=input.nextInt();
 
     /***********************************************/
 
@@ -65,7 +68,7 @@ public class TestEj5Arrays{
         /******************/
 
         case 2:// alta
-          System.out.println("Crear nuevo artículo");
+          System.out.println("Dar de alta nuevo artículo");
 
           // primer hueco libre en el array
             primeraLibre=0;// reseteo a 0 (primer elemento del array)
@@ -88,7 +91,36 @@ public class TestEj5Arrays{
               if(primeraLibre==t){
                 System.out.println("No hay espacio en el almacén para nuevos artículos.");
               }else{
-                
+                System.out.println("Introduce los datos del nuevo artículo.");
+                  // código
+                    System.out.print("Código: ");
+                      codigoIntroducido=input.next();
+
+                      // comprobación de la existencia del código introducido
+                        for(int i=0; i<t; i++){
+                          if(productos[i].getCodigo().equals(codigoIntroducido)){
+                            System.out.println("El código introducido ya existe.");
+                            break;
+                          }else{
+                            productos[i].setCodigo(codigoIntroducido);
+
+                            // descripción
+                              System.out.print("Descripción: ");
+                                productos[i].setDescripcion(input.next());
+
+                            // precio d ecompra
+                              System.out.print("Precio de compra: ");
+                                productos[i].setPrecioCompra(input.nextDouble());
+
+                            // precio de venta
+                              System.out.print("Precio de venta: ");
+                                productos[i].setPrecioVenta(input.nextDouble());
+
+                            // stock
+                              System.out.print("Stock: ");
+                                productos[i].setStock(input.nextInt());
+                          }
+                        }
               }
         break;
       }

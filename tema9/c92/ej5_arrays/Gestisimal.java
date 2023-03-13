@@ -12,7 +12,7 @@ public class Gestisimal{
     private String descripcion;
     private double precioCompra;
     private double precioVenta;
-    private int stock=0;
+    private int stock;
 
   /*********************************************/
 
