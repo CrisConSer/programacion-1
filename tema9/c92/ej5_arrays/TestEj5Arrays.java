@@ -29,6 +29,8 @@ public class TestEj5Arrays{
 
       String codigoIntroducido;
 
+      int coincidencia;
+
     /***********************************************/
 
     // menú
@@ -122,6 +124,35 @@ public class TestEj5Arrays{
                           }
                         }
               }
+        break;
+
+        /******************/
+
+        case 3:// baja
+          System.out.println("Dar de baja un artículo");
+          System.out.println("Introduce el código del artículo que que se va a dar de baja: ");
+            codigoIntroducido=input.next();
+
+          coincidencia=-1;
+          codigo="";
+
+          // 
+            do{
+              coincidencia++;
+
+              if(coincidencia<t){
+                codigo=productos[coincidencia].getCodigo();
+              }
+            }while(!(codigo.equals(codigoIntroducido))&&(coincidencia<t));
+
+          // 
+            if(coincidencia==t){
+              System.out.println("El código introducido no existe.");
+            }else{
+              productos[coincidencia].setCodigo("libre");
+
+              System.out.println("El artículo ha sido dado de baja.");
+            }
         break;
       }
   }
