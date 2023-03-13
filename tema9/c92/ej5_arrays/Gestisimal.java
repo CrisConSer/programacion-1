@@ -16,37 +16,6 @@ public class Gestisimal{
 
   /*********************************/
 
-  // constructor
-    public Gestisimal(String d, double pC, double pV){
-      // generación de código aleatorio
-        this.codigo="";
-          for(int i=0; i<10; i++){
-            this.codigo+=(int)(Math.random()*10);
-          }
-
-      /******************/
-
-      // descripción
-        this.descripcion=d;
-
-      /******************/
-
-      // precio de compra
-        this.precioCompra=pC;
-
-      /******************/
-
-      // precio de venta
-        this.precioVenta=pV;
-
-      /******************/
-
-      // stock
-        Gestisimal.stock++;
-    }
-
-  /*********************************/
-
   // métodos
     // método para listar todos los productos
       public static void listado(){
@@ -56,13 +25,7 @@ public class Gestisimal{
     /*******************/
 
     // método para dar de alta un producto
-      public Gestisimal alta(String d, double pC, double pV){
-        String descripcion=d;
-        double precioCompra=pC;
-        double precioVenta=pV;
-
-        return new Gestisimal(descripcion, precioCompra, precioVenta);
-      }
+      
 
     /*******************/
 

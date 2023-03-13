@@ -11,9 +11,15 @@ import java.util.Scanner;
 public class TestEj5Arrays{
   public static void main(String[] args){
     // array
-      Gestisimal[] productos=new Gestisimal[1];
+      // tamaño
+        int t=500;
 
-    /*************************************/
+      /**************/
+
+      // creación
+        Gestisimal[] productos=new Gestisimal[t];
+
+    /***********************************************/
 
     // menú
       System.out.println("1. Listado");
@@ -29,8 +35,16 @@ public class TestEj5Arrays{
           Scanner input=new Scanner(System.in);
             int opcion=input.nextInt();
 
-      /****** **********************/
+    /***********************************************/
 
+    // inicialización de los huecos del array
+      for(int i=0; i<t; i++){
+        productos[i]=new Gestisimal();
+      }
+
+    /***********************************************/
+
+    // switch para las opciones
       switch(opcion){
         case 1:
           Gestisimal.listado();
@@ -39,16 +53,7 @@ public class TestEj5Arrays{
         /******************/
 
         case 2:
-          // obtención de datos
-            System.out.print("Introduce la descripción del nuevo producto: ");
-              String descripcion=input.next();
-            System.out.print("Introduce el precio de compra del nuevo producto: ");
-              double precioCompra=input.nextDouble();
-            System.out.print("Introduce el precio de venta del nuevo producto: ");
-              double precioVenta=input.nextDouble();
-
-          // creación de la nueva instancia
-            Gestisimal nuevoProducto=new Gestisimal(descripcion, precioCompra, precioVenta);
+          
         break;
       }
   }
