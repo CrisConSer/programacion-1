@@ -67,7 +67,12 @@ public class Gestisimal{
 
     // toString
       public String toString(){
-        String info="";
+        String info="------------------------------";
+          info+="- Código: "+this.codigo;
+          info+="- Descripción: "+this.descripcion;
+          info+="- Precio de compra: "+this.precioCompra;
+          info+="- Precio de venta: "+this.precioVenta;
+          info+="------------------------------";
 
         return info;
       }
