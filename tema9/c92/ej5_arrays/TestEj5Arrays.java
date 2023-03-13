@@ -241,6 +241,38 @@ public class TestEj5Arrays{
           System.out.println("Entrada de mercancía");
           System.out.print("Introduce el código del artículo: ");
             codigoIntroducido=input.next();
+
+          coincidencia=-1;
+          codigo="";
+
+          // se busca el artículo en el array
+            do{
+              coincidencia++;
+
+              if(coincidencia<t){// mientras la posición actual en el array sea menor que el tamaño máximo...
+                codigo=productos[coincidencia].getCodigo();// ...se cambia el valor de "codigo" al código perteneciente al elemento actual del array
+              }
+            }while(!(codigo.equals(codigoIntroducido))&&(coincidencia<t));
+
+          // si el artículo no existe, se muestra un mensaje de error
+            if(coincidencia==t){
+              System.out.println("El código introducido no existe.");
+            }else{// si existe, se elimina del array de productos
+              System.out.println("Entrada de mercancía del siguiente artículo:");
+                System.out.print(productos[coincidencia]);
+              System.out.print("Introduce el número de unidades que se añaden al stock de este artículo: ");
+                stockIntroducido=input.next();
+
+              productos[coincidencia].setStock(productos[coincidencia].getStock()+Integer.parseInt(stockIntroducido));
+                System.out.println("La mercancía ha sido añadida.");
+            }
+        break;
+
+        /******************/
+
+        case 6:// salida de mercancía
+          
+        break;
       }
   }
 }
