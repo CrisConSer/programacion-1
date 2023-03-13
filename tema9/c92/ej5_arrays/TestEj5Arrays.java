@@ -158,7 +158,28 @@ public class TestEj5Arrays{
         /******************/
 
         case 4:// modificación
-          
+          System.out.println("Modificación de un artículo");
+          System.out.print("Introduce el código del artículo que que se va a modificar: ");
+            codigoIntroducido=input.next();
+
+          coincidencia=-1;
+
+          // buscando el artículo en el array
+            do{
+              coincidencia++;
+            }while(!((productos[coincidencia].getCodigo()).equals(codigoIntroducido)));
+
+          // proceso de modificación
+            System.out.println("Introduce los cambios en los datos del artículo o pulsa INTRO para dejarlos igual.");
+              // código
+                System.out.println("Código actual: "+productos[coincidencia].getCodigo());
+                System.out.print("Nuevo código: ");
+                  codigoIntroducido=input.next();
+
+                  // si no se cambia, no se establece de nuevo
+                    if(!codigoIntroducido.equals("")){
+                      productos[coincidencia].setCodigo(codigoIntroducido);
+                    }
         break;
       }
   }
