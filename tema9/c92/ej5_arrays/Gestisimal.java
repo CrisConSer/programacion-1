@@ -8,7 +8,7 @@ package tema9.c92.ej5_arrays;
 
 public class Gestisimal{
   // atributos
-    private String codigo;
+    private String codigo="libre";
     private String descripcion;
     private double precioCompra;
     private double precioVenta;
