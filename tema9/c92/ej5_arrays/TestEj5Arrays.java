@@ -21,6 +21,12 @@ public class TestEj5Arrays{
 
     /***********************************************/
 
+    // variables necesarias
+      int primeraLibre;
+      String codigo;
+
+    /***********************************************/
+
     // menú
       System.out.println("1. Listado");
       System.out.println("2. Alta");
@@ -46,7 +52,9 @@ public class TestEj5Arrays{
 
     // switch para las opciones
       switch(opcion){
-        case 1:
+        case 1:// listado
+          System.out.println("\nListado");
+
           for(int i=0; i<t; i++){
             if(!productos[i].getCodigo().equals("libre")){
               System.out.println(productos[i]);
@@ -56,8 +64,17 @@ public class TestEj5Arrays{
 
         /******************/
 
-        case 2:
-          
+        case 2:// alta
+          System.out.println("Crear nuevo artículo");
+
+          // primer hueco libre en el array
+            primeraLibre=0;// reseteo a 0 (primer elemento del array)
+            codigo=productos[primeraLibre].getCodigo();// reseteo de la variable "codigo" a la del primer elemento del array
+
+            /**************/
+
+            // conversión de "primeraLibre" y "codigo" a los del primer elemento libre
+              
         break;
       }
   }

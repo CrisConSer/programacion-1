@@ -12,7 +12,7 @@ public class Gestisimal{
     private String descripcion;
     private double precioCompra;
     private double precioVenta;
-    private static int stock=0;
+    private int stock=0;
 
   /*********************************************/
 
@@ -65,14 +65,27 @@ public class Gestisimal{
 
     /*******************/
 
+    // getter para el stock
+      public int getStock(){
+        return stock;
+      }
+
+    // setter para el stock
+      public void setStock(int stock){
+        this.stock=stock;
+      }
+
+    /*******************/
+
     // toString
       public String toString(){
-        String info="------------------------------";
-          info+="- Código: "+this.codigo;
-          info+="- Descripción: "+this.descripcion;
-          info+="- Precio de compra: "+this.precioCompra;
-          info+="- Precio de venta: "+this.precioVenta;
-          info+="------------------------------";
+        String info="\n------------------------------";
+          info+="\n- Código: "+this.codigo;
+          info+="\n- Descripción: "+this.descripcion;
+          info+="\n- Precio de compra: "+this.precioCompra;
+          info+="\n- Precio de venta: "+this.precioVenta;
+          info+="\n- Stock: "+this.stock;
+          info+="\n------------------------------";
 
         return info;
       }
