@@ -47,7 +47,11 @@ public class TestEj5Arrays{
     // switch para las opciones
       switch(opcion){
         case 1:
-          Gestisimal.listado();
+          for(int i=0; i<t; i++){
+            if(!productos[i].getCodigo().equals("libre")){
+              System.out.println(productos[i]);
+            }
+          }
         break;
 
         /******************/

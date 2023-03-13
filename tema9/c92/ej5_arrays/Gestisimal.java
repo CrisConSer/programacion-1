@@ -14,15 +14,63 @@ public class Gestisimal{
     private double precioVenta;
     private static int stock=0;
 
-  /*********************************/
+  /*********************************************/
 
   // métodos
-    // método para listar todos los productos
-      public static void listado(){
-        
+    // getter para el código
+      public String getCodigo(){
+        return codigo;
+      }
+
+    // setter para el código
+      public void setCodigo(String codigo){
+        this.codigo=codigo;
       }
 
     /*******************/
+
+    // getter para la descripción
+      public String getDescripcion(){
+        return descripcion;
+      }
+
+    // setter para la descripción
+      public void setDescripcion(String descripcion){
+        this.descripcion=descripcion;
+      }
+
+    /*******************/
+
+    // getter para el precio de compra
+      public double getPrecioCompra(){
+        return precioCompra;
+      }
+
+    // setter para el precio de compra
+      public void setPrecioCompra(double precioCompra){
+        this.precioCompra=precioCompra;
+      }
+
+    /*******************/
+
+    // getter para el precio de venta
+      public double getPrecioVenta(){
+        return precioVenta;
+      }
+
+    // setter para el precio de venta
+      public void setPrecioVenta(double precioVenta){
+        this.precioVenta=precioVenta;
+      }
+
+    /*******************/
+
+    // toString
+      public String toString(){
+        String info="";
+
+        return info;
+      }
 
     // método para dar de alta un producto
       
