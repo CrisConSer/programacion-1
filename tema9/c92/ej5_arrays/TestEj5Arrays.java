@@ -74,7 +74,22 @@ public class TestEj5Arrays{
             /**************/
 
             // conversión de "primeraLibre" y "codigo" a los del primer elemento libre
-              
+              while((primeraLibre<t)&&(!codigo.equals("libre"))){
+                primeraLibre++;
+
+                if(primeraLibre<t){
+                  codigo=productos[primeraLibre].getCodigo();
+                }
+              }
+
+            /**************/
+
+            // comprobación de si hay espacio en el almacén
+              if(primeraLibre==t){
+                System.out.println("No hay espacio en el almacén para nuevos artículos.");
+              }else{
+                
+              }
         break;
       }
   }
