@@ -31,6 +31,11 @@ public class TestEj5Arrays{
 
       int coincidencia;
 
+      String descripcionIntroducida;
+      String precioCompraIntroducido;
+      String precioVentaIntroducido;
+      String stockIntroducido;
+
     /***********************************************/
 
     // menú
@@ -180,7 +185,62 @@ public class TestEj5Arrays{
                     if(!codigoIntroducido.equals("")){
                       productos[coincidencia].setCodigo(codigoIntroducido);
                     }
+
+              /***************/
+
+              // descripción
+                System.out.println("Descripción actual: "+productos[coincidencia].getDescripcion());
+                System.out.print("Nuevo descripción: ");
+                  descripcionIntroducida=input.next();
+
+                  // si no se cambia, no se establece de nuevo
+                    if(!descripcionIntroducida.equals("")){
+                      productos[coincidencia].setDescripcion(descripcionIntroducida);
+                    }
+
+              /***************/
+
+              // precio de compra
+                System.out.println("Precio de compra actual: "+productos[coincidencia].getPrecioCompra());
+                System.out.print("Nuevo precio de compra: ");
+                  precioCompraIntroducido=input.next();
+
+                  // si no se cambia, no se establece de nuevo
+                    if(!precioCompraIntroducido.equals("")){
+                      productos[coincidencia].setPrecioCompra(Double.parseDouble(precioCompraIntroducido));
+                    }
+
+              /***************/
+
+              // precio de venta
+                System.out.println("Precio de venta: " + productos[coincidencia].getPrecioVenta());
+                System.out.print("Nuevo precio de venta: ");
+                  precioVentaIntroducido=input.next();
+
+                  // si no se cambia, no se establece de nuevo
+                    if(!precioVentaIntroducido.equals("")){
+                    productos[coincidencia].setPrecioVenta(Double.parseDouble(precioVentaIntroducido));
+                    }
+
+              /***************/
+
+              // stock
+                System.out.println("Stock: " + productos[coincidencia].getStock());
+                System.out.print("Nuevo stock: ");
+                  stockIntroducido=input.next();
+
+                  // si no se cambia, no se establece de nuevo
+                    if(!stockIntroducido.equals("")){
+                    productos[coincidencia].setStock(Integer.parseInt(stockIntroducido));
+                    }
         break;
+
+        /******************/
+
+        case 5:// entrada de mercancía
+          System.out.println("Entrada de mercancía");
+          System.out.print("Introduce el código del artículo: ");
+            codigoIntroducido=input.next();
       }
   }
 }
