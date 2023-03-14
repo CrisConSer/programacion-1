@@ -117,7 +117,7 @@ public class TestEj5Arrays{
                               System.out.print("Descripción: ");
                                 productos[i].setDescripcion(input.next());
 
-                            // precio d ecompra
+                            // precio de compra
                               System.out.print("Precio de compra: ");
                                 productos[i].setPrecioCompra(input.nextDouble());
 
