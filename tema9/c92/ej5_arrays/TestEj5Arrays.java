@@ -154,7 +154,7 @@ public class TestEj5Arrays{
 
           // si el artículo no existe, se muestra un mensaje de error
             if(coincidencia==t){
-              System.out.println("El código introducido no existe.");
+              System.out.println("El código introducido no existe.");//! pasa lo mismo que con el "case 2"
             }else{// si existe, se elimina del array de productos
               productos[coincidencia].setCodigo("libre");
 
