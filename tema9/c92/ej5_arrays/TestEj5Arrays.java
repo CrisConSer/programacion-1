@@ -137,7 +137,7 @@ public class TestEj5Arrays{
 
         case 3:// baja
           System.out.println("Dar de baja un artículo");
-          System.out.println("Introduce el código del artículo que que se va a dar de baja: ");
+          System.out.print("Introduce el código del artículo que que se va a dar de baja: ");
             codigoIntroducido=input.next();
 
           coincidencia=-1;
