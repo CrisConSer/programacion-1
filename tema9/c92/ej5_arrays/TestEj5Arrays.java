@@ -127,7 +127,7 @@ public class TestEj5Arrays{
 
                             // stock
                               System.out.print("Stock: ");
-                                productos[i].setStock(input.nextInt());
+                                productos[i].setStock(input.nextInt());//! el "case 2" no funciona correctamente: después de introducir el stock no vuelve al menú principal
                           }
                         }
               }
