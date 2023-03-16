@@ -16,6 +16,6 @@ public class TestEj2Extra{
       // planetas
         Planetas[] arrayPlanetas=new Planetas[8];
 
-        arrayPlanetas[0]=new Planetas();
+        arrayPlanetas[0]=new Planetas(2439.7, 1408, 33011, 167, 3.7, "Mercurio");
   }
 }
