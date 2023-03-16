@@ -15,8 +15,12 @@ public class Planetas extends Astros{
   /****************************************/
 
   // constructor
-    public Planetas(double distanciaAlSol, double orbitaAlSol, String tieneSatelites){
+    public Planetas(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad, double distanciaAlSol, double orbitaAlSol, String tieneSatelites){
+      super(radioEcuatorial, rotacionSobreSuEje, masa, temperaturaMedia, gravedad);
 
+      this.distanciaAlSol=distanciaAlSol;
+      this.orbitaAlSol=orbitaAlSol;
+      this.tieneSatelites=tieneSatelites;
     }
 
   /****************************************/
@@ -26,13 +30,8 @@ public class Planetas extends Astros{
       @name: muestra
       @info: muestra toda la información de la que se dispone sobre el planeta
     */
-      public void muestra(){
-        System.out.println("Planeta: ");
-        System.out.println("Masa: " + getMasa() + " kg");
-        System.out.println("Diámetro: " + getDiametro() + " km");
-        System.out.println("Periodo de rotación: " + getPeriodoRotacion() + " horas");
-        System.out.println("Periodo de traslación: " + getPeriodoTranslacion() + " días");
-        System.out.println("Distancia media: " + getDistanciaMedia() + " km");
-        System.out.println("Número de satélites: " + numSatelites);
-      }
+      @Override
+        public void muestra(){
+          
+        }
 }
