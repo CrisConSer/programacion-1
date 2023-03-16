@@ -12,8 +12,10 @@ import tema9.c93.ej2_extra.astros.Satelites;
 
 public class TestEj2Extra{
   public static void main(String[] args){
-    Planetas planeta1=new Planetas(500, 500, 500, 500, 500, 500, 500, "si");
+    // creación de instancias
+      // planetas
+        Planetas[] arrayPlanetas=new Planetas[8];
 
-    System.out.print(planeta1.muestra());
+        arrayPlanetas[0]=new Planetas();
   }
 }
