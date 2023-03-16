@@ -28,6 +28,41 @@ public abstract class Astros{
   /*******************************************/
 
   // métodos
+    // getter "radioEcuatorial"
+      public double getRadioEcuatorial(){
+        return this.radioEcuatorial;
+      }
+
+    /***************/
+
+    // getter "rotacionSobreSuEje"
+      public double getRotacionSobreSuEje(){
+        return this.rotacionSobreSuEje;
+      }
+
+    /***************/
+
+    // getter "masa"
+      public double getMasa(){
+        return this.masa;
+      }
+
+    /***************/
+
+    // getter "temperaturaMedia"
+      public double getTemperaturaMedia(){
+        return this.temperaturaMedia;
+      }
+
+    /***************/
+
+    // getter "gravedad"
+      public double getGravedad(){
+        return this.gravedad;
+      }
+
+    /***************/
+
     /**
       @name: "muestra"
       @info: muestra toda la información de la que se dispone sobre el astro
