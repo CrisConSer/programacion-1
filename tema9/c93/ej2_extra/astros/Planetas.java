@@ -31,16 +31,18 @@ public class Planetas extends Astros{
       @info: muestra toda la información de la que se dispone sobre el planeta
     */
       @Override
-        public void muestra(){
-          System.out.println("\n---------PLANETA---------");
-          System.out.println("- Radio ecuatorial: "+getRadioEcuatorial());
-          System.out.println("- Rotación sobre su eje: "+getRotacionSobreSuEje());
-          System.out.println("- Masa: "+getMasa());
-          System.out.println("- Temperatura media: "+getTemperaturaMedia());
-          System.out.println("- Gravedad: "+getGravedad());
-          System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
-          System.out.println("- Distancia al sol: "+this.distanciaAlSol);
-          System.out.println("- Órbita alrededor del sol: "+this.orbitaAlSol);
-          System.out.println("- Satélites: ");
+        public String muestra(){
+          String muestra=("\n---------PLANETA---------");
+            muestra+="\n- Radio ecuatorial: "+getRadioEcuatorial();
+            muestra+="\n- Rotación sobre su eje: "+getRotacionSobreSuEje();
+            muestra+="\n- Masa: "+getMasa();
+            muestra+="\n- Temperatura media: "+getTemperaturaMedia();
+            muestra+="\n- Gravedad: "+getGravedad();
+            muestra+="\n~~~~~~~~~~~~~~~~~~~~~~~~~";
+            muestra+="\n- Distancia al sol: "+this.distanciaAlSol;
+            muestra+="\n- Órbita alrededor del sol: "+this.orbitaAlSol;
+            muestra+="\n- Satélites: ";
+
+          return muestra;
         }
 }

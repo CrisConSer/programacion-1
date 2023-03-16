@@ -68,5 +68,5 @@ public abstract class Astros{
       @info: muestra toda la información de la que se dispone sobre el astro
       @return: 
     */
-      public abstract void muestra();
+      public abstract String muestra();
 }
