@@ -15,12 +15,11 @@ public class Planetas extends Astros{
   /****************************************/
 
   // constructor
-    public Planetas(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad, String nombre, double distanciaAlSol, double orbitaAlSol, String tieneSatelites){
+    public Planetas(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad, String nombre, double distanciaAlSol, double orbitaAlSol){
       super(radioEcuatorial, rotacionSobreSuEje, masa, temperaturaMedia, gravedad, nombre);
 
       this.distanciaAlSol=distanciaAlSol;
       this.orbitaAlSol=orbitaAlSol;
-      this.tieneSatelites=tieneSatelites;
     }
 
   /****************************************/
@@ -40,7 +39,7 @@ public class Planetas extends Astros{
             muestra+="\n- Temperatura media: "+getTemperaturaMedia()+" ºC";
             muestra+="\n- Gravedad: "+getGravedad()+" m/s^2";
             muestra+="\n~~~~~~~~~~~~~~~~~~~~~~~~~";
-            muestra+="\n- Distancia al sol: "+this.distanciaAlSol+" km";
+            muestra+="\n- Distancia al sol: "+this.distanciaAlSol+" km (valor recortado)";
             muestra+="\n- Órbita alrededor del sol: "+this.orbitaAlSol+" días";
             muestra+="\n- Satélites: ";
 

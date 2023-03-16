@@ -40,7 +40,7 @@ public class Satelites extends Astros{
         muestra+="\n- Temperatura media: "+getTemperaturaMedia()+" ºC";
         muestra+="\n- Gravedad: "+getGravedad()+" m/s^2";
         muestra+="\n~~~~~~~~~~~~~~~~~~~~~~~~~";
-        muestra+="\n- Distancia al planeta: "+this.distanciaAlPlaneta+" km";
+        muestra+="\n- Distancia al planeta: "+this.distanciaAlPlaneta+" km (valor recortado)";
         muestra+="\n- Órbita alrededor del planeta: "+this.orbitaPlanetaria+" días";
         muestra+="\n- Planeta: "+this.planeta;
 
