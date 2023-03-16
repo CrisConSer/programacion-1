@@ -16,20 +16,22 @@ public abstract class Astros{
 
   /*******************************************/
 
+  // constructor
+    public Astros(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad){
+      this.radioEcuatorial=radioEcuatorial;
+      this.rotacionSobreSuEje=rotacionSobreSuEje;
+      this.masa=masa;
+      this.temperaturaMedia=temperaturaMedia;
+      this.gravedad=gravedad;
+    }
+
+  /*******************************************/
+
   // métodos
     /**
       @name: "muestra"
       @info: muestra toda la información de la que se dispone sobre el astro
       @return: 
     */
-      public String muestra(){
-        String info="--------------------------";
-          info+="- Radio Ecuatorial: "+this.radioEcuatorial;
-          info+="- Rotación sobre su eje: "+this.rotacionSobreSuEje;
-          info+="- Masa: "+this.masa;
-          info+="Temperatura media: "+this.temperaturaMedia;
-          info+="Gravedad: "+this.gravedad;
-
-        return info;
-      }
+      public abstract void muestra();
 }
