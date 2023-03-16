@@ -32,11 +32,15 @@ public class Planetas extends Astros{
     */
       @Override
         public void muestra(){
-          System.out.println("---------PLANETA---------");
+          System.out.println("\n---------PLANETA---------");
           System.out.println("- Radio ecuatorial: "+getRadioEcuatorial());
           System.out.println("- Rotación sobre su eje: "+getRotacionSobreSuEje());
           System.out.println("- Masa: "+getMasa());
           System.out.println("- Temperatura media: "+getTemperaturaMedia());
           System.out.println("- Gravedad: "+getGravedad());
+          System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+          System.out.println("- Distancia al sol: "+this.distanciaAlSol);
+          System.out.println("- Órbita alrededor del sol: "+this.orbitaAlSol);
+          System.out.println("- Satélites: ");
         }
 }
