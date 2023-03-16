@@ -24,6 +24,7 @@ public abstract class Astros{
       this.masa=masa;
       this.temperaturaMedia=temperaturaMedia;
       this.gravedad=gravedad;
+      this.nombre=nombre;
     }
 
   /*******************************************/
