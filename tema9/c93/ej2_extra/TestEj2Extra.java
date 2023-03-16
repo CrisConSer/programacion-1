@@ -30,6 +30,25 @@ public class TestEj2Extra{
       // satélites
         Satelites[] arraySatelites=new Satelites[18];// 18 satélites de los más conocidos del sistema solar
 
+        arraySatelites[0]=new Satelites(1737.5, 27.3, 7.342, -20, 1.62, "La Luna", 384.400, 27.3, arrayPlanetas[3]);
+        arraySatelites[1]=new Satelites();
+        arraySatelites[2]=new Satelites();
+        arraySatelites[3]=new Satelites();
+        arraySatelites[4]=new Satelites();
+        arraySatelites[5]=new Satelites();
+        arraySatelites[6]=new Satelites();
+        arraySatelites[7]=new Satelites();
+        arraySatelites[8]=new Satelites();
+        arraySatelites[9]=new Satelites();
+        arraySatelites[10]=new Satelites();
+        arraySatelites[11]=new Satelites();
+        arraySatelites[12]=new Satelites();
+        arraySatelites[13]=new Satelites();
+        arraySatelites[14]=new Satelites();
+        arraySatelites[15]=new Satelites();
+        arraySatelites[16]=new Satelites();
+        arraySatelites[17]=new Satelites();
+
     /*************************************************/
 
     // debug planetas
