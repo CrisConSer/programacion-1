@@ -28,7 +28,7 @@ public class TestEj2Extra{
       /*********************/
 
       // satélites
-        Satelites[] arraySatelites=new Satelites[17];// 17 satélites de los más conocidos del sistema solar
+        Satelites[] arraySatelites=new Satelites[18];// 18 satélites de los más conocidos del sistema solar
 
     /*************************************************/
 
