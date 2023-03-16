@@ -36,5 +36,10 @@ public class TestEj2Extra{
       for(int i=0; i<arrayPlanetas.length; i++){
         System.out.print(arrayPlanetas[i].muestra());
       }
+    
+    // debug satélites
+      for(int i=0; i<arraySatelites.length; i++){
+        System.out.print(arraySatelites[i].muestra());
+      }
   }
 }
