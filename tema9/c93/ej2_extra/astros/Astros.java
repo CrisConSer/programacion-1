@@ -13,11 +13,12 @@ public abstract class Astros{
     private double masa;
     private double temperaturaMedia;
     private double gravedad;
+    private String nombre;
 
   /*******************************************/
 
   // constructor
-    public Astros(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad){
+    public Astros(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad, String nombre){
       this.radioEcuatorial=radioEcuatorial;
       this.rotacionSobreSuEje=rotacionSobreSuEje;
       this.masa=masa;

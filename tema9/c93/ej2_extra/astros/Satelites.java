@@ -15,8 +15,8 @@ public class Satelites extends Astros{
   /********************************************/
 
   // constructor
-    public Satelites(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad, double distanciaAlPlaneta, double orbitaPlanetaria, Planetas planeta){
-      super(radioEcuatorial, rotacionSobreSuEje, masa, temperaturaMedia, gravedad);
+    public Satelites(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad, String nombre, double distanciaAlPlaneta, double orbitaPlanetaria, Planetas planeta){
+      super(radioEcuatorial, rotacionSobreSuEje, masa, temperaturaMedia, gravedad, nombre);
 
       this.distanciaAlPlaneta=distanciaAlPlaneta;
       this.orbitaPlanetaria=orbitaPlanetaria;
@@ -33,14 +33,14 @@ public class Satelites extends Astros{
     @Override
     public String muestra(){
       String muestra=("\n---------SATÉLITE---------");
-        muestra+="\n- Radio ecuatorial: "+getRadioEcuatorial();
-        muestra+="\n- Rotación sobre su eje: "+getRotacionSobreSuEje();
-        muestra+="\n- Masa: "+getMasa();
-        muestra+="\n- Temperatura media: "+getTemperaturaMedia();
-        muestra+="\n- Gravedad: "+getGravedad();
+        muestra+="\n- Radio ecuatorial: "+getRadioEcuatorial()+" km";
+        muestra+="\n- Rotación sobre su eje: "+getRotacionSobreSuEje()+" horas";
+        muestra+="\n- Masa: "+getMasa()+" kg";
+        muestra+="\n- Temperatura media: "+getTemperaturaMedia()+" ºC";
+        muestra+="\n- Gravedad: "+getGravedad()+" m/s^2";
         muestra+="\n~~~~~~~~~~~~~~~~~~~~~~~~~";
-        muestra+="\n- Distancia al sol: "+this.distanciaAlPlaneta;
-        muestra+="\n- Órbita alrededor del sol: "+this.orbitaPlanetaria;
+        muestra+="\n- Distancia al planeta: "+this.distanciaAlPlaneta+" km";
+        muestra+="\n- Órbita alrededor del planeta: "+this.orbitaPlanetaria+" días";
         muestra+="\n- Planeta: "+this.planeta;
 
       return muestra;
