@@ -33,9 +33,10 @@ public class Planetas extends Astros{
       @Override
         public String muestra(){
           String muestra=("\n---------PLANETA---------");
+            muestra+="\n- Nombre: "+getNombre();
             muestra+="\n- Radio ecuatorial: "+getRadioEcuatorial()+" km";
             muestra+="\n- Rotación sobre su eje: "+getRotacionSobreSuEje()+" horas";
-            muestra+="\n- Masa: "+getMasa()+" kg";
+            muestra+="\n- Masa: "+getMasa()+" kg (valor recortado)";
             muestra+="\n- Temperatura media: "+getTemperaturaMedia()+" ºC";
             muestra+="\n- Gravedad: "+getGravedad()+" m/s^2";
             muestra+="\n~~~~~~~~~~~~~~~~~~~~~~~~~";

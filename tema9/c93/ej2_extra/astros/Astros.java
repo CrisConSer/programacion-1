@@ -64,6 +64,13 @@ public abstract class Astros{
 
     /***************/
 
+    // getter "nombre"
+      public String getNombre(){
+        return this.nombre;
+      }
+
+    /***************/
+
     /**
       @name: "muestra"
       @info: muestra toda la información de la que se dispone sobre el astro
