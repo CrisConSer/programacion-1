@@ -119,68 +119,68 @@ public class TestEj2Extra{
               System.out.print(arrayPlanetas[7].muestra());
             break;
 
-        /****************/
+          /****************/
 
-        // satélites
-          case 9:// la luna
-            System.out.print(arraySatelites[0].muestra());
-          break;
+          // satélites
+            case 9:// la luna
+              System.out.print(arraySatelites[0].muestra());
+            break;
 
-          case 10:// fobos
-            System.out.print(arraySatelites[1].muestra());
-          break;
+            case 10:// fobos
+              System.out.print(arraySatelites[1].muestra());
+            break;
 
-          case 11:// deimos
-            System.out.print(arraySatelites[2].muestra());
-          break;
+            case 11:// deimos
+              System.out.print(arraySatelites[2].muestra());
+            break;
 
-          case 12:// ío
-            System.out.print(arraySatelites[3].muestra());
-          break;
+            case 12:// ío
+              System.out.print(arraySatelites[3].muestra());
+            break;
 
-          case 13:// europa
-            System.out.print(arraySatelites[4].muestra());
-          break;
+            case 13:// europa
+              System.out.print(arraySatelites[4].muestra());
+            break;
 
-          case 14:// ganímedes
-            System.out.print(arraySatelites[5].muestra());
-          break;
+            case 14:// ganímedes
+              System.out.print(arraySatelites[5].muestra());
+            break;
 
-          case 15:// calisto
-            System.out.print(arraySatelites[6].muestra());
-          break;
+            case 15:// calisto
+              System.out.print(arraySatelites[6].muestra());
+            break;
 
-          case 16:// mimas
-            System.out.print(arraySatelites[7].muestra());
-          break;
+            case 16:// mimas
+              System.out.print(arraySatelites[7].muestra());
+            break;
 
-          case 17:// encélado
-            System.out.print(arraySatelites[8].muestra());
-          break;
+            case 17:// encélado
+              System.out.print(arraySatelites[8].muestra());
+            break;
 
-          case 18:// titán
-            System.out.print(arraySatelites[9].muestra());
-          break;
+            case 18:// titán
+              System.out.print(arraySatelites[9].muestra());
+            break;
 
-          case 19:// miranda
-            System.out.print(arraySatelites[10].muestra());
-          break;
+            case 19:// miranda
+              System.out.print(arraySatelites[10].muestra());
+            break;
 
-          case 20:// tritón
-            System.out.print(arraySatelites[11].muestra());
-          break;
+            case 20:// tritón
+              System.out.print(arraySatelites[11].muestra());
+            break;
 
-          case 21:// proteo
-            System.out.print(arraySatelites[12].muestra());
-          break;
+            case 21:// proteo
+              System.out.print(arraySatelites[12].muestra());
+            break;
 
-          case 22:// caronte
-            System.out.print(arraySatelites[13].muestra());
-          break;
+            case 22:// caronte
+              System.out.print(arraySatelites[13].muestra());
+            break;
 
-          case 23:// hydra
-            System.out.print(arraySatelites[14].muestra());
-          break;
+            case 23:// hydra
+              System.out.print(arraySatelites[14].muestra());
+            break;
         }
   }
 }
