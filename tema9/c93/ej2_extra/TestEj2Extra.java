@@ -78,8 +78,109 @@ public class TestEj2Extra{
       System.out.println("22. Caronte");
       System.out.println("23. Hydra");
 
-      System.out.print("Introduce el número correspondiente al astro del que quieres obtener información: ");
+      System.out.print("\nIntroduce el número correspondiente al astro del que quieres obtener información: ");
         Scanner input=new Scanner(System.in);
           int opcion=input.nextInt();
+
+      /*************************/
+
+      // switch
+        switch(opcion){
+          // planetas
+            case 1:// mercurio
+              System.out.print(arrayPlanetas[0].muestra());
+            break;
+
+            case 2:// venus
+              System.out.print(arrayPlanetas[1].muestra());
+            break;
+
+            case 3:// tierra
+              System.out.print(arrayPlanetas[2].muestra());
+            break;
+
+            case 4:// marte
+              System.out.print(arrayPlanetas[3].muestra());
+            break;
+
+            case 5:// júpiter
+              System.out.print(arrayPlanetas[4].muestra());
+            break;
+
+            case 6:// saturno
+              System.out.print(arrayPlanetas[5].muestra());
+            break;
+
+            case 7:// urano
+              System.out.print(arrayPlanetas[6].muestra());
+            break;
+
+            case 8:// neptuno
+              System.out.print(arrayPlanetas[7].muestra());
+            break;
+
+        /****************/
+
+        // satélites
+          case 9:// la luna
+            System.out.print(arraySatelites[0].muestra());
+          break;
+
+          case 10:// fobos
+            System.out.print(arraySatelites[1].muestra());
+          break;
+
+          case 11:// deimos
+            System.out.print(arraySatelites[2].muestra());
+          break;
+
+          case 12:// ío
+            System.out.print(arraySatelites[3].muestra());
+          break;
+
+          case 13:// europa
+            System.out.print(arraySatelites[4].muestra());
+          break;
+
+          case 14:// ganímedes
+            System.out.print(arraySatelites[5].muestra());
+          break;
+
+          case 15:// calisto
+            System.out.print(arraySatelites[6].muestra());
+          break;
+
+          case 16:// mimas
+            System.out.print(arraySatelites[7].muestra());
+          break;
+
+          case 17:// encélado
+            System.out.print(arraySatelites[8].muestra());
+          break;
+
+          case 18:// titán
+            System.out.print(arraySatelites[9].muestra());
+          break;
+
+          case 19:// miranda
+            System.out.print(arraySatelites[10].muestra());
+          break;
+
+          case 20:// tritón
+            System.out.print(arraySatelites[11].muestra());
+          break;
+
+          case 21:// proteo
+            System.out.print(arraySatelites[12].muestra());
+          break;
+
+          case 22:// caronte
+            System.out.print(arraySatelites[13].muestra());
+          break;
+
+          case 23:// hydra
+            System.out.print(arraySatelites[14].muestra());
+          break;
+        }
   }
 }
