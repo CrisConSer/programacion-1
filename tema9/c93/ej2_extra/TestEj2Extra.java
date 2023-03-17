@@ -10,6 +10,8 @@ import tema9.c93.ej2_extra.astros.Planetas;
 
 import tema9.c93.ej2_extra.astros.Satelites;
 
+import java.util.Scanner;
+
 public class TestEj2Extra{
   public static void main(String[] args){
     // creación de instancias
@@ -58,5 +60,26 @@ public class TestEj2Extra{
       System.out.println("6. Saturno");
       System.out.println("7. Urano");
       System.out.println("8. Neptuno");
+
+      System.out.println("\n----------------------SATÉLITES----------------------");
+      System.out.println("9. La Luna");
+      System.out.println("10. Fobos");
+      System.out.println("11. Deimos");
+      System.out.println("12. Ío");
+      System.out.println("13. Europa");
+      System.out.println("14. Ganímedes");
+      System.out.println("15. Calisto");
+      System.out.println("16. Mimas");
+      System.out.println("17. Encélado");
+      System.out.println("18. Titán");
+      System.out.println("19. Miranda");
+      System.out.println("20. Tritón");
+      System.out.println("21. Proteo");
+      System.out.println("22. Caronte");
+      System.out.println("23. Hydra");
+
+      System.out.print("Introduce el número correspondiente al astro del que quieres obtener información: ");
+        Scanner input=new Scanner(System.in);
+          int opcion=input.nextInt();
   }
 }
