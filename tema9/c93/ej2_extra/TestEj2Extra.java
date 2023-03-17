@@ -28,7 +28,7 @@ public class TestEj2Extra{
       /*********************/
 
       // satélites
-        Satelites[] arraySatelites=new Satelites[18];// 18 satélites de los más conocidos del sistema solar
+        Satelites[] arraySatelites=new Satelites[15];// 15 satélites de los más conocidos del sistema solar
 
         arraySatelites[0]=new Satelites(1737.5, 27.3, 7.342, -20, 1.62, "La Luna", 384.400, 27.3, arrayPlanetas[2]);
         arraySatelites[1]=new Satelites(11.1, 7.66, 1.08e+16, -40, 0.0084, "Fobos", 9378, 7.66, arrayPlanetas[3]);
@@ -45,9 +45,6 @@ public class TestEj2Extra{
         arraySatelites[12]=new Satelites(210, 1.122315, 5.02e+19, -200, 0.064, "Proteo", 117647, 1.12, arrayPlanetas[7]);
         arraySatelites[13]=new Satelites(606, 6.387230, 1.586e+21, -230, 0.273, "Caronte", 19570, 6.39, arrayPlanetas[7]);
         arraySatelites[14]=new Satelites(40, 38.2021, 4.2e+16, 0, 9.8, "Hydra", 64749, 38.2, arrayPlanetas[7]);
-        arraySatelites[15]=new Satelites();
-        arraySatelites[16]=new Satelites();
-        arraySatelites[17]=new Satelites();
 
     /*************************************************/
 
