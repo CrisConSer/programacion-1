@@ -48,14 +48,15 @@ public class TestEj2Extra{
 
     /*************************************************/
 
-    // debug planetas
-      for(int i=0; i<arrayPlanetas.length; i++){
-        System.out.print(arrayPlanetas[i].muestra());
-      }
-    
-    // debug satélites
-      for(int i=0; i<arraySatelites.length; i++){
-        System.out.print(arraySatelites[i].muestra());
-      }
+    // menú
+      System.out.println("----------------------PLANETAS----------------------");
+      System.out.println("1. Mercurio");
+      System.out.println("2. Venus");
+      System.out.println("3. Tierra");
+      System.out.println("4. Marte");
+      System.out.println("5. Júpiter");
+      System.out.println("6. Saturno");
+      System.out.println("7. Urano");
+      System.out.println("8. Neptuno");
   }
 }
