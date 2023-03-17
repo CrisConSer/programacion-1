@@ -41,7 +41,7 @@ public class Satelites extends Astros{
         muestra+="\n- Gravedad: "+getGravedad()+" m/s^2";
         muestra+="\n- Distancia al planeta: "+this.distanciaAlPlaneta+" km";
         muestra+="\n- Órbita alrededor del planeta: "+this.orbitaPlanetaria+" días";
-        muestra+="\n- Planeta: "+this.planeta;
+        muestra+="\n- Planeta: "+this.planeta.getNombre();
 
       return muestra;
     }
