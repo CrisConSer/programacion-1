@@ -32,8 +32,8 @@ public class TestEj2Extra{
 
         arraySatelites[0]=new Satelites(1737.5, 27.3, 7.342, -20, 1.62, "La Luna", 384.400, 27.3, arrayPlanetas[2]);
         arraySatelites[1]=new Satelites(11.1, 7.66, 1.08e+16, -40, 0.0084, "Fobos", 9378, 7.66, arrayPlanetas[3]);
-        arraySatelites[2]=new Satelites();
-        arraySatelites[3]=new Satelites();
+        arraySatelites[2]=new Satelites(6.2, 30.3, 2.4e+15, -40, 0.003, "Deimos", 23460, 1.26, arrayPlanetas[3]);
+        arraySatelites[3]=new Satelites(1821.3, 42.5, 8.94e+22, -143, 1.796, "Ío", 421700, 1.77, arrayPlanetas[4]);
         arraySatelites[4]=new Satelites();
         arraySatelites[5]=new Satelites();
         arraySatelites[6]=new Satelites();
