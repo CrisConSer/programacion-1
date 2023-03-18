@@ -6,24 +6,54 @@
 
 package tema9.c93.ej3_extra.cuentaBancaria;
 
-public abstract class CuentaBancaria{
+public class CuentaBancaria{
   // atributos
-    private String iban;
+    private String numeroCuenta="";
+    private String iban="";
     private double saldo;
 
   /****************************************************/
 
   // constructor
-    public CuentaBancaria(String iban, double saldo){
-      this.iban=iban;
-      this.saldo=saldo;
+    public CuentaBancaria(double saldo){
+      // número de cuenta
+        for(int i=0; i<4; i++){
+          for(int j=0; j<4; j++){
+            this.numeroCuenta+=(int)(Math.random()*10);
+          }
+
+          this.numeroCuenta+=" ";
+        }
+
+      /***********************/
+
+      // iban
+        String codigoPais="ES";
+        String codigoControl=String.format("%02d", (int)(Math.random()*100));// código de control aleatorio de dos dígitos
+
+        // eliminar espacios de la cadena de número de cuenta y dividirla en bloques de 4 caracteres
+        String cuentaConEspacios=this.numeroCuenta.replace(" ", "").replaceAll("(.{4})", "$1 ").trim();
+
+        this.iban=codigoPais+codigoControl+" "+cuentaConEspacios;
+
+      /***********************/
+
+      // saldo
+        this.saldo=saldo;
     }
 
   /****************************************************/
 
   // métodos
     // getter "iba"
-      public String getIbban(){
+    public String getNumeroCuenta(){
+      return this.numeroCuenta;
+    }
+
+    /********************/
+
+    // getter "iban"
+      public String getIban(){
         return this.iban;
       }
 
