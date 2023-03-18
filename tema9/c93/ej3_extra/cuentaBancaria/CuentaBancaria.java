@@ -99,6 +99,14 @@ public abstract class CuentaBancaria{
     /********************/
 
     /**
+      @name: traspaso
+      @info: traspasar dinero de una cuenta a otra
+    */
+      
+
+    /********************/
+
+    /**
       @name: calcularInteres
       @info: calcular interés de la cuenta
     */
