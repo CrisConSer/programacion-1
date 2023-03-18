@@ -33,4 +33,13 @@ public abstract class CuentaBancaria{
       public double getSaldo(){
         return this.saldo;
       }
+
+    /********************/
+
+    /**
+      @name: ingresar
+      @info: aumentar el valor del atributo "saldo"
+      @param double saldo: valor a sumar al saldo actual
+    */
+      
 }
