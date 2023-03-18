@@ -32,7 +32,7 @@ public class CuentaBancaria{
         String codigoControl=String.format("%02d", (int)(Math.random()*100));// código de control aleatorio de dos dígitos
 
         // eliminar espacios de la cadena de número de cuenta y dividirla en bloques de 4 caracteres
-        String cuentaConEspacios=this.numeroCuenta.replace(" ", "").replaceAll("(.{4})", "$1 ").trim();
+          String cuentaConEspacios=this.numeroCuenta.replace(" ", "").replaceAll("(.{4})", "$1 ").trim();
 
         this.iban=codigoPais+codigoControl+" "+cuentaConEspacios;
 
