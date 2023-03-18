@@ -90,10 +90,23 @@ public abstract class CuentaBancaria{
     /**
       @name: retirar
       @info: disminuir el valor del atributo "saldo"
-      @param double saldo: valor a restar al saldo actual
+      @param saldo: valor a restar al saldo actual
     */
       public void retirar(double saldo){
         this.saldo-=saldo;
+      }
+
+    /********************/
+
+    /**
+      @name: informacionCuenta
+      @info: mostrar toda la información de la cuenta
+      @param cuenta: cuenta de la que se muestra la información 
+    */
+      public String informacionCuenta(String cuenta){
+        String informacionCuenta="";
+
+        return informacionCuenta;
       }
 
     /********************/
