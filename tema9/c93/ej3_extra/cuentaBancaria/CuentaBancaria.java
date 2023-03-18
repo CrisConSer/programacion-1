@@ -6,7 +6,7 @@
 
 package tema9.c93.ej3_extra.cuentaBancaria;
 
-public class CuentaBancaria{
+public abstract class CuentaBancaria{
   // atributos
     private String numeroCuenta="";
     private String iban="";
@@ -28,7 +28,21 @@ public class CuentaBancaria{
       /***********************/
 
       // iban
-        
+        this.iban+="ES";
+
+        for(int i=0; i<2; i++){
+          this.iban+=(int)(Math.random()*10);
+        }
+
+        this.iban+=" ";
+
+        for(int i=0; i<4; i++){
+          for(int j=0; j<4; j++){
+            this.iban+=(int)(Math.random()*10);
+          }
+
+          this.iban+=" ";
+        }
 
       /***********************/
 
