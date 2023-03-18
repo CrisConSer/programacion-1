@@ -12,6 +12,8 @@ public abstract class CuentaBancaria{
     private String iban="";
     private double saldo;
 
+    private static final double interesAnualBasico=20;
+
   /****************************************************/
 
   // constructor
@@ -93,4 +95,12 @@ public abstract class CuentaBancaria{
       public void retirar(double saldo){
         this.saldo-=saldo;
       }
+
+    /********************/
+
+    /**
+      @name: calcularInteres
+      @info: calcular interés de la cuenta
+    */
+      public abstract double calcularInteres();
 }
