@@ -12,7 +12,7 @@ public abstract class CuentaBancaria{
     private String iban="";
     private double saldo;
 
-    private static final double interesAnualBasico=20;
+    private static final double interesAnualBasico=0.01;// interés del 1%
 
   /****************************************************/
 
