@@ -104,7 +104,10 @@ public abstract class CuentaBancaria{
       @param cuenta: cuenta de la que se muestra la información 
     */
       public String informacionCuenta(String cuenta){
-        String informacionCuenta="";
+        String informacionCuenta="---------------------------------";
+          informacionCuenta+="- Número de cuenta: "+getNumeroCuenta();
+          informacionCuenta+="- IBAN: "+getIban();
+          informacionCuenta+="- Saldo actual: "+getSaldo();
 
         return informacionCuenta;
       }
