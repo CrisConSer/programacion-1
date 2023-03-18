@@ -11,7 +11,7 @@ public abstract class CuentaBancaria{
     private String iban;
     private double saldo;
 
-  /**********************************/
+  /****************************************************/
 
   // constructor
     public CuentaBancaria(String iban, double saldo){
@@ -19,8 +19,18 @@ public abstract class CuentaBancaria{
       this.saldo=saldo;
     }
 
-  /**********************************/
+  /****************************************************/
 
   // métodos
-    
+    // getter "iba"
+      public String getIbban(){
+        return this.iban;
+      }
+
+    /********************/
+
+    // getter "saldo"
+      public double getSaldo(){
+        return this.saldo;
+      }
 }
