@@ -144,7 +144,7 @@ public abstract class CuentaBancaria{
 
     /**
       @name: calcularIntereses
-      @info: calcular interés de la cuenta
+      @info: calcular intereses de la cuenta
     */
       public abstract void calcularIntereses();
 }
