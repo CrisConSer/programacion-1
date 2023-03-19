@@ -17,6 +17,11 @@ public class TestEj3Extra{
     // cuenta elegida
       int num;
 
+    // dinero a ingresar/retirar/traspasar
+      double dinero;
+
+    /*************************************************************/
+
     // array de cuentas
       int t=4;
 
@@ -70,8 +75,11 @@ public class TestEj3Extra{
           /*********************/
 
           case 3:// ingresar dinero
-            System.out.print("¿En qué tarjeta quieres ingresar dinero?");
+            System.out.print("¿En qué cuenta quieres ingresar dinero? -> ");
               num=input.nextInt();
+
+            System.out.print("¿Cuánto dinero quieres ingresar? -> ");
+              dinero=input.nextDouble();
           break;
         }
       }while(opcion!=7);
