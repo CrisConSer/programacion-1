@@ -14,9 +14,10 @@ public class TestEj3Extra{
   public static void main(String[] args){
     // menú
       System.out.println("1. Listado");
-      System.out.println("2. Ingresar dinero");
-      System.out.println("3. Retirar dinero");
-      System.out.println("4. Traspasar dinero");
-      System.out.println("5. Calcular el interés");
+      System.out.println("2. Mostrar información");
+      System.out.println("3. Ingresar dinero");
+      System.out.println("4. Retirar dinero");
+      System.out.println("5. Traspasar dinero");
+      System.out.println("6. Calcular el interés");
   }
 }
