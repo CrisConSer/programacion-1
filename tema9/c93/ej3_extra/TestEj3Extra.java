@@ -58,7 +58,7 @@ public class TestEj3Extra{
           /*********************/
 
           case 2:// mostrar información
-            
+            System.out.print("");
           break;
         }
       }while(opcion!=7);
