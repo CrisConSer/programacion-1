@@ -7,6 +7,13 @@
 package tema9.c93.ej3_extra.cuentaBancaria;
 
 public class CuentaCorriente extends CuentaBancaria{
+  // constructor
+    public CuentaCorriente(double saldo){
+      super(saldo);
+    }
+
+  /***************************************/
+
   // métodos
     /**
       @name: calcularInteres
