@@ -156,9 +156,9 @@ public abstract class CuentaBancaria{
       @param identificativo: identificativo de la cuenta actual
     */
       public String toString(int identificativo){
-        String toString="\n~~~~~~~~~~~~~~~~~~~~~~~~~~~";
-          toString+="\n- Cuenta número "+identificativo+" -> "+numeroCuenta.substring(numeroCuenta.length()-4);
-          toString+="\n~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+        String toString="\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+          toString+="\n- Cuenta número "+identificativo+" -> **** **** **** "+numeroCuenta.substring(numeroCuenta.length()-4);
+          toString+="\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
 
         return toString;
       }
