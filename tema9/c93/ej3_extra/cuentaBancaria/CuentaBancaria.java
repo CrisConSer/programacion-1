@@ -104,7 +104,7 @@ public abstract class CuentaBancaria{
       @param saldo: valor a restar al saldo actual
     */
       public void retirar(double saldo){
-        anadir(saldo);
+        anadir(-saldo);
       }
 
     /********************/
