@@ -61,7 +61,7 @@ public class TestEj3Extra{
             System.out.print("Número de la cuenta sobre la que quieres obtener información: ");
               int num=input.nextInt();
 
-            cuentas[num--].informacionCuenta();
+            System.out.println(cuentas[num--].informacionCuenta());
           break;
         }
       }while(opcion!=7);
