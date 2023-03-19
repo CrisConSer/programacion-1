@@ -76,6 +76,13 @@ public abstract class CuentaBancaria{
 
     /********************/
 
+    // getter "interesAnualBasico"
+      public double getInteresAnualBasico(){
+        return this.interesAnualBasico;
+      }
+
+    /********************/
+
     /**
       @name: anadir
       @info: añade una cantidad de dinero al saldo de la cuenta, positiva o negativa
@@ -139,5 +146,5 @@ public abstract class CuentaBancaria{
       @name: calcularInteres
       @info: calcular interés de la cuenta
     */
-      public abstract double calcularInteres();
+      public abstract void calcularInteres();
 }
