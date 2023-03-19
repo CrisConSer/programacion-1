@@ -46,7 +46,9 @@ public class Planetas extends Astros{
             muestra+="\n- Órbita alrededor del sol: "+this.orbitaAlSol+" días";
             muestra+="\n- Satélites: ";
               for(int i=0; i<this.satelites.length; i++){
-                muestra+="\n  - "+this.satelites[i].getNombre();
+                if(this.satelites[i]!=null){
+                  muestra+="\n  - "+this.satelites[i].getNombre();
+                }
               }
 
           return muestra;
@@ -54,15 +56,18 @@ public class Planetas extends Astros{
 
     /**********************/
 
-    public void agregarSatelite(Satelites satelite){
-      this.numSatelites=0;
+    /**
+      @name: agregarSatelite
+      @info: agregar los satélites correspondientes a cada planeta
+      @param satelite: satélite a agregar
+    */
+      public void agregarSatelite(Satelites satelite){
+        if(this.numSatelites < this.satelites.length){
+          this.satelites[this.numSatelites]=satelite;
 
-      if(this.numSatelites<this.satelites.length){
-        satelites[this.numSatelites]=satelite;
-
-        this.numSatelites++;
-      }else{
-        System.out.println("No se pueden agregar más satélites ya que el planeta no cuenta con más.");
+          this.numSatelites++;
+        }else{
+          System.out.println("No se pueden agregar más satélites ya que el planeta no cuenta con más.");
+        }
       }
-  }
 }
