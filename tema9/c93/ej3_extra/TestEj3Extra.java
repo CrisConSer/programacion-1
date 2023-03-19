@@ -125,7 +125,11 @@ public class TestEj3Extra{
             System.out.print("¿De qué cuenta quieres calcular el interés? -> ");
               num=input.nextInt();
 
-            
+            if(cuentas[num-=1]instanceof CuentaCorriente){
+              cuentas[num-1].calcularIntereses();
+            }else{
+
+            }
           break;
         }
       }while(opcion!=7);
