@@ -135,10 +135,18 @@ public abstract class CuentaBancaria{
     /**
       @name: traspaso
       @info: traspasar dinero de una cuenta a otra
-      @param receptora: cuenta que recibe el dinero
+      @param: 
+        - receptora: cuenta que recibe el dinero
+        - dinero: dinero que se traspasa de una cuenta a otra
     */
-      public void traspaso(){
-        
+      public void traspaso(int receptora, double dinero){
+        if(dinero>getSaldo()){
+          System.out.println("\nLa cuenta desde la que se va a traspasar el dinero no cuenta con "+dinero+" euros.\n");
+        }else{
+          retirar(dinero);
+
+          
+        }
       }
 
     /********************/
