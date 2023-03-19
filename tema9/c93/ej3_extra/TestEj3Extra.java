@@ -108,13 +108,13 @@ public class TestEj3Extra{
             System.out.print("Desde qué cuenta quieres traspasar dinero? -> ");
               emisora=input.nextInt();
 
-            System.out.print("Y a qué cuenta quieres traspasar el dinero? -> ");
+            System.out.print("¿Y a qué cuenta quieres traspasar el dinero? -> ");
               receptora=input.nextInt();
 
             System.out.print("¿Cuánto dinero quieres traspasar? -> ");
               dinero=input.nextDouble();
 
-            
+            cuentas[emisora-=1].traspaso(cuentas[receptora-=1], dinero);
           break;
         }
       }while(opcion!=7);
