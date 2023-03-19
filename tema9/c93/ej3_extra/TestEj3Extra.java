@@ -80,6 +80,24 @@ public class TestEj3Extra{
 
             System.out.print("¿Cuánto dinero quieres ingresar? -> ");
               dinero=input.nextDouble();
+
+            cuentas[num-=1].ingresar(dinero);
+
+            System.out.println("\nEl dinero ha sido ingresado. Puedes obtener la información de esta la cuenta número "+num+" en la opción número 2 del menú principal.\n");
+          break;
+
+          /*********************/
+
+          case 4:// retirar dinero
+            System.out.print("¿En qué cuenta quieres retirar dinero? -> ");
+              num=input.nextInt();
+
+            System.out.print("¿Cuánto dinero quieres retirar? -> ");
+              dinero=input.nextDouble();
+
+            cuentas[num-=1].retirar(dinero);
+
+            System.out.println("\nEl dinero ha sido retirado. Puedes obtener la información de esta la cuenta número "+num+" en la opción número 2 del menú principal.\n");
           break;
         }
       }while(opcion!=7);
