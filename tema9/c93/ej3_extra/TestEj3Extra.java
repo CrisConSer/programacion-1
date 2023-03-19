@@ -58,7 +58,10 @@ public class TestEj3Extra{
           /*********************/
 
           case 2:// mostrar información
-            System.out.print("");
+            System.out.print("Número de la cuenta sobre la que quieres obtener información: ");
+              int num=input.nextInt();
+
+            cuentas[num--].informacionCuenta();
           break;
         }
       }while(opcion!=7);
