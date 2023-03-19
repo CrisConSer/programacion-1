@@ -121,11 +121,11 @@ public abstract class CuentaBancaria{
       @info: mostrar toda la información de la cuenta
     */
       public String informacionCuenta(){
-        String informacionCuenta="\n---------------------------------";
+        String informacionCuenta="\n------------------------------------------------";
           informacionCuenta+="\n- Número de cuenta: "+getNumeroCuenta();
           informacionCuenta+="\n- IBAN: "+getIban();
           informacionCuenta+="\n- Saldo actual: "+getSaldo();
-          informacionCuenta+="\n---------------------------------\n";
+          informacionCuenta+="\n------------------------------------------------\n";
 
         return informacionCuenta;
       }
@@ -135,6 +135,7 @@ public abstract class CuentaBancaria{
     /**
       @name: traspaso
       @info: traspasar dinero de una cuenta a otra
+      @param receptora: cuenta que recibe el dinero
     */
       public void traspaso(){
         
