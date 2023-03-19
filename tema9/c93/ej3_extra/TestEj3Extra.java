@@ -19,7 +19,7 @@ public class TestEj3Extra{
 
       CuentaBancaria[] cuentas=new CuentaBancaria[t];
 
-      for(int i=0; i<t; i+=2){
+      for(int i=0; i<t; i++){
         cuentas[i]=new CuentaCorriente(500+(int)(Math.random()*801+100));
 
         cuentas[i+=1]=new CuentaAhorro(500+(int)(Math.random()*801+100));

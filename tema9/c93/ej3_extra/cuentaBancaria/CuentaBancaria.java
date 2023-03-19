@@ -122,10 +122,10 @@ public abstract class CuentaBancaria{
       @param cuenta: cuenta de la que se muestra la información 
     */
       public String informacionCuenta(String cuenta){
-        String informacionCuenta="---------------------------------";
-          informacionCuenta+="- Número de cuenta: "+getNumeroCuenta();
-          informacionCuenta+="- IBAN: "+getIban();
-          informacionCuenta+="- Saldo actual: "+getSaldo();
+        String informacionCuenta="\n---------------------------------";
+          informacionCuenta+="\n- Número de cuenta: "+getNumeroCuenta();
+          informacionCuenta+="\n- IBAN: "+getIban();
+          informacionCuenta+="\n- Saldo actual: "+getSaldo();
 
         return informacionCuenta;
       }
@@ -157,8 +157,8 @@ public abstract class CuentaBancaria{
     */
       public String toString(int identificativo){
         String toString="\n~~~~~~~~~~~~~~~~~~~~~~~";
-          toString+="- Cuenta número "+identificativo+" -> "+numeroCuenta.substring(numeroCuenta.length()-4);
-          toString+="~~~~~~~~~~~~~~~~~~~~~~~";
+          toString+="\n- Cuenta número "+identificativo+" -> "+numeroCuenta.substring(numeroCuenta.length()-4);
+          toString+="\n~~~~~~~~~~~~~~~~~~~~~~~";
 
         return toString;
       }
