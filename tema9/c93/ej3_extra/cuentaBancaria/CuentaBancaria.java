@@ -77,12 +77,23 @@ public abstract class CuentaBancaria{
     /********************/
 
     /**
+      @name: anadir
+      @info: añade una cantidad de dinero al saldo de la cuenta, positiva o negativa
+      @param cantidad: cantidad a añadir
+    */
+      public void anadir(double cantidad){
+        this.saldo+=cantidad;
+      }
+
+    /********************/
+
+    /**
       @name: ingresar
       @info: aumentar el valor del atributo "saldo"
       @param double saldo: valor a sumar al saldo actual
     */
       public void ingresar(double saldo){
-        this.saldo+=saldo;
+        anadir(saldo);
       }
 
     /********************/
@@ -93,7 +104,7 @@ public abstract class CuentaBancaria{
       @param saldo: valor a restar al saldo actual
     */
       public void retirar(double saldo){
-        this.saldo-=saldo;
+        anadir(saldo);
       }
 
     /********************/
