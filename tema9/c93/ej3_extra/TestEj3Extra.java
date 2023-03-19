@@ -122,6 +122,9 @@ public class TestEj3Extra{
           /*********************/
 
           case 6:// calcular interés
+            System.out.print("¿De qué cuenta quieres calcular el interés? -> ");
+              num=input.nextInt();
+
             
           break;
         }
