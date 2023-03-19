@@ -16,6 +16,8 @@ public class TestEj3Extra{
   public static void main(String[] args){
     // cuenta elegida
       int num;
+      int emisora;
+      int receptora;
 
     // dinero a ingresar/retirar/traspasar
       double dinero;
@@ -103,6 +105,15 @@ public class TestEj3Extra{
           /*********************/
 
           case 5:// traspasar dinero
+            System.out.print("Desde qué cuenta quieres traspasar dinero? -> ");
+              emisora=input.nextInt();
+
+            System.out.print("Y a qué cuenta quieres traspasar el dinero? -> ");
+              receptora=input.nextInt();
+
+            System.out.print("¿Cuánto dinero quieres traspasar? -> ");
+              dinero=input.nextDouble();
+
             
           break;
         }
