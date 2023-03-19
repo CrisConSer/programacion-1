@@ -51,7 +51,7 @@ public class TestEj3Extra{
         switch(opcion){
           case 1:// listado
             for(int i=0; i<t; i++){
-              System.out.println(cuentas[i]);
+              System.out.println(cuentas[i].toString(i+1));
             }
           break;
         }

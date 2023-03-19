@@ -147,4 +147,19 @@ public abstract class CuentaBancaria{
       @info: calcular intereses de la cuenta
     */
       public abstract void calcularIntereses();
+
+    /********************/
+
+    /**
+      @name: toString
+      @info: muestreo del número de cuenta
+      @param identificativo: identificativo de la cuenta actual
+    */
+      public String toString(int identificativo){
+        String toString="\n~~~~~~~~~~~~~~~~~~~~~~~";
+          toString+="- Cuenta número "+identificativo+" -> "+numeroCuenta.substring(numeroCuenta.length()-4);
+          toString+="~~~~~~~~~~~~~~~~~~~~~~~";
+
+        return toString;
+      }
 }
