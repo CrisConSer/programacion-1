@@ -25,13 +25,13 @@ public class TestEj3Extra{
         cuentas[i+=1]=new CuentaAhorro(500+(int)(Math.random()*801+100));
       }
 
-    /*******************************************/
+    /*************************************************************/
 
     // scanner
       Scanner input=new Scanner(System.in);
         int opcion;
 
-    /*******************************************/
+    /*************************************************************/
 
     // menú
       do{
@@ -46,13 +46,19 @@ public class TestEj3Extra{
         System.out.print("Selecciona una opción: ");
           opcion=input.nextInt();
 
-        /************************/
+        /*******************************/
 
         switch(opcion){
           case 1:// listado
             for(int i=0; i<t; i++){
               System.out.println(cuentas[i].toString(i+1));
             }
+          break;
+
+          /*********************/
+
+          case 2:// mostrar información
+            
           break;
         }
       }while(opcion!=7);
