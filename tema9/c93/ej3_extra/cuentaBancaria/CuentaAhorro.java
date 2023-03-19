@@ -28,9 +28,13 @@ public class CuentaAhorro extends CuentaBancaria{
         if(getSaldo()>=saldoMinimo){
           double intereses=getSaldo()*(2*getInteresAnualBasico());
             anadir(intereses);
+
+          System.out.println("\nLos intereses de esta cuenta son "+intereses+" euros y han sido añadidos con éxito.\n");
         }else{
           double intereses=getSaldo()*(0.5*getInteresAnualBasico());
             anadir(intereses);
+
+          System.out.println("\nLos intereses de esta cuenta son "+intereses+" euros y han sido añadidos con éxito.\n");
         }
       }
 }

@@ -21,7 +21,8 @@ public class CuentaCorriente extends CuentaBancaria{
     */
     public void calcularIntereses(){
       double intereses=getSaldo()*getInteresAnualBasico();
+        anadir(intereses);
 
-      anadir(intereses);
+      System.out.println("\nLos intereses de esta cuenta son "+intereses+" euros y han sido añadidos con éxito.\n");
     }
 }

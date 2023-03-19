@@ -126,9 +126,9 @@ public class TestEj3Extra{
               num=input.nextInt();
 
             if(cuentas[num-=1]instanceof CuentaCorriente){
-              cuentas[num-1].calcularIntereses();
+              cuentas[num].calcularIntereses();
             }else{
-
+              cuentas[num].calcularIntereses();
             }
           break;
         }
