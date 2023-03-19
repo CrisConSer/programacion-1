@@ -33,20 +33,35 @@ public class TestEj2Extra{
         Satelites[] arraySatelites=new Satelites[15];// 15 satélites de los más conocidos del sistema solar
 
         arraySatelites[0]=new Satelites(1737.5, 27.3, 7.342, -20, 1.62, "La Luna", 384.400, 27.3, arrayPlanetas[2]);
+          arrayPlanetas[2].agregarSatelite(arraySatelites[0]);
         arraySatelites[1]=new Satelites(11.1, 7.66, 1.08e+16, -40, 0.0084, "Fobos", 9378, 7.66, arrayPlanetas[3]);
+          arrayPlanetas[3].agregarSatelite(arraySatelites[1]);
         arraySatelites[2]=new Satelites(6.2, 30.3, 2.4e+15, -40, 0.003, "Deimos", 23460, 1.26, arrayPlanetas[3]);
+          arrayPlanetas[3].agregarSatelite(arraySatelites[2]);
         arraySatelites[3]=new Satelites(1821.3, 42.5, 8.94e+22, -143, 1.796, "Ío", 421700, 1.77, arrayPlanetas[4]);
+          arrayPlanetas[4].agregarSatelite(arraySatelites[3]);
         arraySatelites[4]=new Satelites(1560.8, 85.2, 4.8e+22, -161, 1.314, "Europa", 671034, 3.55, arrayPlanetas[4]);
+          arrayPlanetas[4].agregarSatelite(arraySatelites[4]);
         arraySatelites[5]=new Satelites(2634.1, 171, 1.48e+23, -163, 1.428, "Ganímedes", 1070400, 7.16, arrayPlanetas[4]);
+          arrayPlanetas[4].agregarSatelite(arraySatelites[5]);
         arraySatelites[6]=new Satelites(2410.3, 16.69, 1.08e+23, -139, 1.235, "Calisto", 1883000, 16.69, arrayPlanetas[4]);
+          arrayPlanetas[4].agregarSatelite(arraySatelites[6]);
         arraySatelites[7]=new Satelites(198.2, 22.6, 3.75e+19, -181, 0.063, "Mimas", 185540, 0.94, arrayPlanetas[5]);
+          arrayPlanetas[5].agregarSatelite(arraySatelites[7]);
         arraySatelites[8]=new Satelites(252.1, 1.370218, 1.08e+20, -198, 0.113, "Encélado", 238037, 1.37, arrayPlanetas[5]);
+          arrayPlanetas[5].agregarSatelite(arraySatelites[8]);
         arraySatelites[9]=new Satelites(2575, 15.94542, 1.35e+23, -179, 1.352, "Titán", 1221870, 15.95, arrayPlanetas[5]);
+          arrayPlanetas[5].agregarSatelite(arraySatelites[9]);
         arraySatelites[10]=new Satelites(235.8, 34.2, 6.59e+19, -187, 0.079, "Miranda", 129390, 1.41, arrayPlanetas[6]);
+          arrayPlanetas[6].agregarSatelite(arraySatelites[10]);
         arraySatelites[11]=new Satelites(1353.4, 5.876854, 2.14e+22, -235, 0.779, "Tritón", 354760, 5.88, arrayPlanetas[7]);
+          arrayPlanetas[7].agregarSatelite(arraySatelites[11]);
         arraySatelites[12]=new Satelites(210, 1.122315, 5.02e+19, -200, 0.064, "Proteo", 117647, 1.12, arrayPlanetas[7]);
+          arrayPlanetas[7].agregarSatelite(arraySatelites[12]);
         arraySatelites[13]=new Satelites(606, 6.387230, 1.586e+21, -230, 0.273, "Caronte", 19570, 6.39, arrayPlanetas[7]);
+          arrayPlanetas[7].agregarSatelite(arraySatelites[13]);
         arraySatelites[14]=new Satelites(40, 38.2021, 4.2e+16, 0, 9.8, "Hydra", 64749, 38.2, arrayPlanetas[7]);
+          arrayPlanetas[7].agregarSatelite(arraySatelites[14]);
 
     /*************************************************/
 

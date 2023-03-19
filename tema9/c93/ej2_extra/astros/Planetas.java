@@ -10,7 +10,8 @@ public class Planetas extends Astros{
   // atributos
     private double distanciaAlSol;
     private double orbitaAlSol;
-    private String tieneSatelites;
+    private Satelites[] satelites;// array para almacenar todos los satélites de cada planeta
+    private int numSatelites;// número de satélites por planeta
 
   /****************************************/
 
@@ -20,6 +21,9 @@ public class Planetas extends Astros{
 
       this.distanciaAlSol=distanciaAlSol;
       this.orbitaAlSol=orbitaAlSol;
+
+      this.satelites=new Satelites[20];
+      this.numSatelites=0;// inicialización del contador de satélites
     }
 
   /****************************************/
@@ -41,7 +45,24 @@ public class Planetas extends Astros{
             muestra+="\n- Distancia al sol: "+this.distanciaAlSol+" km";
             muestra+="\n- Órbita alrededor del sol: "+this.orbitaAlSol+" días";
             muestra+="\n- Satélites: ";
+              for(int i=0; i<this.satelites.length; i++){
+                muestra+="\n  - "+this.satelites[i].getNombre();
+              }
 
           return muestra;
         }
+
+    /**********************/
+
+    public void agregarSatelite(Satelites satelite){
+      this.numSatelites=0;
+
+      if(this.numSatelites<this.satelites.length){
+        satelites[this.numSatelites]=satelite;
+
+        this.numSatelites++;
+      }else{
+        System.out.println("No se pueden agregar más satélites ya que el planeta no cuenta con más.");
+      }
+  }
 }
