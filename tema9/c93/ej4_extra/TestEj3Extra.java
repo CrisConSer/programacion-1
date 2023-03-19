@@ -4,13 +4,13 @@
   @info: programa principal
 */
 
-package tema9.c93.ej3_extra;
-
-import tema9.c93.ej3_extra.cuentaBancaria.CuentaAhorro;
-import tema9.c93.ej3_extra.cuentaBancaria.CuentaBancaria;
-import tema9.c93.ej3_extra.cuentaBancaria.CuentaCorriente;
+package tema9.c93.ej4_extra;
 
 import java.util.Scanner;
+
+import tema9.c93.ej4_extra.cuentaBancaria.CuentaAhorro;
+import tema9.c93.ej4_extra.cuentaBancaria.CuentaBancaria;
+import tema9.c93.ej4_extra.cuentaBancaria.CuentaCorriente;
 
 public class TestEj3Extra{
   public static void main(String[] args){

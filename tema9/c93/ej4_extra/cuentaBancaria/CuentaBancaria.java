@@ -4,7 +4,7 @@
   @info: clase abstracta "CuentaBancaria"
 */
 
-package tema9.c93.ej3_extra.cuentaBancaria;
+package tema9.c93.ej4_extra.cuentaBancaria;
 
 public abstract class CuentaBancaria{
   // atributos

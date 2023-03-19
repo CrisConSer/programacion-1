@@ -4,7 +4,7 @@
   @info: subclase de "CuentaBancaria"
 */
 
-package tema9.c93.ej3_extra.cuentaBancaria;
+package tema9.c93.ej4_extra.cuentaBancaria;
 
 public class CuentaAhorro extends CuentaBancaria{
   // atributos
