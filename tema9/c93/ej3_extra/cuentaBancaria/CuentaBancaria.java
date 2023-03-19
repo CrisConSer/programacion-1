@@ -145,7 +145,7 @@ public abstract class CuentaBancaria{
         }else{
           retirar(dinero);
 
-          
+          receptora.ingresar(dinero);
         }
       }
 
