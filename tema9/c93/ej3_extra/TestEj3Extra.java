@@ -85,7 +85,7 @@ public class TestEj3Extra{
 
             cuentas[num-=1].ingresar(dinero);
 
-            System.out.println("\nEl dinero ha sido ingresado. Puedes obtener la información de esta la cuenta número "+num+" en la opción número 2 del menú principal.\n");
+            System.out.println("\nEl dinero ha sido ingresado. Puedes obtener la información de esta la cuenta número "+(num+=1)+" en la opción número 2 del menú principal.\n");
           break;
 
           /*********************/
@@ -99,7 +99,7 @@ public class TestEj3Extra{
 
             cuentas[num-=1].retirar(dinero);
 
-            System.out.println("\nEl dinero ha sido retirado. Puedes obtener la información de esta la cuenta número "+num+" en la opción número 2 del menú principal.\n");
+            System.out.println("\nEl dinero ha sido retirado. Puedes obtener la información de esta la cuenta número "+(num+=1)+" en la opción número 2 del menú principal.\n");
           break;
 
           /*********************/
@@ -115,6 +115,14 @@ public class TestEj3Extra{
               dinero=input.nextDouble();
 
             cuentas[emisora-=1].traspaso(cuentas[receptora-=1], dinero);
+
+            System.out.println("\nEl dinero ha sido traspasado desde la cuenta número "+(emisora+=1)+" a la cuenta número "+(receptora+=1)+". Puedes obtener la información de estas cuentas en la opción número 2 del menú principal.\n");
+          break;
+
+          /*********************/
+
+          case 6:// calcular interés
+            
           break;
         }
       }while(opcion!=7);
