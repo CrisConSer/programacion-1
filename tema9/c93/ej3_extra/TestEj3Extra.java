@@ -63,6 +63,12 @@ public class TestEj3Extra{
 
             System.out.println(cuentas[num-=1].informacionCuenta());
           break;
+
+          /*********************/
+
+          case 3:// ingresar dinero
+            
+          break;
         }
       }while(opcion!=7);
   }
