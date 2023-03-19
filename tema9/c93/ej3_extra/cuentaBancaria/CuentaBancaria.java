@@ -157,7 +157,7 @@ public abstract class CuentaBancaria{
     */
       public String toString(int identificativo){
         String toString="\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
-          toString+="\n- Cuenta número "+identificativo+" -> **** **** **** "+getNumeroCuenta().substring(getNumeroCuenta().length()-4);
+          toString+="\n- Cuenta número "+identificativo+" -> **** **** **** "+getNumeroCuenta().substring(getNumeroCuenta().length()-5);
           toString+="\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
 
         return toString;
