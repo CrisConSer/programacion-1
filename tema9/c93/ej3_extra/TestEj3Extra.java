@@ -99,6 +99,12 @@ public class TestEj3Extra{
 
             System.out.println("\nEl dinero ha sido retirado. Puedes obtener la información de esta la cuenta número "+num+" en la opción número 2 del menú principal.\n");
           break;
+
+          /*********************/
+
+          case 5:// traspasar dinero
+            
+          break;
         }
       }while(opcion!=7);
   }
