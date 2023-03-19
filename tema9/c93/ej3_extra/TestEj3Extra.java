@@ -6,12 +6,27 @@
 
 package tema9.c93.ej3_extra;
 
+import tema9.c93.ej3_extra.cuentaBancaria.CuentaAhorro;
 import tema9.c93.ej3_extra.cuentaBancaria.CuentaBancaria;
+import tema9.c93.ej3_extra.cuentaBancaria.CuentaCorriente;
 
 import java.util.Scanner;
 
 public class TestEj3Extra{
   public static void main(String[] args){
+    // array de cuentas
+      int t=4;
+
+      CuentaBancaria[] cuentas=new CuentaBancaria[t];
+
+      for(int i=0; i<t; i+=2){
+        cuentas[i]=new CuentaCorriente(500+(int)(Math.random()*801+100));
+
+        cuentas[i+=1]=new CuentaAhorro(500+(int)(Math.random()*801+100));
+      }
+
+    /*******************************************/
+
     // scanner
       Scanner input=new Scanner(System.in);
         int opcion;
@@ -30,6 +45,16 @@ public class TestEj3Extra{
 
         System.out.print("Selecciona una opción: ");
           opcion=input.nextInt();
+
+        /************************/
+
+        switch(opcion){
+          case 1:// listado
+            for(int i=0; i<t; i++){
+              System.out.println(cuentas[i]);
+            }
+          break;
+        }
       }while(opcion!=7);
   }
 }
