@@ -6,6 +6,6 @@
 
 package tema9.c93.ej3_extra.cuentaBancaria;
 
-public class CuentaAhorro{
+public class CuentaAhorro extends CuentaBancaria{
   
 }
