@@ -143,8 +143,8 @@ public abstract class CuentaBancaria{
     /********************/
 
     /**
-      @name: calcularInteres
+      @name: calcularIntereses
       @info: calcular interés de la cuenta
     */
-      public abstract void calcularInteres();
+      public abstract void calcularIntereses();
 }

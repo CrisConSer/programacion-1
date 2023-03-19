@@ -16,10 +16,10 @@ public class CuentaCorriente extends CuentaBancaria{
 
   // métodos
     /**
-      @name: calcularInteres
+      @name: calcularIntereses
       @info: calcular interés de la cuenta
     */
-    public void calcularInteres(){
+    public void calcularIntereses(){
       double intereses=getSaldo()*getInteresAnualBasico();
 
       anadir(intereses);
