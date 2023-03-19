@@ -14,6 +14,9 @@ import java.util.Scanner;
 
 public class TestEj3Extra{
   public static void main(String[] args){
+    // cuenta elegida
+      int num;
+
     // array de cuentas
       int t=4;
 
@@ -59,7 +62,7 @@ public class TestEj3Extra{
 
           case 2:// mostrar información
             System.out.print("Número de la cuenta sobre la que quieres obtener información: ");
-              int num=input.nextInt();
+              num=input.nextInt();
 
             System.out.println(cuentas[num-=1].informacionCuenta());
           break;
@@ -67,7 +70,8 @@ public class TestEj3Extra{
           /*********************/
 
           case 3:// ingresar dinero
-            
+            System.out.print("¿En qué tarjeta quieres ingresar dinero?");
+              num=input.nextInt();
           break;
         }
       }while(opcion!=7);
