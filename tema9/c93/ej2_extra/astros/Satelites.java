@@ -30,19 +30,19 @@ public class Satelites extends Astros{
       @name: muestra
       @info: muestra toda la información de la que se dispone sobre el satélite
     */
-    @Override
-    public String muestra(){
-      String muestra=("\n\n---------SATÉLITE---------");
-        muestra+="\n- Nombre: "+getNombre();
-        muestra+="\n- Radio ecuatorial: "+getRadioEcuatorial()+" km";
-        muestra+="\n- Rotación sobre su eje: "+getRotacionSobreSuEje()+" horas";
-        muestra+="\n- Masa: "+getMasa()+" kg";
-        muestra+="\n- Temperatura media: "+getTemperaturaMedia()+" ºC";
-        muestra+="\n- Gravedad: "+getGravedad()+" m/s^2";
-        muestra+="\n- Distancia al planeta: "+this.distanciaAlPlaneta+" km";
-        muestra+="\n- Órbita alrededor del planeta: "+this.orbitaPlanetaria+" días";
-        muestra+="\n- Planeta: "+this.planeta.getNombre();
+      @Override
+      public String muestra(){
+        String muestra=("\n\n---------SATÉLITE---------");
+          muestra+="\n- Nombre: "+getNombre();
+          muestra+="\n- Radio ecuatorial: "+getRadioEcuatorial()+" km";
+          muestra+="\n- Rotación sobre su eje: "+getRotacionSobreSuEje()+" horas";
+          muestra+="\n- Masa: "+getMasa()+" kg";
+          muestra+="\n- Temperatura media: "+getTemperaturaMedia()+" ºC";
+          muestra+="\n- Gravedad: "+getGravedad()+" m/s^2";
+          muestra+="\n- Distancia al planeta: "+this.distanciaAlPlaneta+" km";
+          muestra+="\n- Órbita alrededor del planeta: "+this.orbitaPlanetaria+" días";
+          muestra+="\n- Planeta: "+this.planeta.getNombre();
 
-      return muestra;
-    }
+        return muestra;
+      }
 }
