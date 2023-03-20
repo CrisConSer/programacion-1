@@ -75,7 +75,6 @@ public abstract class Astros{
     /**
       @name: "muestra"
       @info: muestra toda la información de la que se dispone sobre el astro
-      @return: 
     */
       public abstract String muestra();
 }
