@@ -69,12 +69,13 @@ public class TestEj4Arrays{
               System.out.println("5. Menú principal");
                 System.out.print("Introduce una opción: ");
                   opcionListado=input.nextInt();
+                  input.nextLine();// consumir buffer del teclado
 
               switch(opcionListado){
                 case 1:// completo
                   for(int i=0; i<t; i++){
                     if(!album[i].getCodigo().equals("LIBRE")){// se muestran todas las instancias que no están libres
-                      System.out.println(album[i]);//! esta línea no funciona correctamente, pendiente de arreglo
+                      System.out.println(album[i]);
                     }
                   }
                 break;
@@ -82,11 +83,10 @@ public class TestEj4Arrays{
                 case 2:// por autor
                   System.out.print("Introduce el autor: ");
                     autorIntroducido=input.nextLine();
-                    input.nextLine();// consumir buffer del teclado
 
                   for(int i=0; i<t; i++){
                     if((!album[i].getCodigo().equals("LIBRE"))&&(album[i].getAutor().equals(autorIntroducido))){
-                      System.out.println(album[i]);//! esta línea no funciona correctamente, pendiente de arreglo
+                      System.out.println(album[i]);
                     }
                   }
                 break;
@@ -98,7 +98,7 @@ public class TestEj4Arrays{
 
                   for(int i=0; i<t; i++){
                     if((!album[i].getCodigo().equals("LIBRE"))&&(album[i].getGenero().equals(generoIntroducido))){
-                      System.out.println(album[i]);//! esta línea no funciona correctamente, pendiente de arreglo
+                      System.out.println(album[i]);
                     }
                   }
                 break;
