@@ -62,7 +62,7 @@ public class Planetas extends Astros{
       @param satelite: satélite a agregar
     */
       public void agregarSatelite(Satelites satelite){
-        if(this.numSatelites < this.satelites.length){
+        if(this.numSatelites<this.satelites.length){
           this.satelites[this.numSatelites]=satelite;
 
           this.numSatelites++;
