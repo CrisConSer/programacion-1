@@ -85,7 +85,7 @@ public class TestEj3Extra{
 
             cuentas[num-=1].ingresar(dinero);
 
-            System.out.println("\nEl dinero ha sido ingresado. Puedes obtener la información de esta la cuenta número "+(num+=1)+" en la opción número 2 del menú principal.\n");
+            System.out.println("\nEl dinero ha sido ingresado. Puedes obtener la información de la cuenta número "+(num+=1)+" en la opción número 2 del menú principal.\n");
           break;
 
           /*********************/
@@ -99,7 +99,7 @@ public class TestEj3Extra{
 
             cuentas[num-=1].retirar(dinero);
 
-            System.out.println("\nEl dinero ha sido retirado. Puedes obtener la información de esta la cuenta número "+(num+=1)+" en la opción número 2 del menú principal.\n");
+            System.out.println("\nEl dinero ha sido retirado. Puedes obtener la información de la cuenta número "+(num+=1)+" en la opción número 2 del menú principal.\n");
           break;
 
           /*********************/
