@@ -55,7 +55,7 @@ public abstract class CuentaBancaria{
   /****************************************************/
 
   // métodos
-    // getter "iba"
+    // getter "numeroCuenta"
     public String getNumeroCuenta(){
       return this.numeroCuenta;
     }
